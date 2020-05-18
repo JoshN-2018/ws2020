@@ -5,6 +5,10 @@
 
 /* Set Up */
 
+html {
+  background-color: 'black';
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -123,7 +127,7 @@ nav .logo {
 }
 
 nav .logo img {
-   height: 0.9rem;
+   height: 0.8rem;
 }
 
    /* region medium */

@@ -12,10 +12,11 @@
   /* Spacing */
   --space-index-l: 19rem; /*304px*/
   --space-index-m: 16.5rem; /*264px*/
-  --space-huge: 9rem; /*144px*/
-  --space-larger: 7rem; /*112px*/
-  --space-large: 4.5rem; /*72px*/
-  --space-medium: 3.25rem; /*52px*/
+  --space-huge: 12.5rem; /*200px*/
+  --space-larger: 7.5rem; /*120px*/
+  --space-large: 6.25rem; /*100px*/
+  --space-big: 5rem; /*80px*/
+  --space-medium: 3.75rem; /*60px*/
   --space-small: 2rem; /*32px*/
   --space-petit: 1.5rem; /*24px*/
   --space-std: 1rem; /*16px*/

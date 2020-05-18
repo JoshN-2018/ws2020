@@ -5,10 +5,6 @@
 
 /* Set Up */
 
-html {
-  background-color: 'black';
-}
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -163,78 +159,11 @@ nav .logo img {
 
 
 
-/* sticky header region small */
-      /* object */
-#icon-contact {
-   background-color: var(--color-white);
-   padding: 0.8rem 0 0.25rem 0.5rem;
-   margin-top: -1rem;
-   width: 100%;
-   transition: 0.5s transform ease;
-}
-
-#icon-contact img {
-   margin-left: 1rem;
-   fill: red;
-   height: 1.35rem;
-}
-
-#stick-icon-cont {
-   padding-top: 0.4rem;
-   transition: 0.3s all ease;
-   display: flex;
-   align-items: flex-start;
-   justify-content: flex-end;
-}
-/* end of: sticky header region small */
 
 
-/* sticky header region large */
-#sticky-contact, #container-case-stick {
-   display: none;
-}
-
-@media (min-width: 720px) {
-   #sticky-contact, #container-case-stick {
-      display: flex;
-   }
-
-   #sticky-contact {
-      transition: 0.5s all ease;
-   }
-
-   #sticky-contact:hover {
-      opacity: 0.3;
-   }
-}
 
 
-/* js classes */
-.sticky {
-   position: fixed !important;
-   top: 0;
-   z-index: 2;
-   -webkit-transform: translateY(0) !important;
-       -ms-transform: translateY(0) !important;
-           transform: translateY(0) !important;
-}
 
-.stickyM {
-   position: fixed;
-   padding-top: 2rem !important;
-   right: 0;
-   z-index: 2;
-   height: 85px;
-   background-color: var(--color-white);
-   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-}
-
-.shift {
-   -webkit-transform: translate(calc(-50vw + 55px)) !important;
-       -ms-transform: translate(calc(-50vw + 55px)) !important;
-           transform: translate(calc(-50vw + 55px)) !important;
-}
-/* end of js classes */
 
 
 
@@ -242,114 +171,22 @@ nav .logo img {
 /* Hero-section */
 
    /* region small */
-.hero-section .container.container-flex {
-   flex-direction: column;
-}
-
-.hero-section .hero-content {
-   flex-direction: column;
-   padding-top: var(--space-small);
-}
-
-.hero-text .hero {
-   margin-bottom: var(--space-small);
-}
-
-.indicator-recent-work {
-   padding-top: var(--space-medium);
-}
-
-.indicator-recent-work img {
-   height: 0.5rem;
-   margin-top: 0.5rem;
-}
 
 
-
-   /* Tall screen fix */
-@media (min-width: 720px) and (max-height: 991px) {
-   .hero-section .container.container-flex {
-      height: 91vh;
-   }
-}
-
-   /* disabling for contact page */
-@media (min-width: 720px) and (max-height: 991px) {
-   .hero-section .contact.container-flex {
-      height: initial; /* note this is compressing content fix padding to achieve this look*/
-   }
-}
 
    /* region medium */
 @media (min-width: 720px) {
-   .hero-section .container.container-flex {
-      justify-content: space-between;
-   }
 
-   .hero-section .hero-content {
-      flex-direction: row;
-      padding-top: var(--space-large);
-      padding-bottom: var(--space-large);
-      padding-right: var(--indent-1-col);
-      margin: auto 0;
-   }
-   /* fix for contact page */
-   .hero-section .hero-content.contact {
-      padding-top: var(--space-large);
-      padding-bottom: var(--space-medium);
-   }
-
-   .hero-section .indicators {
-      justify-content: space-between;
-      align-items: flex-end;
-   }
-
-   .hero-text {
-      width: 85%;
-   }
-
-   .hero-text .hero {
-      margin-bottom: var(--space-small);
-   }
-
-   .indicator-recent-work {
-      padding-top: var(--space-small);
-   }
 }
+
 
    /* region large */
 @media (min-width: 1100px) {
 
-   .hero-section .hero-content {
-      padding-top: var(--space-larger);
-      padding-bottom: 10rem;
-      padding-left: var(--indent-2-col);
-      padding-right: var(--indent-2-col);
-   }
 
-   /* fix for contact page */
-   .hero-section .hero-content.contact {
-      padding-top: var(--space-large);
-      padding-bottom: var(--space-medium);
-   }
-
-   .hero-text {
-      width: 75%;
-   }
-
-   .hero-text .hero {
-      margin-bottom: var(--space-small);
-   }
-}
-
-   /* ensuring flexibility for shorter screens without compromising taller display output */
-@media (min-width: 1100px) and (max-height: 991px) {
-   .hero-section .hero-content {
-      padding-top: var(--space-medium);
-      padding-bottom: 9rem;
-   }
 }
 /* end of: Hero-section */
+
 
 
 /* Hero-section-case */

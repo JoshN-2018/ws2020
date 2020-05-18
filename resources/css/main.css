@@ -1,10 +1,9 @@
-/* Set Up */
+/* Compiling  */
+@import 'reset.css';
+@import 'typography.css';
+@import 'variables.css';
 
-html {
-   box-sizing: border-box;
-   font-family: 'Open Sans', sans-serif;
-   color: var(--color-black);
-}
+/* Set Up */
 
 *, *:before, *:after {
   box-sizing: inherit;

@@ -2,16 +2,16 @@
 
 /* global modifiers */
 .light {
-  font-weight: 300;
+  font-family: 'untitled regular', sans-serif;
 }
 
 strong,
 .bold {
-  font-weight: 700;
+  font-family: "untitled medium";
 }
 
 .semi-bold, b {
-   font-weight: 600;
+  font-family: "untitled medium";
 }
 
 .text-link {
@@ -22,19 +22,50 @@ strong,
    text-align: center;
 }
 
-@font-face {
+/* @font-face {
    font-family: "Domaine Display";
    src: url("../fonts/DomaineDisplayWeb-Bold.woff2") format("woff2"),
    url("../fonts/DomaineDisplayWeb-Bold.woff") format("woff");
    font-weight: bold;
+} */
+
+@font-face {
+  font-family: "nuacht black";
+
+  src: url("../fonts/nuacht-serif-headline-web-black.woff") format("woff"),
+    url("../fonts/nuacht-serif-headline-web-black.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "untitled medium";
+
+  src: url("../fonts/untitled-sans-test-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "untitled regular";
+
+  src: url("../fonts/untitled-sans-test-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* default styling */
+html {
+font-family: 'untitled regular', sans-serif;
+color: var(--color-black);
+}
+
 
 /* large headings */
 .hero, .sidekick, .h1, .h2, .h3 {
-   font-family: "Domaine Display", "Georgia", "serif";
+   font-family: "nuacht black", "Georgia", "serif";
    font-weight: bold;
 }
-
 
 /* Text Styles */
 

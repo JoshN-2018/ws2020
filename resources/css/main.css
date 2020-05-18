@@ -107,6 +107,9 @@
 /* App-header */
 
    /* region small */
+nav {
+  z-index: 5;
+}
 nav div.container-flex {
    padding: 1.25rem 1.25rem 0 1.25rem;
    align-items: center;
@@ -165,14 +168,35 @@ nav .logo img {
 
 
 
-
+.full-width-cont {
+  width: 100%;
+}
 
 
 /* Hero-section */
 
    /* region small */
+.hero-section {
+  height: calc(100vh - 54px);
+  /* height: 100vh; */
+  align-items: flex-end;
+  justify-content: center;
+  background: white;
+  /* margin-top: -100px !important; */
+}
 
+.hero-section p {
+  margin-top: 100px;
+  width: 430px;
+}
 
+#hero-anim {
+  width: 100%;
+  /* margin-top: -100px !important; */
+  /* height: 100%; */
+}
+
+/* try manually setting the z-index with javascript */
 
    /* region medium */
 @media (min-width: 720px) {

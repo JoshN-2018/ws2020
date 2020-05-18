@@ -109,7 +109,7 @@ color: var(--color-black);
 }
 
 .body-big {
-   font-size: 1.125rem; /* 18px */
+   font-size: 1.5rem; /* 24px */
    line-height: 1.7;
 }
 
@@ -186,8 +186,8 @@ a {
    }
 
    .body-big {
-      font-size: 1.188rem; /* 19px */
-      line-height: 1.74;
+     font-size: 1.5rem; /* 24px */
+     line-height: 1.7;
    }
 
    .body-lead {
@@ -246,8 +246,8 @@ a {
    }
 
    .body-big {
-      font-size: 1.25rem; /* 20px */
-      line-height: 1.9;
+     font-size: 1.5rem; /* 24px */
+     line-height: 1.7;
    }
 
    .body-lead {

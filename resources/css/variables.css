@@ -168,7 +168,7 @@ height: 300px;
    /* region small */
 .container {
    margin: 0 auto;
-   padding: 0 1.25rem;
+   padding: 0 1.875rem;
    overflow: hidden;
    max-width: 1440px;
    position: relative;

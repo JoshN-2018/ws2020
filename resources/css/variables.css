@@ -411,6 +411,14 @@ footer h4:hover {
    margin-top: 0.8rem;
 }
 
+/* ///////////////////    JS clasess  /////////////////*/
+
+/* toggle class for hero animations */
+
+.off {
+  display: none;
+}
+
 
    /* offset animations */
 

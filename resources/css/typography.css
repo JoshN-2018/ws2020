@@ -70,70 +70,77 @@ color: var(--color-black);
 /* Text Styles */
 
 /* #region small */
-.hero {
-   font-size: 3.4rem;
-   /*font-size: 2.5rem;*/ /* 40px */
+
+.h1 {
+   font-size: 2rem; /* 32px */
    line-height: 1.25;
  }
 
-.sidekick {
- font-size: 2.5rem; /* 40px */
+.h2 {
+ font-size: 1.75rem; /* 28px */
  line-height: 1.25;
 }
 
-.h1 {
-   font-size: 2.25rem; /* 36px */
-   line-height: 1.22;
- }
-
-.h2 {
- font-size: 1.5rem; /* 24px */
- line-height: 1.13;
-}
-
 .h3 {
-   font-size: 1.5rem; /* 24px */
-   line-height: 1.35;
+  font-size: 1.75rem; /* 28px */
+  line-height: 1.25;
  }
 
 .h4 {
- font-size: 0.75rem; /* 12px */
- letter-spacing: 3px;
- line-height: 1.2;
- text-transform: uppercase;
+ font-size: 1.3125rem; /* 21px */
+ line-height: 1.25;
 }
 
-.body-block {
-   font-size: 1.2rem; /* 28px */
-   line-height: 1.8;
-}
-
-.body-big {
+.body-big-tight {
    font-size: 1.5rem; /* 24px */
-   line-height: 1.7;
+   line-height: 1.67;
 }
 
-.body-lead {
-   font-size: 1.18rem; /* 19px */
-   line-height: 1.47;
+.body-big-loose {
+   font-size: 1.5rem; /* 24px */
+   line-height: 2.167;
 }
 
-.body {
-   font-size: 1rem; /* 16px */
-   line-height: 1.63;
-}
-
-.body-petit {
-   font-size: 0.813rem; /* 13px */
-   line-height: 2.4;
-}
-
-.credit {
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   color: var(--color-light-grey);
+.body-header {
+   font-size: 1.125rem; /* 18px */
    line-height: 2;
-   font-size: 0.8rem;
+}
+
+.body-tight {
+   font-size: 1rem; /* 16px */
+   line-height: 1.5;
+}
+
+.body-loose {
+   font-size: 1rem; /* 16px */
+   line-height: 2;
+}
+
+.body-small {
+   font-size: 0.9375rem; /* 15px */
+   line-height: 1.5;
+}
+
+.label {
+   letter-spacing: 2.4px;
+   text-transform: uppercase;
+   line-height: 1.5;
+   font-size: 0.75rem;
+}
+
+.eyebrow {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  line-height: 1.5;
+}
+
+.button {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 
 .nav {
@@ -148,120 +155,134 @@ a {
 
 /* region medium */
 @media (min-width: 720px) {
-   .hero {
-      font-size: 4.5rem;
-      /*font-size: 3.125rem;*/ /* 50px */
-      line-height: 1.26;
-    }
-
-    .sidekick {
-      font-size: 3.125rem; /* 50px */
-      line-height: 1.26;
-    }
-
-   .h1 {
-      font-size: 2.560rem; /* 41px */
-      line-height: 1.22;
-    }
-
-   .h2 {
-    font-size: 1.75rem; /* 28px */
-    line-height: 1.21;
+  .h1 {
+     font-size: 2.75rem; /* 44px */
+     line-height: 1.25;
    }
 
-   .h3 {
-      font-size: 1.375rem; /* 22px */
-      line-height: 1.55;
-    }
+  .h2 {
+   font-size: 2.25rem; /* 36px */
+   line-height: 1.25;
+  }
 
-   .h4 {
-    font-size: 0.75rem; /* 12px */
-    letter-spacing: 3px;
-    line-height: 1.2;
+  .h3 {
+    font-size: 1.8125rem; /* 29px */
+    line-height: 1.25;
    }
 
-   .body-block {
-      font-size: 1.2rem; /* 28px */
-      line-height: 1.8;
-   }
+  .h4 {
+   font-size: 1.5rem; /* 24px */
+   line-height: 1.25;
+  }
 
-   .body-big {
+  .body-big-tight {
      font-size: 1.5rem; /* 24px */
-     line-height: 1.7;
-   }
+     line-height: 1.67;
+  }
 
-   .body-lead {
-      font-size: 1.125rem; /* 18px */
-      line-height: 1.39;
-   }
+  .body-big-loose {
+     font-size: 1.5rem; /* 24px */
+     line-height: 2.83;
+  }
 
-   .body {
-      font-size: 1rem; /* 16px */
-      line-height: 1.69;
-   }
+  .body-header {
+     font-size: 1.125rem; /* 18px */
+     line-height: 2;
+  }
 
-   .body-petit {
-      font-size: 0.875rem; /* 14px */
-      line-height: 1.9;
-   }
+  .body-tight {
+     font-size: 1.125rem; /* 18px */
+     line-height: 1.5;
+  }
+
+  .body-loose {
+     font-size: 1.125rem; /* 18px */
+     line-height: 2;
+  }
+
+  .body-small {
+     font-size: 1rem; /* 16px */
+     line-height: 1.5;
+  }
+
+  .label {
+     letter-spacing: 2.4px;
+     text-transform: uppercase;
+     font-size: 0.75rem;
+     line-height: 1.5;
+  }
+
+  .eyebrow {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    line-height: 1.5;
+  }
 }
 
 /* region large */
 @media (min-width: 1100px) {
-   .hero {
-      font-size: 6rem; /* 60px */
-      /*font-size: 3.75rem;*/ /* 60px */
-      line-height: 1.24;
-    }
-
-    .sidekick {
-      font-size: 3.75rem; /* 60px */
-      line-height: 1.24;
-    }
-
-   .h1 {
-      font-size: 3.375rem; /* 54px */
-      line-height: 1.24;
-    }
-
-   .h2 {
-    font-size: 2.188rem; /* 35px */
-    line-height: 1.29;
+  .h1 {
+     font-size: 2.75rem; /* 44px */
+     line-height: 1.25;
    }
 
-   .h3 {
-      font-size: 1.563rem; /* 25px */
-      line-height: 1.4;
-    }
+  .h2 {
+   font-size: 2.25rem; /* 36px */
+   line-height: 1.25;
+  }
 
-   .h4 {
-    font-size: 0.75rem; /* 12px */
-    letter-spacing: 3px;
-    line-height: 1.2;
+  .h3 {
+    font-size: 1.8125rem; /* 29px */
+    line-height: 1.25;
    }
 
-   .body-block {
-      font-size: 1.4rem; /* 28px */
-      line-height: 1.8;
-   }
+  .h4 {
+   font-size: 1.5rem; /* 24px */
+   line-height: 1.25;
+  }
 
-   .body-big {
+  .body-big-tight {
      font-size: 1.5rem; /* 24px */
-     line-height: 1.7;
-   }
+     line-height: 1.67;
+  }
 
-   .body-lead {
-      font-size: 1.188rem; /* 19px */
-      line-height: 1.42;
-   }
+  .body-big-loose {
+     font-size: 1.5rem; /* 24px */
+     line-height: 2.83;
+  }
 
-   .body {
-      font-size: 1.063rem; /* 17px */
-      line-height: 1.76;
-   }
+  .body-header {
+     font-size: 1.125rem; /* 18px */
+     line-height: 2;
+  }
 
-   .body-petit {
-      font-size: 0.875rem; /* 14px */
-      line-height: 2.1;
-   }
+  .body-tight {
+     font-size: 1.125rem; /* 18px */
+     line-height: 1.5;
+  }
+
+  .body-loose {
+     font-size: 1.125rem; /* 18px */
+     line-height: 2;
+  }
+
+  .body-small {
+     font-size: 1rem; /* 16px */
+     line-height: 1.5;
+  }
+
+  .label {
+     letter-spacing: 2.4px;
+     text-transform: uppercase;
+     font-size: 0.75rem;
+     line-height: 1.5;
+  }
+
+  .eyebrow {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    line-height: 1.5;
+  }
 }

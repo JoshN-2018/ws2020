@@ -27,7 +27,7 @@
   --shadow-soft: 0px 11px 50px 0px rgba(0, 0, 0, 0.1);
 
   /* Column indents */
-  --indent-1-col: 3.5rem; /* 56px */
+   : 3.5rem; /* 56px */
   --indent-2-col: 7rem; /* 112px */
   --indent-3-col: 10.5rem; /* 168px */
 }

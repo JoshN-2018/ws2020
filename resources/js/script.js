@@ -27,7 +27,7 @@ function off() {
 }
 
 
-
+/*
 
 // link highlighting (UPDATE THIS FOR NEW LINKS!!!)
 
@@ -64,7 +64,7 @@ if(window.location.pathname === "/contact/index.html" && window.innerWidth < wid
 } else {
    logo.style.marginTop = "0rem";
 }
-
+*/
 
 
 //Above the line animate!!!
@@ -170,3 +170,127 @@ document.addEventListener("DOMContentLoaded", function(event) {
    setTimeout(function(){delay4(); }, 400);
    setTimeout(function(){removeProps(); }, 1000);
 });
+
+
+
+////////////////////    load animations  ////////////////////
+
+// loading animation data
+var animSmall = lottie.loadAnimation({
+   container: document.getElementById('hero-anim-small'),
+   renderer: 'svg',
+   loop: false,
+   autoplay: true,
+   path: 'resources/anim/region-small.json'
+})
+
+var animMedium = lottie.loadAnimation({
+   container: document.getElementById('hero-anim-medium'),
+   renderer: 'svg',
+   loop: false,
+   autoplay: true,
+   path: 'resources/anim/region-medium.json'
+})
+
+var animLarge = lottie.loadAnimation({
+   container: document.getElementById('hero-anim-large'),
+   renderer: 'svg',
+   loop: false,
+   autoplay: true,
+   path: 'resources/anim/region-large.json'
+})
+
+//collect animation containers
+var animContSmall = document.getElementById('hero-anim-small')
+var animContMedium = document.getElementById('hero-anim-medium')
+var animContLarge = document.getElementById('hero-anim-large')
+
+
+
+////////////////////    Prepare to change animation  ////////////////////
+
+var displayedContainers = document.getElementsByClassName("anim");
+
+// turn off other regions
+function turnOffOtherRegions() {
+   for (var i = 0; i < displayedContainers.length; i++) {
+      displayedContainers[i].classList.add("off");
+   }
+   console.log("later anim containers off");
+}
+turnOffOtherRegions();
+
+
+
+
+
+////////////////////    Determine breakpoint & switch  ////////////////////
+
+
+// breakpoint determining variable
+var screenBase
+
+// screen break points
+var breakOne = 720
+var breakTwo = 1100
+var breakThree = 1440
+
+function breakHandler() {
+
+   // determine screen breakpoints and assign base values
+   if(window.innerWidth <= breakOne) {
+      screenBase = 1
+      console.log("region-small")
+      turnOffOtherRegions();
+      animContSmall.classList.toggle("off");
+
+   }
+   else if(window.innerWidth >= breakOne && window.innerWidth <= breakTwo) {
+      screenBase = 2
+      console.log("region-medium")
+      turnOffOtherRegions();
+      animContMedium.classList.toggle("off");
+   }
+   else if(window.innerWidth >= breakTwo && window.innerWidth <= breakThree) {
+      screenBase = 3
+      console.log("region-large")
+      turnOffOtherRegions();
+      animContLarge.classList.toggle("off");
+   }
+   else if(window.innerWidth >= breakThree) {
+      screenBase = 3
+      console.log("region-large")
+      turnOffOtherRegions();
+      animContLarge.classList.toggle("off");
+   }
+ }
+
+// add event listener
+ document.addEventListener("DOMContentLoaded", function(event) {
+ breakHandler();
+ });
+
+// call on resize
+ window.addEventListener('resize', breakHandler);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //

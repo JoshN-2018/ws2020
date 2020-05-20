@@ -1,0 +1,115 @@
+/* highlights */
+   /* region small */
+
+.exp .container-flex {
+   flex-direction: column;
+}
+
+.exp .exp-video {
+   box-shadow: var(--shadow-soft);
+}
+
+.exp .exp-text {
+   margin-top: var(--space-petit);
+}
+
+.exp-text h2 {
+   margin-bottom: var(--space-micro);
+}
+
+.exp-text hr {
+   margin: var(--space-std) 0;
+}
+
+.exp-icons.container-flex {
+   flex-direction: row;
+}
+
+.exp-icons img:last-child {
+   margin-left: var(--space-std);
+}
+
+.exp-icons img {
+   height: 2.2rem;
+}
+
+.exp-comp {
+   margin-bottom: 3.25rem;
+}
+
+   /* removing margin on last experiments component */
+.exp .exp-comp:last-child {
+   margin-bottom: var(--space-small);
+}
+
+/* Experiments */
+   /* region medium */
+@media (min-width: 850px) {
+   .exp .container-flex.exp-comp {
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   .exp .exp-text {
+      width: 40%;
+      margin-right: var(--space-small);
+      margin-top: 0;
+   }
+
+   .exp .exp-text {
+      order: -1;
+   }
+
+   .exp-comp {
+      margin-bottom: var(--space-large);
+   }
+
+   .exp-text h2 {
+      margin-bottom: var(--space-tiny);
+   }
+
+   .exp-text hr {
+      margin: var(--space-petit) 0;
+   }
+
+   .exp .h4 {
+      margin-bottom: var(--space-micro);
+   }
+
+   .exp-icons img {
+      height: 2.5rem;
+      margin: -0.5rem 0;
+   }
+
+}
+
+   /* region large */
+@media (min-width: 1100px) {
+   .exp .exp-text {
+      max-width: 25%;
+      margin-right: var(--space-medium);
+      margin-top: 0;
+   }
+
+
+   .exp-comp {
+      margin-bottom: var(--space-larger);
+      padding: 0 var(--indent-2-col);
+   }
+
+   .exp-text h2 {
+      margin-bottom: var(--space-tiny);
+   }
+
+   .exp-text hr {
+      margin: var(--space-petit) 0;
+   }
+
+   .exp .h4 {
+      margin-bottom: var(--space-micro);
+   }
+
+   .exp-icons img {
+      height: 2.5rem;
+      margin: -0.5rem 0;
+   }
+}

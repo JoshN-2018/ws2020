@@ -44,6 +44,9 @@ footer .container-flex {
    margin-bottom: 36px;
 }
 
+#content-icons img {
+   height: 26px;
+}
    /* end of: structure */
 
 
@@ -62,6 +65,7 @@ footer .body-small {
    line-height: 28px;
 }
    /* end of: type */
+
 
 
 

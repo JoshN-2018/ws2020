@@ -14,6 +14,9 @@
 
 .case-card img {
   width: 100%;
+  height: 100%;
+  max-height: 375px;
+  object-fit: cover;
 }
 
 .case-card span {
@@ -30,16 +33,9 @@
    .showcase-section .container-flex {
       flex-direction: row;
       flex-wrap: wrap;
-      margin-top: var(--space-petit);
+      padding-top: var(--space-medium);
    }
 
-   .showcase-section img {
-      margin-bottom: var(--space-petit);
-   }
-
-   .showcase-section .h2 {
-      margin-bottom: var(--space-tiny);
-   }
       /* this applies to all and is reflected without interference */
    .showcase-section .case-card {
       width: 46%;

@@ -28,9 +28,9 @@
   --shadow-soft: 0px 11px 50px 0px rgba(0, 0, 0, 0.1);
 
   /* Column indents */
-   : 3.5rem; /* 56px */
-  --indent-2-col: 7rem; /* 112px */
-  --indent-3-col: 10.5rem; /* 168px */
+  --indent-1-col-end: 2rem; /* 32px */
+  --indent-2-col-start: 3.5rem; /* 56px */
+  --indent-3-col-start: 7rem; /* 112px */
 }
 
 /* end of: Global Variables */

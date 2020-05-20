@@ -79,12 +79,12 @@ color: var(--color-black);
  }
 
 .h2 {
- font-size: 1.75rem; /* 28px */
- line-height: 1.25;
-}
+   font-size: 1.8125rem; /* 28px */
+   line-height: 1.25;
+  }
 
 .h3 {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.8125rem; /* 28px */
   line-height: 1.25;
  }
 
@@ -163,14 +163,14 @@ a {
    }
 
    .h2 {
-    font-size: 1.75rem; /* 28px */
-    line-height: 1.25;
-   }
+      font-size: 1.8125rem; /* 28px */
+      line-height: 1.25;
+     }
 
    .h3 {
-     font-size: 1.75rem; /* 28px */
-     line-height: 1.25;
-    }
+      font-size: 1.8125rem; /* 28px */
+      line-height: 1.25;
+     }
 
   .h4 {
    font-size: 1.5rem; /* 24px */

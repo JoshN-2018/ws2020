@@ -1,10 +1,13 @@
 /* Showcase-section */
 
    /* region small */
-.showcase-section .container-flex {
+#showcase-section {
+  background-color: var(--color-black);
+}
+
+#showcase-section .container-flex {
    flex-direction: column;
-   padding-top: var(--space-medium);
-   background-color: var(--color-black);
+   padding-top: var(--space-small);
 }
 
 .card-header {
@@ -14,8 +17,7 @@
 
 .case-card img {
   width: 100%;
-  height: 100%;
-  max-height: 375px;
+  height: 375px;
   object-fit: cover;
 }
 
@@ -23,71 +25,74 @@
   margin-bottom: 4px;
 }
 
-.case-card h3 {
-  margin-bottom: var(--space-micro);
+.case-card h2 {
+  margin-bottom: var(--space-tiny);
+}
+
+.case-card {
+  margin-bottom: 52px;
 }
 
 
    /* region medium */
 @media (min-width: 720px) {
-   .showcase-section .container-flex {
+   #showcase-section .container-flex {
       flex-direction: row;
       flex-wrap: wrap;
-      padding-top: var(--space-medium);
+      padding: 60px 24px 0 24px; /*--indent-2-col-start left & right*/
    }
 
-      /* this applies to all and is reflected without interference */
-   .showcase-section .case-card {
-      width: 46%;
-      margin-bottom: var(--space-index-m);
+   #showcase .label {
+     padding-left: var(--indent-1-col-end);
+   }
+
+   .case-card {
+     max-width: 44%;
+     margin-bottom: 60px;
    }
 
       /* setting margin on every second item */
-   .showcase-section .case-card:nth-child(2n + 0) {
-      margin-left: 8%;
+   #showcase-section .case-card:nth-child(2n + 0) {
+      margin-left: 60px;
    }
 
       /* Every second item reverse stagger starting with the third item */
-   .showcase-section .case-card:nth-child(2n + 3) {
-      margin-top: calc(var(--space-index-m) * -1);
+   #showcase-section .case-card:nth-child(2n + 3) {
+      margin-top: -40px;
    }
-
+}
       /* second item stagger */
-   .showcase-section .case-card:nth-child(0n + 2) {
-      margin-top: var(--space-index-m);
+   #showcase-section .case-card:nth-child(0n + 2) {
+      margin-top: 40px;
    }
 }
 
+
 /* region large */
 @media (min-width: 1100px) {
-   .showcase-section .container-flex {
-      margin-top: var(--space-small);
-      padding: 0 var(--indent-3-col);
+   #showcase-section .container-flex {
+      padding: 0; /*--indent-2-col-start left & right*/
    }
 
-   .showcase-section .h2 {
-      margin-bottom: var(--space-std);
-   }
-
-   /* this applies to all and is reflected without interference */
-   .showcase-section .case-card {
-      width: 46%;
-      margin-bottom: var(--space-index-l);
+   .case-card {
+     max-width: 44%;
+     margin-bottom: 60px;
    }
 
       /* setting margin on every second item */
-   .showcase-section .case-card:nth-child(2n + 0) {
-      margin-left: 8%;
+   #showcase-section .case-card:nth-child(2n + 0) {
+      margin-left: 60px;
    }
 
-      /* 3rd item reverse stagger */
-   .showcase-section .case-card:nth-child(0n + 3) {
-      margin-top: calc(var(--space-index-l) * -1);
+      /* Every second item reverse stagger starting with the third item */
+   #showcase-section .case-card:nth-child(2n + 3) {
+      margin-top: -60px;
    }
-
+}
       /* second item stagger */
-   .showcase-section .case-card:nth-child(0n + 2) {
-      margin-top: var(--space-index-l);
+   #showcase-section .case-card:nth-child(0n + 2) {
+      margin-top: 60px;
    }
+}
 }
 /* end of: Showcase-section */

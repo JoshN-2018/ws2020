@@ -4,16 +4,16 @@
 @import 'variables.css';
 
 /* navigation components */
-@import 'components/nav.css';
-@import 'components/overlay-menu.css';
-@import 'components/footer.css';
-@import 'components/end-of-page-cta.css';
+@import 'components/navigation/nav.css';
+@import 'components/navigation/overlay-menu.css';
+@import 'components/navigation/footer.css';
+@import 'components/navigation/end-of-page-cta.css';
 
 /* sections */
-@import 'components/hero-section.css';
-@import 'components/hero-section-case.css';
-@import 'components/intro-section.css';
-@import 'components/showcase-section.css';
-@import 'components/case-section.css';
-@import 'components/about-section.css';
-@import 'components/highlights-section.css';
+@import 'components/sections/hero-section.css';
+@import 'components/sections/hero-section-case.css';
+@import 'components/sections/intro-section.css';
+@import 'components/sections/showcase-section.css';
+@import 'components/sections/case-section.css';
+@import 'components/sections/about-section.css';
+@import 'components/sections/highlights-section.css';

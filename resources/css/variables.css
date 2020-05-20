@@ -23,6 +23,7 @@
   --space-tiny: 0.75rem; /*12px*/
   --space-micro: 0.5rem; /*8px*/
 
+
   /* Shadows */
   --shadow-soft: 0px 11px 50px 0px rgba(0, 0, 0, 0.1);
 
@@ -34,7 +35,10 @@
 
 /* end of: Global Variables */
 
-
+/* box sizing  */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 
 /* Global Styles */

@@ -1,176 +1,21 @@
-/* Compiling  */
+/* core css */
 @import 'reset.css';
 @import 'typography.css';
 @import 'variables.css';
 
-/* Set Up */
+/* navigation components */
+@import 'nav.css';
+@import 'overlay-menu.css';
+@import 'footer.css';
+@import 'end-of-page-cta.css';
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+/* sections */
+@import 'hero-section.css';
+@import 'hero-section-case.css';
+@import 'intro-section.css';
+@import 'showcase-section.css';
+@import 'about-section.css';
 
-/* Menu-overlay */
-
-   /* region small-ONLY */
-#overlay {
-    position: fixed;
-    /* display: relative; */
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 1.30rem 1.25rem;
-    background-color: var(--color-white);
-    z-index: 3;
-    cursor: pointer;
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-            transform: translateY(100%);
-    transition: opacity 0.5s ease;
-}
-
-#overlay h2 {
-   margin-bottom: 2.5rem;
-}
-
-#overlay .menu-items {
-   margin-top: var(--space-large);
-}
-
-#overlay img {
-   height: 0.9rem;
-   margin-top: 0.4rem;
-}
-
-   /* js classes */
-.overlayOn {
-   -webkit-transform: translateY(0%) !important;
-       -ms-transform: translateY(0%) !important;
-           transform: translateY(0%) !important;
-   opacity: 1 !important;
-}
-
-.overlayOff {
-   -webkit-transform: translateY(0%) !important;
-       -ms-transform: translateY(0%) !important;
-           transform: translateY(0%) !important;
-   opacity: 0 !important;
-}
-
-.overlayShift {
-   -webkit-transform: translateY(100%) !important;
-       -ms-transform: translateY(100%) !important;
-           transform: translateY(100%) !important;
-}
-   /* end of js classes */
-
-
-   /* Button-overlay */
-   /* region-small */
-#menu-button img {
-   height: 2.5rem;
-}
-
-#menu-button-off img {
-   height: 2.5rem;
-}
-
-#menu-button, #menu-button-off {
-   display: none;
-   padding: 0.5rem 0.5rem;
-   background-color: var(--color-white);
-   border: 1px solid var(--color-black);
-}
-
-@media (max-width: 720px) {
-   #menu-button, #menu-button-off {
-      position: fixed;
-      bottom: 1.25rem;
-      right: 1.25rem;
-      z-index: 4;
-   }
-
-   #menu-button {
-      display: block;
-   }
-}
-   /* end of: Button-overlay */
-
-/* end of: Menu-overlay */
-
-
-
-
-/* App-header */
-
-   /* region small */
-nav {
-  z-index: 5;
-}
-nav div.container-flex {
-   padding: 1.25rem 1.25rem 0 1.25rem;
-   align-items: center;
-   max-width: 1440px;
-   margin: 0 auto;
-}
-
-nav ul .link-collapsible {
-   display: none;
-}
-
-nav .logo {
-   flex-grow: 1;
-}
-
-nav .logo img {
-   height: 0.8rem;
-}
-
-   /* region medium */
-@media (min-width: 720px) {
-   nav div.container-flex {
-      padding: 2.25rem 2.5rem 0 2.5rem;
-   }
-
-   nav ul .link-collapsible {
-   display: initial;
-   }
-
-   nav ul li {
-      margin-left: 3.25rem;
-   }
-
-   nav #icon-contact {
-      display: none;
-   }
-}
-
-   /* region large */
-@media (min-width: 1100px) {
-   nav div.container-flex {
-   padding: 3rem 3.75rem 0 3.75rem;
-   }
-
-   nav .logo img {
-      height: 1rem;
-   }
-}
-/* end of: App-header */
-
-
-
-
-
-
-
-
-
-/* .full-width-cont {
-  width: 100%;
-} */
 
 
 /* Hero-section */
@@ -449,126 +294,6 @@ nav .logo img {
 
 
 
-/* Footer */
-
-   /* region small */
-footer .container-flex.wrapper {
-   flex-direction: column;
-   padding: var(--space-small) 0;
-}
-
-footer .logo-region-m-l {
-   display: none;
-}
-
-footer .h4 {
-   line-height: 1.9;
-   margin-bottom: var(--space-micro);
-   border-bottom: 1px solid var(--color-black);
-}
-
-.footer-content {
-   flex-direction: column;
-}
-
-.footer-left {
-   margin-bottom: var(--space-petit);
-}
-
-.footer-right {
-   margin-bottom: var(--space-small);
-}
-
-footer .icon-container {
-   justify-content: space-between;
-}
-
-footer .logo-region-small img {
-   margin-top: 0.25rem;
-   height: 1rem;
-}
-
-footer .social-icons img {
-   height: 1.5rem;
-   margin-left: var(--space-tiny);
-}
-
-   /* region medium */
-@media (min-width: 720px) {
-   footer .container-flex.wrapper {
-      justify-content: space-between;
-      flex-direction: row;
-      padding: var(--space-medium) 0;
-      border-top: 1px solid var(--color-light-grey);
-   }
-
-   /* turning alternatively positioned logo on */
-   footer .logo-region-m-l {
-      display: block;
-   }
-
-   footer .logo-region-m-l img {
-      height: 1rem;
-   }
-
-   .footer-content {
-      flex-direction: row;
-      /* correcting for extreme line-height */
-      margin-top: -0.3rem;
-      width: 60%;
-   }
-
-   .footer-left {
-      margin-left: 17%;
-      margin-bottom: 0;
-      width: 100%;
-   }
-
-   .footer-right {
-      margin-left: var(--space-medium);
-      margin-bottom: 0;
-      width: 100%;
-   }
-
-   footer .icon-container {
-      justify-content: space-between;
-   }
-
-   footer .logo-region-small {
-      display: none;
-   }
-
-   footer .social-icons img {
-      height: 1.5rem;
-      margin-left: var(--space-std);
-   }
-}
-
-
-/* region large */
-@media (min-width: 1100px) {
-   footer .container-flex.wrapper {
-      padding: var(--space-large) 0;
-   }
-
-   footer .h4 {
-      line-height: 2.1;
-   }
-
-   .footer-content {
-      /* correcting for extreme line-height */
-      margin-top: -0.4rem;
-   }
-
-   .footer-left {
-      margin-left: 14%;
-   }
-
-   .footer-right {
-      margin-left: var(--space-large);
-   }
-}
-/* end of: Footer */
 
 
 
@@ -662,18 +387,7 @@ footer .social-icons img {
    margin-bottom: var(--space-tiny);
 }
 
-.cta-block .h3 {
-   margin-bottom: var(--space-petit);
-}
 
-.cta-block {
-   margin: var(--space-medium) 0;
-}
-
-.cta-block .next-project-comp {
-   justify-content: center;
-   margin-top: var(--space-small);
-}
 
    /* form comp */
 .case .oxy-form {
@@ -749,14 +463,6 @@ footer .social-icons img {
               transform: scale(1) translateX(0%);
    }
 
-   .case .cta-block {
-      margin: var(--space-large) 0;
-   }
-
-   .cta-block .next-project-comp {
-      margin-top: var(--space-small);
-      margin-bottom: var(--space-large);
-   }
 
    .case .left .asset:last-child {
       margin-bottom: 0;
@@ -834,15 +540,6 @@ footer .social-icons img {
 
    .case hr {
        margin: var(--space-medium) 0;
-   }
-
-   .cta-block {
-      margin-top: var(--space-large);
-   }
-
-   .cta-block .next-project-comp {
-      margin-top: var(--space-medium);
-      margin-bottom: var(--space-large);
    }
 
    /* form comp */

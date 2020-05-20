@@ -1,0 +1,120 @@
+/* Footer */
+
+   /* region small */
+footer .container-flex.wrapper {
+   flex-direction: column;
+   padding: var(--space-small) 0;
+}
+
+footer .logo-region-m-l {
+   display: none;
+}
+
+footer .h4 {
+   line-height: 1.9;
+   margin-bottom: var(--space-micro);
+   border-bottom: 1px solid var(--color-black);
+}
+
+.footer-content {
+   flex-direction: column;
+}
+
+.footer-left {
+   margin-bottom: var(--space-petit);
+}
+
+.footer-right {
+   margin-bottom: var(--space-small);
+}
+
+footer .icon-container {
+   justify-content: space-between;
+}
+
+footer .logo-region-small img {
+   margin-top: 0.25rem;
+   height: 1rem;
+}
+
+footer .social-icons img {
+   height: 1.5rem;
+   margin-left: var(--space-tiny);
+}
+
+   /* region medium */
+@media (min-width: 720px) {
+   footer .container-flex.wrapper {
+      justify-content: space-between;
+      flex-direction: row;
+      padding: var(--space-medium) 0;
+      border-top: 1px solid var(--color-light-grey);
+   }
+
+   /* turning alternatively positioned logo on */
+   footer .logo-region-m-l {
+      display: block;
+   }
+
+   footer .logo-region-m-l img {
+      height: 1rem;
+   }
+
+   .footer-content {
+      flex-direction: row;
+      /* correcting for extreme line-height */
+      margin-top: -0.3rem;
+      width: 60%;
+   }
+
+   .footer-left {
+      margin-left: 17%;
+      margin-bottom: 0;
+      width: 100%;
+   }
+
+   .footer-right {
+      margin-left: var(--space-medium);
+      margin-bottom: 0;
+      width: 100%;
+   }
+
+   footer .icon-container {
+      justify-content: space-between;
+   }
+
+   footer .logo-region-small {
+      display: none;
+   }
+
+   footer .social-icons img {
+      height: 1.5rem;
+      margin-left: var(--space-std);
+   }
+}
+
+
+/* region large */
+@media (min-width: 1100px) {
+   footer .container-flex.wrapper {
+      padding: var(--space-large) 0;
+   }
+
+   footer .h4 {
+      line-height: 2.1;
+   }
+
+   .footer-content {
+      /* correcting for extreme line-height */
+      margin-top: -0.4rem;
+   }
+
+   .footer-left {
+      margin-left: 14%;
+   }
+
+   .footer-right {
+      margin-left: var(--space-large);
+   }
+}
+/* end of: Footer */

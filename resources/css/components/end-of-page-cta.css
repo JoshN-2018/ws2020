@@ -1,0 +1,38 @@
+/* region-small */
+
+.cta-block .h3 {
+   margin-bottom: var(--space-petit);
+}
+
+.cta-block {
+   margin: var(--space-medium) 0;
+}
+
+.cta-block .next-project-comp {
+   justify-content: center;
+   margin-top: var(--space-small);
+}
+
+/* region-medium */
+@media (min-width: 720px) {
+  .case .cta-block {
+     margin: var(--space-large) 0;
+  }
+
+  .cta-block .next-project-comp {
+     margin-top: var(--space-small);
+     margin-bottom: var(--space-large);
+  }
+}
+
+/* region-large */
+@media (min-width: 1100px) {
+  .cta-block {
+     margin-top: var(--space-large);
+  }
+
+  .cta-block .next-project-comp {
+     margin-top: var(--space-medium);
+     margin-bottom: var(--space-large);
+  }
+}

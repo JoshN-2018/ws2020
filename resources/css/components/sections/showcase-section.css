@@ -53,17 +53,17 @@
 
 
       /* setting margin on every second item */
-   #showcase-section .case-card:nth-child(2n + 0) {
+   .case-card:nth-child(2n + 0) {
       margin-left: 60px;
    }
 
       /* Every second item reverse stagger starting with the third item */
-   #showcase-section .case-card:nth-child(2n + 3) {
+   .case-card:nth-child(2n + 3) {
       margin-top: -40px;
    }
 
       /* second item stagger */
-   #showcase-section .case-card:nth-child(0n + 2) {
+   .case-card:nth-child(0n + 2) {
       margin-top: 40px;
    }
 }
@@ -75,25 +75,44 @@
       padding: 0; /*--indent-2-col-start left & right*/
    }
 
+   .card-header {
+     background-color: #FFF;
+     padding: 45px 42px 37px 42px;
+   }
+
    .case-card {
      max-width: 44%;
-     margin-bottom: 60px;
+     margin-bottom: 88px;
+   }
+
+   .case-card img {
+     width: 100%;
+     height: 470px;
+     object-fit: cover;
+   }
+
+   .case-card h2 {
+     margin-bottom: 26px;
+   }
+
+   .case-card span {
+     margin-bottom: 8px;
    }
 
       /* setting margin on every second item */
-   #showcase-section .case-card:nth-child(2n + 0) {
-      margin-left: 60px;
+   .case-card:nth-child(2n + 0) {
+      margin-left: 88px;
    }
 
-      /* Every second item reverse stagger starting with the third item */
-   #showcase-section .case-card:nth-child(2n + 3) {
+      /* sucking the third and fith cards up */
+   .case-card:nth-child(2n + 3) {
       margin-top: -60px;
    }
-}
-      /* second item stagger */
-   #showcase-section .case-card:nth-child(0n + 2) {
+
+      /* pushing the second card down */
+   .case-card:nth-child(0n + 2) {
       margin-top: 60px;
    }
 }
-}
+
 /* end of: Showcase-section */

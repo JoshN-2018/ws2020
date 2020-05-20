@@ -22,12 +22,14 @@ strong,
    text-align: center;
 }
 
-/* @font-face {
-   font-family: "Domaine Display";
-   src: url("../fonts/DomaineDisplayWeb-Bold.woff2") format("woff2"),
-   url("../fonts/DomaineDisplayWeb-Bold.woff") format("woff");
-   font-weight: bold;
-} */
+.white {
+   color: var(--color-white);
+}
+
+.black {
+   color: var(--color-black);
+}
+
 
 @font-face {
   font-family: "nuacht black";

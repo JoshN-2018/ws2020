@@ -51,6 +51,7 @@
      margin-bottom: 60px;
    }
 
+
       /* setting margin on every second item */
    #showcase-section .case-card:nth-child(2n + 0) {
       margin-left: 60px;
@@ -60,7 +61,7 @@
    #showcase-section .case-card:nth-child(2n + 3) {
       margin-top: -40px;
    }
-}
+
       /* second item stagger */
    #showcase-section .case-card:nth-child(0n + 2) {
       margin-top: 40px;

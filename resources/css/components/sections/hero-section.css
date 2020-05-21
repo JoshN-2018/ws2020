@@ -13,7 +13,7 @@
 
 #hero-section p {
   width: 274px;
-  padding-top: var(--space-big);
+  padding-top: var(--space-80);
 }
 
 #hero-anim-small, #hero-anim-medium, #hero-anim-large {
@@ -31,7 +31,7 @@
 
   #hero-section p {
     width: 420px;
-    padding-top: var(--space-large);
+    padding-top: var(--space-100);
     padding-left: var(--indent-1-col);
   }
 }

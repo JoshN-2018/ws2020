@@ -3,13 +3,20 @@
 :root {
    /* Colours */
   --color-black: #222222;
+  --color-white: #FFFFFF;
   --color-light-grey: #cccccc;
   --color-v-light-grey: #eeeeee;
   --color-dark-grey: #979797;
   --color-blue-sky: #cbe4ff;
-  --color-white: #FFF;
 
-  /* Spacing */
+   /* Spacing */
+  --space-60: 3.75rem;
+  --space-80: 5rem;
+  --space-100: 6.25rem;
+  --space-120: 7.5rem;
+  --space-200:  12.5rem;
+
+  /* Spacing (deprecated)*/
   --space-index-l: 19rem; /*304px*/
   --space-index-m: 16.5rem; /*264px*/
   --space-huge: 12.5rem; /*200px*/
@@ -35,10 +42,56 @@
 
 /* end of: Global Variables */
 
+
+
+/* Global Structure Elements */
+
 /* box sizing  */
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+   /* Flex wrapper */
+   /* regions-ALL */
+.container-flex {
+  display: flex;
+}
+
+.container-flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+   /* end of: Flex wrapper */
+
+   /* Container wrapper */
+   /* region small */
+.container {
+   margin: 0 auto;
+   padding: 0 1.875rem; /* 30px */
+   overflow: hidden;
+   max-width: 1440px;
+   position: relative;
+}
+
+
+   /* region medium */
+@media (min-width: 720px) {
+   .container {
+      padding: 0 4.5rem; /* 72px */
+   }
+}
+
+   /* region large */
+@media (min-width: 1100px) {
+    .container {
+      padding: 0 10.75rem;  /* 172px */
+   }
+}
+   /* end of: Container wrapper */
+
+/* end of: Global Structure Elements */
+
+
 
 
 /* Global Styles */
@@ -99,85 +152,6 @@ height: 300px;
    }
 }
 
-/* for when the simplest solution is just to add a spacing element */
-/* region medium */
-@media (min-width: 720px) {
-   .spacer {
-      height: var(--space-small);
-   }
-}
-
-/* region large */
-@media (min-width: 1100px) {
-   .spacer {
-      height: var(--space-medium);
-   }
-}
-
-/* pre-sets the height to prevent content jumping when animation plays */
-/* .space-save {
-   min-height: 176px;
-}
-
-@media (min-width: 375px) {
-   .space-save {
-      min-height: 176px;
-   }
-}
-
-@media (min-width: 412px) {
-   .space-save {
-      min-height: 190px;
-   }
-}
-
-@media (min-width: 720px) {
-   .space-save {
-      min-height: 253px;
-   }
-}
-
-@media (min-width: 1100px) {
-   .space-save {
-      min-height: 290px;
-   }
-}
-
-@media (min-width: 1440px) {
-   .space-save {
-      min-height: 417px;
-   }
-} */
-/* end of: Global Styles */
-
-
-
-
-/* Global Structure Elements */
-
-
-   /* Flex wrapper */
-   /* regions-ALL */
-.container-flex {
-  display: flex;
-}
-
-.container-flex-end {
-  display: flex;
-  justify-content: flex-end;
-}
-   /* end of: Flex wrapper */
-
-   /* Margins wrapper */
-   /* region small */
-.container {
-   margin: 0 auto;
-   padding: 0 1.875rem; /* 30px */
-   overflow: hidden;
-   max-width: 1440px;
-   position: relative;
-}
-
 /* testing styles */
 .test {
   background-color: lightblue;
@@ -187,22 +161,8 @@ height: 300px;
   border: 2px solid red;
 }
 
-   /* region medium */
-@media (min-width: 720px) {
-   .container {
-      padding: 0 4.5rem; /* 72px */
-   }
-}
+/* end of: Global Styles */
 
-   /* region large */
-@media (min-width: 1100px) {
-    .container {
-      padding: 0 10.75rem;  /* 172px */
-   }
-}
-   /* end of: Margins wrapper */
-
-/* end of: Global Structure Elements */
 
 
 

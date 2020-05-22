@@ -211,9 +211,7 @@ var breakOne = 720
 var breakTwo = 1100
 var breakThree = 1440
 
-
-
-breakHandler() {
+function breakHandler() {
 
    // determine screen breakpoints and assign base values
    if(window.innerWidth <= breakOne) {
@@ -263,27 +261,32 @@ breakHandler() {
          path: 'resources/anim/region-large.json'
       })
    }
-   else if(window.innerWidth >= breakThree) {
-      screenBase = 3
-      console.log("region-large")
-      turnOffOtherRegions();
-      animContLarge.classList.toggle("off");
-
-      // also load region large animation
-      var animLarge = lottie.loadAnimation({
-         container: document.getElementById('hero-anim-large'),
-         renderer: 'svg',
-         loop: false,
-         autoplay: true,
-         path: 'resources/anim/region-large.json'
-      })
-   }
  }
 
+// add event listener
+ document.addEventListener("DOMContentLoaded", function(event) {
+ breakHandler();
+ });
 
-window.addEventListener('resize', breakHandler());
+// call on resize
+ window.addEventListener('resize', breakHandler);
 
-// its fucked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

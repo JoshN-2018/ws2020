@@ -261,6 +261,20 @@ function breakHandler() {
          path: 'resources/anim/region-large.json'
       })
    }
+   else if(window.innerWidth >= breakThree) {
+      screenBase = 3
+      console.log("region-large")
+      turnOffOtherRegions();
+      animContLarge.classList.toggle("off");
+   }
+      // also load region large animation
+      var animLarge = lottie.loadAnimation({
+         container: document.getElementById('hero-anim-large'),
+         renderer: 'svg',
+         loop: false,
+         autoplay: true,
+         path: 'resources/anim/region-large.json'
+      })
  }
 
 // add event listener

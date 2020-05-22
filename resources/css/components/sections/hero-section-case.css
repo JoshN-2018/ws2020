@@ -105,11 +105,12 @@
          padding-right: 100px;
          height: initial;
    }
-   
+
    #hero-section-case {
       justify-content: initial;
+      height: initial;
    }
-}
+
 
 
    /* region large */

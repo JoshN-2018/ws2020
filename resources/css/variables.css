@@ -10,6 +10,7 @@
   --color-blue-sky: #cbe4ff;
 
    /* Spacing */
+  --space-32: 3.25rem;
   --space-52: 3.25rem;
   --space-60: 3.75rem;
   --space-80: 5rem;
@@ -82,7 +83,7 @@
    /* region medium */
 @media (min-width: 720px) {
    .container {
-      padding: 0 4.5rem; /* 72px */
+      padding: 0 6rem; /* 96px */
    }
 }
 

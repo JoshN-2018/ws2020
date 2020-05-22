@@ -23,8 +23,7 @@
   #intro-section .content-left {
     display: initial;
     width: 25%;
-    padding: 24px 0 0 32px; /*left = --indent-1-col-end*/
-    /* margin–left: 100px; */
+    padding-top: 24px;
   }
   #intro-section .content-right {
     width: 75%;

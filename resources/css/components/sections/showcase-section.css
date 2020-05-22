@@ -46,7 +46,7 @@
    #showcase-section .container-flex {
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 60px 24px 0 24px; /*--indent-2-col-start left & right*/
+      padding-top: 32px;
    }
 
    #showcase .label {

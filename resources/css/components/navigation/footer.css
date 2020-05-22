@@ -82,8 +82,13 @@ footer .body-small {
    /* structure */
    footer #flip-wrapper {
       flex-direction: row;
+      justify-content: space-between;
    }
 
+   #secondary-section {
+      flex-direction: column;
+      align-items: flex-end; 
+   }
 
    /* type */
    footer h3 {

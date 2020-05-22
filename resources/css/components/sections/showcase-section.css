@@ -54,14 +54,15 @@
    }
 
    .case-card {
-     max-width: 44%;
+     max-width: 45.66%;
      margin-bottom: 60px;
    }
 
 
       /* setting margin on every second item */
    .case-card:nth-child(2n + 0) {
-      margin-left: 60px;
+      margin-left: 8.67%;
+      /* border: solid 3px yellow; */
    }
 
       /* Every second item reverse stagger starting with the third item */
@@ -92,7 +93,7 @@
    }
 
    .case-card {
-     max-width: 44%;
+     max-width: 45.99%;
      margin-bottom: 88px;
    }
 
@@ -112,7 +113,8 @@
 
       /* setting margin on every second item */
    .case-card:nth-child(2n + 0) {
-      margin-left: 88px;
+      margin-left: 8.02%;
+      /* border: solid 3px yellow; */
    }
 
       /* sucking the third and fith cards up */

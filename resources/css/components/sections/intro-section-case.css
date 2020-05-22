@@ -37,17 +37,26 @@
    /* structure */
 @media (min-width: 720px) {
   #intro-section-case {
-    padding-top: 160px;
+    padding-top: 200px;
     padding-bottom: var(--space-80);
-    margin-top: calc(var(--space-80) * -1); /*suck intro section under image*/
+    margin-top: calc(var(--space-100) * -1); /*suck intro section under image*/
   }
 
   #intro-section-case .content-secondary {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    align-items: top;
   }
+
+  #intro-section-case .content-secondary .wrapper:nth-child(1n + 2) {
+   margin-top: 0;
+   margin-left: 32px;
+ }
+
+  #intro-section-case .content-secondary .wrapper {
+    width: 25%;
+  }
+
   #intro-section-case .content-main {
     width: 100%;
 }

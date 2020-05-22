@@ -32,10 +32,10 @@ strong,
 
 
 @font-face {
-  font-family: "nuacht black";
+  font-family: "serif bold";
 
-  src: url("../fonts/nuacht-serif-headline-web-black.woff") format("woff"),
-    url("../fonts/nuacht-serif-headline-web-black.woff2") format("woff2");
+  src: url("../fonts/serif-headline-web-bold.woff") format("woff"),
+    url("../fonts/serif-headline-web-bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -65,7 +65,7 @@ color: var(--color-black);
 
 /* large headings */
 .hero, .sidekick, .h1, .h2, .h3 {
-   font-family: "nuacht black", "Georgia", "serif";
+   font-family: "serif bold", "Georgia", "serif";
    font-weight: bold;
 }
 

@@ -283,7 +283,7 @@ breakHandler() {
 
 window.addEventListener('resize', breakHandler());
 
-
+// its fucked
 
 
 

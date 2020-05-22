@@ -83,7 +83,7 @@
    }
 
    #showcase-section .container-flex {
-      padding: 0; /*--indent-2-col-start left & right*/
+      padding-top: var(--space-52);
    }
 
    .card-header {

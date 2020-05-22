@@ -17,3 +17,8 @@
 @import 'components/sections/case-section.css';
 @import 'components/sections/about-section.css';
 @import 'components/sections/highlights-section.css';
+
+/* box sizing  */
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */

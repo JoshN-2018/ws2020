@@ -175,30 +175,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 ////////////////////    load animations  ////////////////////
 
-// loading animation data
-var animSmall = lottie.loadAnimation({
-   container: document.getElementById('hero-anim-small'),
-   renderer: 'svg',
-   loop: false,
-   autoplay: true,
-   path: 'resources/anim/region-small.json'
-})
-
-var animMedium = lottie.loadAnimation({
-   container: document.getElementById('hero-anim-medium'),
-   renderer: 'svg',
-   loop: false,
-   autoplay: true,
-   path: 'resources/anim/region-medium.json'
-})
-
-var animLarge = lottie.loadAnimation({
-   container: document.getElementById('hero-anim-large'),
-   renderer: 'svg',
-   loop: false,
-   autoplay: true,
-   path: 'resources/anim/region-large.json'
-})
 
 //collect animation containers
 var animContSmall = document.getElementById('hero-anim-small')
@@ -244,24 +220,46 @@ function breakHandler() {
       turnOffOtherRegions();
       animContSmall.classList.toggle("off");
 
+      // load region small animation
+      var animSmall = lottie.loadAnimation({
+         container: document.getElementById('hero-anim-small'),
+         renderer: 'svg',
+         loop: false,
+         autoplay: true,
+         path: 'resources/anim/region-small.json'
+      })
+
    }
    else if(window.innerWidth >= breakOne && window.innerWidth <= breakTwo) {
       screenBase = 2
       console.log("region-medium")
       turnOffOtherRegions();
       animContMedium.classList.toggle("off");
+
+      // load region medium animation
+      var animMedium = lottie.loadAnimation({
+         container: document.getElementById('hero-anim-medium'),
+         renderer: 'svg',
+         loop: false,
+         autoplay: true,
+         path: 'resources/anim/region-medium.json'
+      })
+
    }
    else if(window.innerWidth >= breakTwo && window.innerWidth <= breakThree) {
       screenBase = 3
       console.log("region-large")
       turnOffOtherRegions();
       animContLarge.classList.toggle("off");
-   }
-   else if(window.innerWidth >= breakThree) {
-      screenBase = 3
-      console.log("region-large")
-      turnOffOtherRegions();
-      animContLarge.classList.toggle("off");
+
+      // load region large animation
+      var animLarge = lottie.loadAnimation({
+         container: document.getElementById('hero-anim-large'),
+         renderer: 'svg',
+         loop: false,
+         autoplay: true,
+         path: 'resources/anim/region-large.json'
+      })
    }
  }
 

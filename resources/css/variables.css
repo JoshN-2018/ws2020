@@ -16,6 +16,10 @@
   --space-120: 7.5rem;
   --space-200:  12.5rem;
 
+  /* Column */
+  --col:  2rem;
+  --gap:  1.5rem;
+
   /* Spacing (deprecated)*/
   --space-index-l: 19rem; /*304px*/
   --space-index-m: 16.5rem; /*264px*/
@@ -34,7 +38,7 @@
   /* Shadows */
   --shadow-soft: 0px 11px 50px 0px rgba(0, 0, 0, 0.1);
 
-  /* Column indents */
+  /* Column indents (deprecated)*/
   --indent-1-col-end: 2rem; /* 32px */
   --indent-2-col-start: 3.5rem; /* 56px */
   --indent-3-col-start: 7rem; /* 112px */

@@ -44,6 +44,11 @@ footer .container-flex {
    /* margin-bottom: 36px; */
    margin: 0 -3px 36px -3px;
 }
+
+#content-icons .wrapper:last-child img {
+   margin-left: 16px;
+}
+
    /* end of: structure */
 
 
@@ -69,6 +74,12 @@ footer .body-small {
 
    /* region medium */
 @media (min-width: 720px) {
+   footer h3 {
+      margin-bottom: 84px;
+      max-width: 400px;
+   }
+   
+
 
 }
 

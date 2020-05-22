@@ -3,6 +3,7 @@
    /* region small */
 #showcase-section {
   background-color: var(--color-black);
+  padding-bottom: 68px; /*120px - card bottom padding of 52*/
 }
 
 #showcase-section .container-flex {
@@ -36,6 +37,12 @@
 
    /* region medium */
 @media (min-width: 720px) {
+
+   #showcase-section {
+     background-color: var(--color-black);
+     padding-bottom: 60px; /*120px - card bottom padding of 60*/
+   }
+
    #showcase-section .container-flex {
       flex-direction: row;
       flex-wrap: wrap;
@@ -71,6 +78,10 @@
 
 /* region large */
 @media (min-width: 1100px) {
+   #showcase-section {
+     padding-bottom: 120px; /*200px - card bottom padding of 80*/
+   }
+
    #showcase-section .container-flex {
       padding: 0; /*--indent-2-col-start left & right*/
    }

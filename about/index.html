@@ -5,75 +5,111 @@
 
 <body>
 
-{% include app-header.html %}
+{% include nav.html %}
 
 
-<!-- Hero-section-contact -->
+<!-- Hero-section -->
+
+<section id="hero-section" class="container-flex">
+
+     <div class="positioning-line-cont container-flex">
+
+        <div class="positioning-line">
+             <p class="body-big-tight">Let me introduce myself</p>
+        </div>
+        <div class="stretcher"></div>
+
+     </div>
+
+
+  <div id="hero-anim-small" class="anim"></div> <!-- animation -->
+  <div id="hero-anim-medium" class="anim"></div> <!-- animation -->
+  <div id="hero-anim-large" class="anim"></div> <!-- animation -->
+
+</section>
+
+<!-- end of: Hero-section -->
+
+
+
+<!-- Intro-section -->
+
+<section id="intro-section">
+
+  <div class="container container-flex">
+
+    <div class="content-left">
+      <span class="label">introduction</span>
+    </div>
+    <div class="content-right">
+      <p class="body-big-loose">
+        Hi there, Josh is a full-service agency, busy designing and building beautiful digital products, brands, and experiences. Learn the nitty gritty details of alll this below.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- end of: Intro-section -->
 
 
 
 
 <!-- Skills -->
-   <section class="skills container an-mark-props an-mark-3">
+   <section id="skills" class="container">
       <div class="contact-divide">
-         <hr>
       </div>
 
       <div class="container-flex skills-wrapper">
 
-         <div class="skills-left">
-            <h3 class="h3">Skills</h3>
+         <div class="skills-left an-mark-props an-mark-3">
+            <p class="label">Skills</p>
          </div>
 
-         <div class="skills-right">
-            <div class="skills-intro">
-               <p class="body-lead semi-bold">My career has had me explore many different tools, heres whats currently under my belt.
-               </p>
-            </div>
+         <div class="skills-right an-mark-props an-mark-3">
 
             <div class="skills-area">
                <div class="skills-content">
-                  <h4 class="body-lead semi-bold">Design</h4>
-                  <p class="body">I'm fluent in the UI toolkit and the extensive plugins that support these programs. While I consider Sketch home I have completed a project in Figma. Creative suite is my first love, and I can use these programs telepathically. As a keen photographer I have also dabbled in Lightroom.
+                  <h3 class="body-big-tight">Design</h3>
+                  <p class="body-loose">I'm fluent Figma/sketch, personally I think the former has the edge.  Creative suite is my original turf, I know these programs backwards.
                   </p>
                </div>
                <div class="skills-detail">
-                  <h4 class="body semi-bold">Sketch</h4>
-                  <h4 class="body semi-bold">After Effects</h4>
-                  <h4 class="body semi-bold">Illustrator</h4>
-                  <h4 class="body semi-bold">Photoshop</h4>
-                  <h4 class="body semi-bold">Indesign</h4>
-                  <h4 class="body semi-bold">Zeplin</h4>
-                  <h4 class="body semi-bold">Lightroom</h4>
+                  <p class="body-header">Sketch / Figma</p>
+                  <p class="body-header">Illustrator</p>
+                  <p class="body-header">Photoshop</p>
+                  <p class="body-header">Lightroom</p>
+                  <p class="body-header">Invision/Craft</p>
                </div>
             </div>
 
             <div class="skills-area">
                <div class="skills-content">
-                  <h4 class="body-lead semi-bold">Prototyping</h4>
-                  <p class="body">I have used Framer extensively and am comfortable in a code based prototyping environment. After effects is my default choice for when more control is required. As part of building my skills in AE I completed <a href="https://uxinmotion.net/v" target="_blank" class="text-link">Issara Willenskomer&#39;s</a> UI fundamentals and Micro interactions courses. I'm a fan of Lottie but also aware of its limitations.
+                  <h3 class="body-big-tight">Motion</h3>
+                  <p class="body-loose">Since completing Motion design school’s <a href="http://127.0.0.1:4000/about/index.html" target="_blank" class="text-link">UI Essentials</a> course. I am at ease in AE  and utterly addicted to its power. Its my go to for anything  beyond the basics. I’m also intrigued by C4D  and have been exploring the lite version and its integration with AE. I'm a big fan of Lottie, and know how to tune these animations to be performant on all platforms &#8212; an example of this can be found in the type animations on this very website.
                   </p>
                </div>
                <div class="skills-detail">
-                  <h4 class="body semi-bold">Framer</h4>
-                  <h4 class="body semi-bold">After Effects/Lottie</h4>
-                  <h4 class="body semi-bold">Principle</h4>
-                  <h4 class="body semi-bold">Invision/Craft</h4>
+                  <p class="body-header">Framer</p>
+                  <p class="body-header">After Effects/Lottie</p>
+                  <p class="body-header">Principle</p>
+                  <p class="body-header">Invision/Craft</p>
                </div>
             </div>
 
             <div class="skills-area">
                <div class="skills-content">
-                  <h4 class="body-lead semi-bold">Code</h4>
-                  <p class="body">I'm fluent in HTML &#38; CSS and speak a few phrases of javascript. My code ability is encapsulated in this website &#8212; it is this website. I'm fascinated by development and see collaborating with these magicians as one of the best parts of the job.
+                  <h3 class="body-big-tight">Code</h3>
+                  <p class="body-loose">With HTML/CSS if i can design it I can code it. My code ability is encapsulated in this website — it is this website. When it comes to actual programming I tinker in (vanilla) javascript &#8212; I know enough to be dangerous. I'm fascinated by development, epescially implementing motion and  interaction. I see collaborating with developers as one of the best parts of the job.
                   </p>
                </div>
                <div class="skills-detail">
-                  <h4 class="body"><b>HTML</b> &#8212; I built this website!</h4>
-                  <h4 class="body"><b>CSS</b> &#8212; flexbox, learning grid</h4>
-                  <h4 class="body"><b>Javascript</b> &#8212; simple DOM manipulations</h4>
-                  <h4 class="body"><b>CoffeeScript</b> &#8212; comfortable</h4>
-                  <h4 class="body"><b>CL/Git</b> &#8212; basic workflow</h4>
+                  <p class="body-loose"><b>HTML</b> &#8212; — I built this website!  💪</p>
+                  <p class="body-loose"><b>CSS  💪</b></p>
+                  <p class="body-loose"><b>Command-line/Git 👌</b></p>
+                  <p class="body-loose"><b>Javascript 👌</b></p>
+                  <p class="body-loose"><b>Expressions (AE) 🤘/b></p>
                </div>
             </div>
 
@@ -85,6 +121,8 @@
 
 {% include footer.html %}
 {% include page-end.html %}
+<script src="../resources/js/anim-load_about.js"></script>
+
 
 
 </body>

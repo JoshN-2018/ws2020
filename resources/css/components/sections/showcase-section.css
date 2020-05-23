@@ -85,6 +85,8 @@
 
    #showcase-section .container-flex {
       padding-top: var(--space-52);
+      max-width: 1096px;
+      margin: 0 auto;
    }
 
    .card-header {
@@ -93,7 +95,7 @@
    }
 
    .case-card {
-     max-width: 45.99%;
+     width: 46%;
      margin-bottom: 88px;
    }
 
@@ -113,7 +115,7 @@
 
       /* setting margin on every second item */
    .case-card:nth-child(2n + 0) {
-      margin-left: 8.02%;
+      margin-left: 8%;
       /* border: solid 3px yellow; */
    }
 

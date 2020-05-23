@@ -40,15 +40,20 @@
 
 
 
+/* region medium */
 
-   /* region medium */
+      /* structure */
 @media (min-width: 720px) {
    #skills .container-flex {
       flex-direction: row;
    }
 
-   .skills-right, .skills-left {
-      width: 50%;
+   .skills-left {
+      width: 25%;
+   }
+
+   .skills-right {
+      width: 75%;
    }
 
    #skills hr {
@@ -57,17 +62,23 @@
       display: flex;
    }
 
+   /* type */
+   #skills p.label {
+      margin-top: 26px;
+   }
+}
+
 
 
 /* region large */
 @media (min-width: 1100px) {
-   .contact .hero-text {
-      width: 52%;
+
+   .skills-left {
+      width: 40%;
    }
 
-   .contact-divide {
-      padding-left: var(--indent-2-col);
-      padding-right: var(--indent-2-col);
+   .skills-right {
+      width: 60%;
    }
 
    .skills-detail .body {

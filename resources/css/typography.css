@@ -7,9 +7,9 @@ strong,
   font-family: "untitled medium";
 }
 
-b {
+/* b {
   font-family: "untitled medium";
-}
+} */
 
 .text-link {
    border-bottom: 1px solid var(--color-white)

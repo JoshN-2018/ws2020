@@ -21,11 +21,6 @@ nav .logo img {
 height: 0.8rem;
 }
 
-nav a {
-   text-decoration: none;
-   color: var(--color-black);
-}
-
 
 /* region medium */
 @media (min-width: 720px) {

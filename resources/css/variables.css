@@ -264,14 +264,14 @@ footer h4:hover {
    pointer-events: none;
 	display: block;
 	width: 120%;
-	height: 8px;
-	margin-top: 0.4rem;
+	height: 2px;
+	margin-top: 9px;
    margin-left: -10%;
-   background-color: var(--color-blue-sky);
+   background-color: var(--color-black);
    mix-blend-mode: multiply;
-   -webkit-transform-origin: left;
-	    -ms-transform-origin: left;
-	        transform-origin: left;
+   -webkit-transform-origin: right;
+	    -ms-transform-origin: right;
+	        transform-origin: right;
    -webkit-transform: scaleX(0);
        -ms-transform: scaleX(0);
            transform: scaleX(0);
@@ -287,40 +287,6 @@ footer h4:hover {
 	        transform-origin: left;
 }
 
-   /* Strike-small */
-.strike-small {
-	display: inline-block;
-	position: relative;
-	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.strike-small:before {
-	content: '';
-	position: absolute;
-   pointer-events: none;
-	display: block;
-	width: 100%;
-	height: 8px;
-	margin-top: 0.7rem;
-   background-color: var(--color-blue-sky);
-   mix-blend-mode: multiply;
-   -webkit-transform-origin: left;
-	    -ms-transform-origin: left;
-	        transform-origin: left;
-   -webkit-transform: scaleX(0);
-       -ms-transform: scaleX(0);
-           transform: scaleX(0);
-	transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.strike-small:hover:before {
-	-webkit-transform: scaleX(1);
-	    -ms-transform: scaleX(1);
-	        transform: scaleX(1);
-	-webkit-transform-origin: left;
-	    -ms-transform-origin: left;
-	        transform-origin: left;
-}
 
 /* Strike-big */
    /* region small */
@@ -340,9 +306,9 @@ footer h4:hover {
 	margin-top: 1.9rem;
    background-color: var(--color-black);
    mix-blend-mode: multiply;
-   -webkit-transform-origin: left;
-	    -ms-transform-origin: left;
-	        transform-origin: left;
+   -webkit-transform-origin: right;
+	    -ms-transform-origin: right;
+	        transform-origin: right;
    -webkit-transform: scaleX(0);
        -ms-transform: scaleX(0);
            transform: scaleX(0);

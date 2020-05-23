@@ -9,6 +9,11 @@
    color: var(--color-white);
 }
 
+#skills a {
+   text-decoration: none;
+   color: var(--color-white);
+}
+
 #skills .container-flex {
    flex-direction: column;
 }

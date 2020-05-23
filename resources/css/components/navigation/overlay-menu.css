@@ -1,6 +1,12 @@
 /* Menu-overlay */
 
    /* region small-ONLY */
+
+#overlay a {
+   text-decoration: none;
+   color: var(--color-black);
+}
+   
 #overlay {
     position: fixed;
     /* display: relative; */

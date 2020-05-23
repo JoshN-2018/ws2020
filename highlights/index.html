@@ -5,40 +5,32 @@
 
 <body>
 
-
 {% include nav.html %}
 
 
-<!-- Hero-section-case -->
+<!-- Hero-section -->
 
-   <section class="hero-section-case">
-         <div class="container container-flex">
+<section id="hero-section" class="container-flex">
 
-            <div class="container-flex hero-content">
+     <div class="positioning-line-cont container-flex">
 
-               <div class="hero-title an-mark-props an-mark-1">
-                  <img src="../resources/images/icon-carrot.svg" alt="arrow">
-                  <h1 class="h1">Experiments</h1>
-                  <img src="../resources/images/icon-carrot.svg" alt="arrow">
-               </div>
+        <div class="positioning-line">
+             <p class="body-big-tight">Sexy bits from all over</p>
+        </div>
+        <div class="stretcher"></div>
 
-               <div class="hero-text an-mark-props an-mark-1">
-                  <p class="body-big">
-                     These projects are the relics of my personal journey through motion and code. They represent a sample of some of the new tools, techniques and trends I've explored in the past year.
-                  </p>
+     </div>
 
-                  <div class="my-role an-mark-props an-mark-2">
-                     <span class="h4 bold">prototyping</span>
-                     <span class="h4 bold">Motion design</span>
-                     <span class="h4 bold">coffee script</span>
-                     <span class="h4 bold">java script</span>
-                  </div>
-               </div>
 
-            </div>
+  <div id="hero-anim-small" class="anim"></div> <!-- animation -->
+  <div id="hero-anim-medium" class="anim"></div> <!-- animation -->
+  <div id="hero-anim-large" class="anim"></div> <!-- animation -->
 
-         </div>
-   </section>
+</section>
+
+<!-- end of: Hero-section -->
+
+
 
 
 <!-- Experiment-case -->
@@ -155,6 +147,7 @@
 
 {% include footer.html %}
 {% include page-end.html %}
+<script src="../resources/js/anim-load_highlights.js"></script>
 
 </body>
 </html>

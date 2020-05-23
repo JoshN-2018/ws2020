@@ -46,7 +46,7 @@ var animSmall = lottie.loadAnimation({
    renderer: 'svg',
    loop: true,
    autoplay: false,
-   path: '../resources/anim/region-small_about.json'
+   path: '../resources/anim/region-small_highlights.json'
 })
 
 // load region medium animation
@@ -55,7 +55,7 @@ var animMedium = lottie.loadAnimation({
    renderer: 'svg',
    loop: true,
    autoplay: false,
-   path: '../resources/anim/region-medium_about.json'
+   path: '../resources/anim/region-medium_highlights.json'
 })
 
 // load region large animation
@@ -64,7 +64,7 @@ var animLarge = lottie.loadAnimation({
    renderer: 'svg',
    loop: true,
    autoplay: false,
-   path: '../resources/anim/region-large_about.json'
+   path: '../resources/anim/region-large_highlights.json'
 })
 
 

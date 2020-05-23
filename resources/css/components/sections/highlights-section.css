@@ -1,0 +1,36 @@
+/* Highlights section */
+
+
+/* region small */
+
+   /* structure */
+#highlights {
+   background-color: var(--color-black);
+   color: var(--color-white);
+}
+
+#highlights .content-text {
+   margin-top: 40px;
+   justify-content: space-between;
+}
+
+/* #highlights .content-text .wrapper:first-child {
+   width: 80%;
+} */
+
+#highlights .content-text img {
+   margin-top: 5px;
+}
+
+   /* type */
+#highlights a {
+   color: var(--color-white);
+}
+
+#highlights h4 {
+   margin-bottom: 16px;
+}
+
+.highlight-block {
+   margin-bottom: var(--space-80);
+}

@@ -44,7 +44,7 @@ function debounce(func, wait, immediate) {
 var animSmall = lottie.loadAnimation({
    container: document.getElementById('hero-anim-small'),
    renderer: 'svg',
-   loop: false,
+   loop: true,
    autoplay: false,
    path: 'resources/anim/region-small.json'
 })
@@ -53,7 +53,7 @@ var animSmall = lottie.loadAnimation({
 var animMedium = lottie.loadAnimation({
    container: document.getElementById('hero-anim-medium'),
    renderer: 'svg',
-   loop: false,
+   loop: true,
    autoplay: false,
    path: 'resources/anim/region-medium.json'
 })
@@ -62,7 +62,7 @@ var animMedium = lottie.loadAnimation({
 var animLarge = lottie.loadAnimation({
    container: document.getElementById('hero-anim-large'),
    renderer: 'svg',
-   loop: false,
+   loop: true,
    autoplay: false,
    path: 'resources/anim/region-large.json'
 })
@@ -127,25 +127,25 @@ function animPlayer() {
    if(screenBase === 1) {
       turnOffOtherRegions();
       animContSmall.classList.toggle("off");
-      animSmall.play();
-   }
+      animSmall.playSegments([[0,525],[145,525]], true);
+      }
 
    else if(screenBase === 2) {
       turnOffOtherRegions();
       animContMedium.classList.toggle("off");
-      animMedium.play();
+      animMedium.playSegments([[0,525],[145,525]], true);
    }
 
    else if(screenBase === 3) {
       turnOffOtherRegions();
       animContLarge.classList.toggle("off");
-      animLarge.play();
+      animLarge.playSegments([[0,525],[145,525]], true);
    }
 
    else if(screenBase === 4) {
       turnOffOtherRegions();
       animContLarge.classList.toggle("off");
-      animLarge.play();
+      animLarge.playSegments([[0,525],[145,525]], true);
    }
 }
 

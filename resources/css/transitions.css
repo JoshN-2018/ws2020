@@ -41,7 +41,7 @@
 /* next project arrows */
 .arrow-right,
 .arrow-left {
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 
 .arrow-right:hover {
@@ -54,7 +54,8 @@
 
 /* logo hover */
 nav .logo {
-  transition: all 0.5s ease;
+  /* this was causing nav animation! */
+  transition: opacity 0.5s ease;
 }
 
 nav .logo:hover {
@@ -81,7 +82,8 @@ footer h4:hover {
 .strike {
   display: inline-block;
   position: relative;
-  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* and this was causing nav animation! */
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .strike:before {

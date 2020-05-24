@@ -27,45 +27,6 @@ function off() {
 }
 
 
-/*
-
-// link highlighting (UPDATE THIS FOR NEW LINKS!!!)
-
-// nav link ids
-var caseLink = document.getElementById("cases-link");
-var experimentsLink = document.getElementById("experiments-link");
-var contactLink = document.getElementById("contact-link");
-var iconContact = document.getElementById("icon-contact");
-var logo = document.getElementById("logo-nav");
-var width = 720
-
-
-if(window.location.pathname === "/index.html") {
-   caseLink.classList.add("current");
-} else {
-   caseLink.classList.remove("current");
-}
-if(window.location.pathname === "/experiments/index.html") {
-   experimentsLink.classList.add("current");
-} else {
-   experimentsLink.classList.remove("current");
-}
-if(window.location.pathname === "/contact/index.html") {
-   contactLink.classList.add("current");
-   // removing sticky behaviour on contact-page
-   iconContact.style.display = "none";
-   headerLarge.style.display = "none";
-   gap.style.display = "none";
-} else {
-   contactLink.classList.remove("current");
-}
-if(window.location.pathname === "/contact/index.html" && window.innerWidth < width) {
-   logo.style.marginTop = "0.45rem";
-} else {
-   logo.style.marginTop = "0rem";
-}
-*/
-
 
 //Above the line animate!!!
 

@@ -7,6 +7,11 @@ strong,
   font-family: "untitled medium";
 }
 
+a {
+   color: var(--color-black);
+   text-decoration: none;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -15,11 +20,11 @@ a:visited {
   text-decoration: none;
 }
 
-.text-link {
-   border-bottom: 1px solid var(--color-white)
+.link-light {
+   border-bottom: 1px solid var(--color-black)
 }
 
-.link-white {
+.link-dark {
    border-bottom: 1px solid var(--color-dark-grey);
 }
 

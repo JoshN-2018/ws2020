@@ -63,6 +63,10 @@ footer #secondary-section .wrapper:last-child img {
 
 
    /* type */
+footer a {
+   color: var(--color-white);
+}
+
 footer h3 {
    margin-bottom: var(--space-80);
    max-width: 280px;

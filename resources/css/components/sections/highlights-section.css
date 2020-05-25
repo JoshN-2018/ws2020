@@ -3,15 +3,6 @@
    /* region small */
 
 /* structure */
-#highlights {
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-
-#highlights a {
-  color: var(--color-white);
-}
-
 #highlights .content-title {
   margin-top: 40px;
   justify-content: space-between;

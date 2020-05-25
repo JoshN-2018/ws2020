@@ -7,8 +7,6 @@
 #intro-section-case {
   padding-top: var(--space-120);
   padding-bottom: var(--space-80);
-  background-color: var(--color-black);
-  color: var(--color-white);
   margin-top: calc(var(--space-60) * -1); /*suck intro section under image*/
 }
 

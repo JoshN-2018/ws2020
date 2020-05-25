@@ -4,8 +4,6 @@
 #intro-section {
   padding-top: var(--space-60);
   padding-bottom: var(--space-80);
-  background-color: var(--color-black);
-  color: var(--color-white);
 }
 
 #intro-section .content-left {

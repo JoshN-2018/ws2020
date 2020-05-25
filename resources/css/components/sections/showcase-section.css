@@ -8,7 +8,7 @@
 
 #showcase-section .container-flex {
    flex-direction: column;
-   padding-top: var(--space-small);
+   padding-top: var(--space-32);
 }
 
 .card-header {
@@ -56,6 +56,10 @@
    .case-card {
      max-width: 45.66%;
      margin-bottom: 60px;
+   }
+
+   .case-card h2 {
+     margin-bottom: 14px;
    }
 
 

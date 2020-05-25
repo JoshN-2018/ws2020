@@ -1,176 +1,213 @@
----
----
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <sergey-import src="head.html" />
+  <body>
+    <sergey-import src="nav.html" />
 
-{% include head.html %}
+    <!-- Hero-section -->
 
-<body>
-
-{% include nav.html %}
-
-
-<!-- Hero-section -->
-
-<section id="hero-section" class="container-flex">
-
-     <div class="positioning-line-cont container-flex">
-
+    <section id="hero-section" class="container-flex">
+      <div class="positioning-line-cont container-flex">
         <div class="positioning-line">
-             <p class="body-big-tight">Creating experiences at the intersection of product and brand</p>
+          <p class="body-big-tight">
+            Creating experiences at the intersection of product and brand
+          </p>
         </div>
         <div class="stretcher"></div>
-
-     </div>
-
-
-  <div id="hero-anim-small" class="anim"></div> <!-- animation -->
-  <div id="hero-anim-medium" class="anim"></div> <!-- animation -->
-  <div id="hero-anim-large" class="anim"></div> <!-- animation -->
-
-</section>
-
-<!-- end of: Hero-section -->
-
-
-
-<!-- Intro-section -->
-
-<section id="intro-section">
-
-  <div class="container container-flex">
-
-    <div class="content-left">
-      <span class="label">introduction</span>
-    </div>
-    <div class="content-right">
-      <p class="body-big-loose">
-        Hi there, my name is Josh I’m a digital designer working at the intersection of product and brand. My thinking is conceptually led and digitally activated. In other words, creating experiences that move people.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- end of: Intro-section -->
-
-<!-- Showcase-section -->
-
-   <section id="showcase-section">
-
-      <div class="container">
-         <span class="label white">recent work</span>
-
-         <div class="container-flex">
-
-              <!-- card-1–Deutschlandfunk -->
-              <div class="case-card an-mark-1 an-mark-props">
-                <div class="card-header">
-                  <p class="eyebrow">Editorial design</p>
-                  <h2 class="h2 strike-big"><a href="deutschlandfunk/index.html">Deutschlandfunk</a></h2>
-                  <p class="body-tight">Combining three stations into one easy to use platform</p>
-                </div>
-                <a href="deutschlandfunk/index.html">
-                   <img src="resources/images/deu-card.png"
-                   srcset="resources/images/deu-card@2x.png 1008w,
-                   resources/images/deu-card.png 504w"
-                   sizes="(min-width: 504px) 504px, 100vw"
-                   alt="project image"/>
-                </a>
-              </div>
-
-              <!-- card-2–Redbull -->
-              <div class="case-card an-mark-1 an-mark-props">
-                <div class="card-header">
-                  <p class="eyebrow">AR activations</p>
-                  <h2 class="h2 strike-big"><a href="redbull/index.html">Redbull</a></h2>
-                  <p class="body-tight">Defining the user experiences that will define redbull in 2021 and beyond</p>
-                </div>
-                <a href="redbull/index.html">
-                   <img src="resources/images/red-card.png"
-                   srcset="resources/images/red-card@2x.png 1008w,
-                   resources/images/red-card.png 504w"
-                   sizes="(min-width: 504px) 504px, 100vw"
-                   alt="project image"/>
-                </a>
-              </div>
-
-              <!-- card–3-De Voorhoede -->
-              <div class="case-card an-mark-1 an-mark-props">
-                <div class="card-header">
-                  <p class="eyebrow">Branding, UI/UX design</p>
-                     <h2 class="h2 strike-big"><a href="de-voorhoede/index.html">De Voorhoede</a></h2>
-                  <p class="body-tight">From blueprint to experience — positioning the De Voorhoede as a creative technical partner.</p>
-                </div>
-                <a href="de-voorhoede/index.html">
-                   <img src="resources/images/dev-card.png"
-                   srcset="resources/images/dev-card@2x.png 1008w,
-                   resources/images/dev-card.png 504w"
-                   sizes="(min-width: 504px) 504px, 100vw"
-                   alt="project image"/>
-                </a>
-              </div>
-
-              <!-- card–4-Type Craft -->
-              <div class="case-card an-mark-1 an-mark-props">
-                <div class="card-header">
-                  <p class="eyebrow">Product design</p>
-                  <h2 class="h2 strike-big"><a href="type-craft/index.html">TypeCraft</a></h2>
-                  <p class="body-tight">A passion project seeking to make perfect web typography that bit easier.</p>
-                </div>
-                <a href="type-craft/index.html">
-                   <img src="resources/images/typ-card.png"
-                   srcset="resources/images/typ-card@2x.png 1008w,
-                   resources/images/typ-card.png 504w"
-                   sizes="(min-width: 504px) 504px, 100vw"
-                   alt="project image"/>
-                </a>
-              </div>
-
-              <!-- card–5-Highlights -->
-              <div class="case-card an-mark-1 an-mark-props">
-                <div class="card-header">
-                  <p class="eyebrow">Motion & Code experiments</p>
-                  <h2 class="h2 strike-big"><a href="type-craft/index.html">Highlights</a></h2>
-                  <p class="body-tight">Highlights from various projects, using motion to deliver brand moments</p>
-                </div>
-                <a href="highlights/index.html">
-                   <img src="resources/images/hig-card.png"
-                   srcset="resources/images/hig-card@2x.png 1008w,
-                   resources/images/hig-card.png 504w"
-                   sizes="(min-width: 504px) 504px, 100vw"
-                   alt="project image"/>
-                </a>
-              </div>
-
-              <!-- card–6-Kowry -->
-              <div class="case-card an-mark-1 an-mark-props">
-                <div class="card-header">
-                  <p class="eyebrow">Branding, Product design</p>
-                  <h2 class="h2 strike-big"><a href="kowry/index.html">Everyman Crypto</a></h2>
-                  <p class="body-tight">Building a friendly crypto platform from the ground up</p>
-                </div>
-                <a href="kowry/index.html">
-                   <img src="resources/images/kow-card.png"
-                   srcset="resources/images/kow-card@2x.png 1008w,
-                   resources/images/kow-card.png 504w"
-                   sizes="(min-width: 504px) 504px, 100vw"
-                   alt="project image"/>
-                </a>
-              </div>
-
-        </div>
-
       </div>
-   </section>
 
-   <!-- end of: Showcase-section -->
+      <div id="hero-anim-small" class="anim"></div>
+      <!-- animation -->
+      <div id="hero-anim-medium" class="anim"></div>
+      <!-- animation -->
+      <div id="hero-anim-large" class="anim"></div>
+      <!-- animation -->
+    </section>
 
+    <!-- end of: Hero-section -->
 
+    <!-- Intro-section -->
 
-{% include footer.html %}
-{% include page-end.html %}
-<script src="../resources/js/anim-load_hero.js"></script>
+    <section id="intro-section">
+      <div class="container container-flex">
+        <div class="content-left">
+          <span class="label">introduction</span>
+        </div>
+        <div class="content-right">
+          <p class="body-big-loose">
+            Hi there, my name is Josh I’m a digital designer working at the
+            intersection of product and brand. My thinking is conceptually led
+            and digitally activated. In other words, creating experiences that
+            move people.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <!-- end of: Intro-section -->
 
-</body>
+    <!-- Showcase-section -->
+
+    <section id="showcase-section">
+      <div class="container">
+        <span class="label white">recent work</span>
+
+        <div class="container-flex">
+          <!-- card-1–Deutschlandfunk -->
+          <div class="case-card an-mark-1 an-mark-props">
+            <div class="card-header">
+              <p class="eyebrow">Editorial design</p>
+              <h2 class="h2 strike-big">
+                <a href="deutschlandfunk/index.html">Deutschlandfunk</a>
+              </h2>
+              <p class="body-tight">
+                Combining three stations into one easy to use platform
+              </p>
+            </div>
+            <a href="deutschlandfunk/index.html">
+              <img
+                src="resources/images/deu-card.png"
+                srcset="
+                  resources/images/deu-card@2x.png 1008w,
+                  resources/images/deu-card.png     504w
+                "
+                sizes="(min-width: 504px) 504px, 100vw"
+                alt="project image"
+              />
+            </a>
+          </div>
+
+          <!-- card-2–Redbull -->
+          <div class="case-card an-mark-1 an-mark-props">
+            <div class="card-header">
+              <p class="eyebrow">AR activations</p>
+              <h2 class="h2 strike-big">
+                <a href="redbull/index.html">Redbull</a>
+              </h2>
+              <p class="body-tight">
+                Defining the user experiences that will define redbull in 2021
+                and beyond
+              </p>
+            </div>
+            <a href="redbull/index.html">
+              <img
+                src="resources/images/red-card.png"
+                srcset="
+                  resources/images/red-card@2x.png 1008w,
+                  resources/images/red-card.png     504w
+                "
+                sizes="(min-width: 504px) 504px, 100vw"
+                alt="project image"
+              />
+            </a>
+          </div>
+
+          <!-- card–3-De Voorhoede -->
+          <div class="case-card an-mark-1 an-mark-props">
+            <div class="card-header">
+              <p class="eyebrow">Branding, UI/UX design</p>
+              <h2 class="h2 strike-big">
+                <a href="de-voorhoede/index.html">De Voorhoede</a>
+              </h2>
+              <p class="body-tight">
+                From blueprint to experience — positioning the De Voorhoede as a
+                creative technical partner.
+              </p>
+            </div>
+            <a href="de-voorhoede/index.html">
+              <img
+                src="resources/images/dev-card.png"
+                srcset="
+                  resources/images/dev-card@2x.png 1008w,
+                  resources/images/dev-card.png     504w
+                "
+                sizes="(min-width: 504px) 504px, 100vw"
+                alt="project image"
+              />
+            </a>
+          </div>
+
+          <!-- card–4-Type Craft -->
+          <div class="case-card an-mark-1 an-mark-props">
+            <div class="card-header">
+              <p class="eyebrow">Product design</p>
+              <h2 class="h2 strike-big">
+                <a href="type-craft/index.html">TypeCraft</a>
+              </h2>
+              <p class="body-tight">
+                A passion project seeking to make perfect web typography that
+                bit easier.
+              </p>
+            </div>
+            <a href="type-craft/index.html">
+              <img
+                src="resources/images/typ-card.png"
+                srcset="
+                  resources/images/typ-card@2x.png 1008w,
+                  resources/images/typ-card.png     504w
+                "
+                sizes="(min-width: 504px) 504px, 100vw"
+                alt="project image"
+              />
+            </a>
+          </div>
+
+          <!-- card–5-Highlights -->
+          <div class="case-card an-mark-1 an-mark-props">
+            <div class="card-header">
+              <p class="eyebrow">Motion & Code experiments</p>
+              <h2 class="h2 strike-big">
+                <a href="type-craft/index.html">Highlights</a>
+              </h2>
+              <p class="body-tight">
+                Highlights from various projects, using motion to deliver brand
+                moments
+              </p>
+            </div>
+            <a href="highlights/index.html">
+              <img
+                src="resources/images/hig-card.png"
+                srcset="
+                  resources/images/hig-card@2x.png 1008w,
+                  resources/images/hig-card.png     504w
+                "
+                sizes="(min-width: 504px) 504px, 100vw"
+                alt="project image"
+              />
+            </a>
+          </div>
+
+          <!-- card–6-Kowry -->
+          <div class="case-card an-mark-1 an-mark-props">
+            <div class="card-header">
+              <p class="eyebrow">Branding, Product design</p>
+              <h2 class="h2 strike-big">
+                <a href="kowry/index.html">Everyman Crypto</a>
+              </h2>
+              <p class="body-tight">
+                Building a friendly crypto platform from the ground up
+              </p>
+            </div>
+            <a href="kowry/index.html">
+              <img
+                src="resources/images/kow-card.png"
+                srcset="
+                  resources/images/kow-card@2x.png 1008w,
+                  resources/images/kow-card.png     504w
+                "
+                sizes="(min-width: 504px) 504px, 100vw"
+                alt="project image"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of: Showcase-section -->
+
+    <sergey-import src="footer.html" />
+    <sergey-import src="page-end.html" />
+    <script src="../resources/js/anim-load_hero.js"></script>
+  </body>
 </html>

@@ -1,94 +1,90 @@
----
----
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <sergey-import src="head.html" />
+  <body>
+    <sergey-import src="nav.html" />
 
-{% include head.html %}
+    <!-- Hero-section -->
 
-<body>
-
-{% include nav.html %}
-
-
-<!-- Hero-section -->
-
-<section id="hero-section-case" class="container-flex">
-
-     <div class="positioning-line-cont container-flex">
-
+    <section id="hero-section-case" class="container-flex">
+      <div class="positioning-line-cont container-flex">
         <div class="positioning-line">
-             <p class="body-big-tight">Deutschlandfunk</p>
+          <p class="body-big-tight">Deutschlandfunk</p>
         </div>
         <div class="stretcher"></div>
-
-     </div>
+      </div>
 
       <div id="hero-image">
-         <picture>
-            <source media="(min-width: 1100px)"
-               srcset="../resources/images/deu-hero_l@2x.png 2540w,
-                      ../resources/images/deu-hero_l.png 1270w"/>
-            <source media="(min-width: 721px)"
-               srcset="../resources/images/deu-hero_m@2x.png 1606w,
-                      ../resources/images/deu-hero_m.png 803w"/>
-            <source media="(max-width: 720px)"
-               srcset="../resources/images/deu-hero_s@2x.png 668w,
-                     ../resources/images/deu-hero_s.png 334w"/>
-            <img src="../resources/images/deu-hero_l.png" alt="hero-image"/>
-         </picture>
+        <picture>
+          <source
+            media="(min-width: 1100px)"
+            srcset="
+              ../resources/images/deu-hero_l@2x.png 2540w,
+              ../resources/images/deu-hero_l.png    1270w
+            "
+          />
+          <source
+            media="(min-width: 721px)"
+            srcset="
+              ../resources/images/deu-hero_m@2x.png 1606w,
+              ../resources/images/deu-hero_m.png     803w
+            "
+          />
+          <source
+            media="(max-width: 720px)"
+            srcset="
+              ../resources/images/deu-hero_s@2x.png 668w,
+              ../resources/images/deu-hero_s.png    334w
+            "
+          />
+          <img src="../resources/images/deu-hero_l.png" alt="hero-image" />
+        </picture>
       </div>
+    </section>
 
-</section>
+    <!-- end of: Hero-section -->
 
-<!-- end of: Hero-section -->
+    <!-- Intro-section-case -->
 
+    <section id="intro-section-case">
+      <div class="container container-flex">
+        <div class="content-main">
+          <p class="body-big-loose">
+            Deutschlandfunk are the revered national radio service in Germany.
+            However to engage new listeners, (whilst retaining their current
+            ones) they needed a mobile solution that could deliver content from
+            their three very different brands, in both ondemand and live
+            formats. While remaining one cohesive experience.
+          </p>
+        </div>
+        <div class="content-secondary container-flex">
+          <div class="wrapper">
+            <span class="eyebrow">Made for</span>
+            <p class="body-loose">edenspiekermann Berlin</p>
+          </div>
 
+          <div class="wrapper">
+            <span class="eyebrow">Date</span>
+            <p class="body-loose">November 2019</p>
+          </div>
 
-<!-- Intro-section-case -->
+          <div class="wrapper">
+            <span class="eyebrow">My roles</span>
+            <p class="body-loose">
+              UI design, UX, Motion design, Strategy in collaboration with Tania
+              Shoukair
+            </p>
+          </div>
 
-<section id="intro-section-case">
-
-  <div class="container container-flex">
-
-    <div class="content-main">
-      <p class="body-big-loose">
-        Deutschlandfunk are the revered national radio service in Germany. However to engage new listeners, (whilst retaining their current ones)  they needed a mobile solution that could deliver content from their three very different brands, in both ondemand and live formats. While remaining one cohesive experience.
-      </p>
-    </div>
-    <div class="content-secondary container-flex">
-
-      <div class="wrapper">
-         <span class="eyebrow">Made for</span>
-         <p class="body-loose">edenspiekermann Berlin
-         </p>
+          <div class="wrapper">
+            <span class="eyebrow">Client</span>
+            <p class="body-loose">Deutschlandfunk (pitch)</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="wrapper">
-         <span class="eyebrow">Date</span>
-         <p class="body-loose">November 2019
-         </p>
-      </div>
-
-      <div class="wrapper">
-         <span class="eyebrow">My roles</span>
-         <p class="body-loose">UI design, UX, Motion design, Strategy in collaboration with Tania Shoukair
-         </p>
-      </div>
-
-      <div class="wrapper">
-         <span class="eyebrow">Client</span>
-         <p class="body-loose">Deutschlandfunk (pitch)
-         </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-{% include footer.html %}
-{% include page-end.html %}
-
-
-</body>
+    <sergey-import src="footer.html" />
+    <sergey-import src="page-end.html" />
+  </body>
 </html>

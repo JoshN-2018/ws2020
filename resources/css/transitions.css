@@ -2,29 +2,10 @@
 
 /* hover states */
 
-/* region small */
-.button-primary {
-  display: block;
-  padding: 15px 25px;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  width: 100%;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.button-primary:hover {
+button:hover {
   -webkit-transform: scale(1.03);
   -ms-transform: scale(1.03);
   transform: scale(1.03);
-}
-
-/* region medium/large */
-@media (min-width: 720px) {
-  .button-primary {
-    width: 280px;
-    margin: 0 auto;
-  }
 }
 
 /* social icons hover */

@@ -21,5 +21,8 @@
   "homepage": "https://github.com/JoshN-2018/ws2020#readme",
   "dependencies": {
     "sergey": "0.0.13"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
   }
 }

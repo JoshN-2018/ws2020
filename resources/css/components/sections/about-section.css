@@ -1,109 +1,100 @@
 /* About section */
 
-
 /* region small */
 
-   /* structure */
+/* structure */
 #skills {
-   background-color: var(--color-black);
-   color: var(--color-white);
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 #skills a {
-   text-decoration: none;
-   color: var(--color-white);
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 #skills .container-flex {
-   flex-direction: column;
+  flex-direction: column;
 }
 
 .skills-detail hr {
-   display: none;
+  display: none;
 }
 
-
-   /* type */
+/* type */
 #skills p.label {
-   margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 #skills h3 {
-   border-bottom: 1px solid var(--color-dark-grey);
-   line-height: 2.8;
-   margin-bottom: 10px;
+  border-bottom: 1px solid var(--color-dark-grey);
+  line-height: 2.8;
+  margin-bottom: 10px;
 }
 
 .skills-detail {
-   margin-top: var(--space-32);
+  margin-top: var(--space-32);
 }
 
 .skills-area {
-   margin-bottom: var(--space-60);
+  margin-bottom: var(--space-60);
 }
 
 .skills-area:last-of-type {
-   margin-bottom: var(--space-120);
+  margin-bottom: var(--space-120);
 }
-
-
-
 
 /* region medium */
 
 @media (min-width: 720px) {
+  /* structure */
+  #skills .container-flex {
+    flex-direction: row;
+  }
 
-   /* structure */
-   #skills .container-flex {
-      flex-direction: row;
-   }
+  .skills-left {
+    width: 25%;
+  }
 
-   .skills-left {
-      width: 25%;
-   }
+  .skills-right {
+    width: 75%;
+  }
 
-   .skills-right {
-      width: 75%;
-   }
-
-
-   /* type */
-   #skills p.label {
-      margin-top: 26px;
-   }
+  /* type */
+  #skills p.label {
+    margin-top: 26px;
+  }
 }
-
-
 
 /* region large */
 @media (min-width: 1100px) {
+  /* structure */
+  .skills-left {
+    width: 40%;
+  }
 
-   /* structure */
-   .skills-left {
-      width: 40%;
-   }
+  .skills-right {
+    width: 60%;
+  }
 
-   .skills-right {
-      width: 60%;
-   }
+  .skills-area {
+    display: flex;
+  }
+  .skills-content,
+  .skills-detail {
+    width: 50%;
+  }
 
-   .skills-area {
-      display: flex;
-   }
-   .skills-content, .skills-detail {
-      width: 50%;
-   }
+  /* type */
 
-   /* type */
+  .skills-detail hr {
+    border-color: var(--color-dark-grey);
+    margin-bottom: 10px;
+    display: flex;
+  }
 
-   .skills-detail hr {
-      border-color: var(--color-dark-grey);
-      margin-bottom: 10px;
-      display: flex;
-   }
-
-   .skills-detail {
-      margin-left: 60px;
-      margin-top: 58px;
-   }
+  .skills-detail {
+    margin-left: 60px;
+    margin-top: 58px;
+  }
 }

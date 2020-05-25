@@ -22,21 +22,6 @@
   --col:  2rem;
   --gap:  1.5rem;
 
-  /* Spacing (deprecated)*/
-  --space-index-l: 19rem; /*304px*/
-  --space-index-m: 16.5rem; /*264px*/
-  --space-huge: 12.5rem; /*200px*/
-  --space-larger: 7.5rem; /*120px*/
-  --space-large: 6.25rem; /*100px*/
-  --space-big: 5rem; /*80px*/
-  --space-medium: 3.75rem; /*60px*/
-  --space-small: 2rem; /*32px*/
-  --space-petit: 1.5rem; /*24px*/
-  --space-std: 1rem; /*16px*/
-  --space-tiny: 0.75rem; /*12px*/
-  --space-micro: 0.5rem; /*8px*/
-
-
   /* Shadows */
   --shadow-soft: 0px 11px 50px 0px rgba(0, 0, 0, 0.1);
 

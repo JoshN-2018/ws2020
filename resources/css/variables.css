@@ -37,6 +37,11 @@
 
 /* Global Structure Elements */
 
+.dark-mode {
+   color: var(--color-white);
+   background-color: var(--color-black);
+}
+
 /* box sizing  */
 *, *:before, *:after {
   box-sizing: inherit;

@@ -42,6 +42,10 @@
    background-color: var(--color-black);
 }
 
+section.dark-mode a {
+   color: var(--color-white);
+}
+
 /* box sizing  */
 *, *:before, *:after {
   box-sizing: inherit;

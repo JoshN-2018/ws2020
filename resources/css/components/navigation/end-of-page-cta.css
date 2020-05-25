@@ -47,5 +47,5 @@ button:visited {
 }
 
 #cta-block {
-   margin-bottom: var(--space-80);
+   padding-bottom: var(--space-80);
 }

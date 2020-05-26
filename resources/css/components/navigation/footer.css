@@ -14,6 +14,11 @@ footer hr {
    margin-bottom: 40px;
 }
 
+/* turn off logo for menu */
+footer #secondary-section .wrapper:first-child {
+   opacity: 0;
+}
+
 footer #flip-wrapper {
    flex-direction: column;
 }
@@ -89,6 +94,10 @@ footer .body-small {
    /* structure */
    footer hr {
       margin-bottom: var(--space-60);
+   }
+
+   footer #secondary-section .wrapper:first-child {
+      opacity: 1;
    }
 
    footer {

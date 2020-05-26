@@ -11,10 +11,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 1.30rem 1.25rem;
-    background-color: var(--color-white);
     z-index: 3;
-    cursor: pointer;
+    /* cursor: pointer; */
     opacity: 0;
     -webkit-transform: translateY(100%);
         -ms-transform: translateY(100%);
@@ -22,17 +20,27 @@
     transition: opacity 0.5s ease;
 }
 
-#overlay h2 {
+#overlay h1 {
    margin-bottom: 2.5rem;
 }
 
-#overlay .menu-items {
-   margin-top: var(--space-large);
+#overlay .container-flex {
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100vh;
+
 }
 
+#overlay .menu-items {
+   padding-left: 42px;
+   padding-bottom: 8%;
+}
+
+
 #overlay img {
-   height: 0.9rem;
-   margin-top: 0.4rem;
+   height: 1.5rem;
+   margin-top: 30px;
+   margin-left: 30px
 }
 
    /* js classes */
@@ -68,25 +76,24 @@
    height: 2.5rem;
 }
 
-#menu-button, #menu-button-off {
+#menu-button-off {
    display: none;
-   padding: 0.5rem 0.5rem;
-   background-color: var(--color-white);
-   border: 1px solid var(--color-black);
 }
 
-@media (max-width: 720px) {
+#menu-button, #menu-button-off {
+   position: fixed;
+   bottom: 30px;
+   mix-blend-mode: difference;
+   left: 30px;
+   z-index: 1000;
+}
+
+@media (min-width: 720px) {
    #menu-button, #menu-button-off {
-      position: fixed;
-      bottom: 1.25rem;
-      right: 1.25rem;
-      z-index: 4;
-   }
-
-   #menu-button {
-      display: block;
+      display: none;
    }
 }
+
    /* end of: Button-overlay */
 
 /* end of: Menu-overlay */

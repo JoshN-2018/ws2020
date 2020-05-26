@@ -42,7 +42,7 @@
    background-color: var(--color-black);
 }
 
-section.dark-mode, footer.darkmode a {
+section.dark-mode, footer.dark-mode, #overlay.dark-mode a {
    color: var(--color-white);
 }
 

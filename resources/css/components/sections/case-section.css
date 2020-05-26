@@ -8,6 +8,9 @@
    width: 100%;
 }
 
+footer.no-rule hr {
+   display: none;
+}
 
 /* sect-1  */
 #case-study-section .container.sect-1 {

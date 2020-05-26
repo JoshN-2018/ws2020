@@ -23,6 +23,8 @@
     "sergey": "0.0.13"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "prettier": "2.0.5"
   }
 }

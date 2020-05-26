@@ -9,7 +9,7 @@ const mozjpeg = require('imagemin-mozjpeg');
 function imgCompressor() {
    return gulp
    .src("resources/images/*")
-   .pipe(imagemin())
+   .pipe(imagemin({optimizationLevel: 1}))
    .pipe(gulp.dest("public/resources/images"));
 }
 

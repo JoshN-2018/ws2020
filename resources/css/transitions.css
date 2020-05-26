@@ -73,11 +73,11 @@ footer h4:hover {
   pointer-events: none;
   display: block;
   width: 120%;
-  height: 2px;
+  height: 1px;
   margin-top: 9px;
   margin-left: -10%;
   background-color: var(--color-black);
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   -webkit-transform-origin: right;
   -ms-transform-origin: right;
   transform-origin: right;
@@ -96,12 +96,17 @@ footer h4:hover {
   transform-origin: left;
 }
 
+.dark-mode :before {
+  background-color: var(--color-white) !important;
+  margin-top: 15px;
+}
+
 /* Strike-big */
 /* region small */
 .strike-big {
   display: inline-block;
   position: relative;
-  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .strike-big:before {

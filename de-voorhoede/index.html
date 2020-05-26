@@ -7,35 +7,89 @@
     <sergey-import src="nav.html" />
 
 
-<!-- Hero-section-case -->
 
-   <section class="hero-section-case">
-         <div class="container">
+    <!-- Hero-section -->
 
-            <div class="container-flex hero-content">
+    <section id="hero-section-case" class="container-flex">
+      <div class="positioning-line-cont container-flex">
+        <div class="positioning-line">
+          <p class="body-big-tight">De Voorhoede</p>
+        </div>
+        <div class="stretcher"></div>
+      </div>
 
-               <div class="hero-title an-mark-props an-mark-1">
-                  <img src="../resources/images/icon-carrot.svg" alt="arrow">
-                  <h1 class="h1">De Voorhoede</h1>
-                  <img src="../resources/images/icon-carrot.svg" alt="arrow">
-               </div>
+      <div id="hero-image">
+        <picture>
+          <source
+            media="(min-width: 1100px)"
+            srcset="
+              ../resources/images/pro-hero_l@2x.png 2540w,
+              ../resources/images/pro-hero_l.png 1x 1270w
+              "/>
 
-               <div class="hero-text an-mark-props an-mark-2">
-                  <p class="body-big">
-                     The De Voorhoede are developers who listen. They are Co-pilots for their clients as they navigate the digital world. However their current website sold them short. Working with the De Voorhoede I refreshed their brand and designed a website that was as fresh as their approach.
-                  </p>
+          <source
+            media="(min-width: 721px)"
+            srcset="
+            ../resources/images/pro-hero_m@2x.png 1606w,
+            ../resources/images/pro-hero_m.png 803w
+            "/>
 
-                  <div class="my-role an-mark-props an-mark-3">
-                     <span class="h4 bold">Brand Identity</span>
-                     <span class="h4 bold">Ui design</span>
-                     <span class="h4 bold">Motion Design</span>
-                  </div>
-               </div>
+          <source
+            media="(max-width: 720px)"
+            srcset="
+            ../resources/images/pro-hero_s@2x.png 668w,
+            ../resources/images/pro-hero_s.png 334w
+            "/>
 
-            </div>
+          <img src="../resources/images/pro-hero_l.png" alt="hero-image" />
+        </picture>
+      </div>
+    </section>
 
-         </div>
-   </section>
+    <!-- end of: Hero-section -->
+
+
+
+    <!-- Intro-section-case -->
+
+    <section id="intro-section-case" class="dark-mode">
+      <div class="container container-flex">
+        <div class="content-main">
+          <p class="body-big-loose">
+            The De Voorhoede are developers who listen. They are Co-pilots for their clients as they navigate the digital world. However their current website sold them short. Working with the De Voorhoede I refreshed their brand and designed a website that was as fresh as their approach.
+          </p>
+        </div>
+        <div class="content-secondary container-flex">
+          <div class="wrapper">
+            <span class="eyebrow">Made for</span>
+            <p class="body-loose">edenspiekermann Berlin</p>
+          </div>
+
+          <div class="wrapper">
+            <span class="eyebrow">Date</span>
+            <p class="body-loose">November 2019</p>
+          </div>
+
+          <div class="wrapper">
+            <span class="eyebrow">My roles</span>
+            <p class="body-loose">
+              UI design, UX, Motion design, Strategy in collaboration with Tania
+              Shoukair
+            </p>
+          </div>
+
+          <div class="wrapper">
+            <span class="eyebrow">Client</span>
+            <p class="body-loose">Deutschlandfunk (pitch)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+<!-- Case-study -->
 
 
 
@@ -273,12 +327,15 @@
 
 
    </section>
-<!-- end of: DV-case -->
 
 
-{% include footer.html %}
-{% include page-end.html %}
+<!-- part 1 – brand-story -->
 
+<!-- end of: part 1 -->
 
+<div class="no-rule">
+<sergey-import src="footer.html" />
+</div>
+<sergey-import src="page-end.html" />
 </body>
 </html>

@@ -1,7 +1,6 @@
 {
   "name": "ws2020",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,5 +26,6 @@
     "gulp-imagemin": "^7.1.0",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0"
-  }
+  },
+  "description": ""
 }

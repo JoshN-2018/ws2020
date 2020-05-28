@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/JoshN-2018/ws2020#readme",
   "dependencies": {
-    "gulp-v3": "^3.12.1",
+    "core-util-is": "^1.0.2",
     "sergey": "0.0.13"
   },
   "devDependencies": {

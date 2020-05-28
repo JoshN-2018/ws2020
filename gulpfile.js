@@ -16,11 +16,16 @@ gulp.task('images', function() {
        quality: '65-80'
       }))
       .pipe(gulp.dest(imgDest));
-      console.log("images starting");
+});
+
+
+gulp.task('default', function() {
+  gulp.watch(imgSrc, ['images-new']);
 });
 
 // note this isn't working but the above is!
 
+/*
 // Minify any new images
 gulp.task('images-new', function() {
 
@@ -35,6 +40,5 @@ gulp.task('images-new', function() {
 });
 
 
-gulp.task('default', function() {
-  gulp.watch(imgSrc, ['images-new']);
-});
+
+*/

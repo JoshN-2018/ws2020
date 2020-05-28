@@ -1,9 +1,1 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <title>icon-menu-cross</title>
-  <g id="icon_cross" data-name="icon/cross">
-    <g id="Group-3">
-      <path id="Path-4" d="M23.049,8.791,8.725,23.115" fill="none" stroke="#222" stroke-width="1.8"/>
-      <path id="Path-4-Copy-2" d="M23.275,23.209,8.951,8.885" fill="none" stroke="#222" stroke-width="1.8"/>
-    </g>
-  </g>
-</svg>
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M23.049 8.791L8.725 23.115m14.55.094L8.951 8.885" fill="none" stroke="#222" stroke-width="1.8" data-name="icon/cross"/></svg>

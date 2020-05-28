@@ -12,8 +12,6 @@
 // set up
 const gulp = require("gulp");
 const imagemin = require("gulp-imagemin");
-const pngquant = require("imagemin-pngquant");
-const mozjpeg = require('imagemin-mozjpeg');
 
 // minify function
 function imgCompressor() {

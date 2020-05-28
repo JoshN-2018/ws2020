@@ -1,25 +1,40 @@
-// set up
-const gulp = require("gulp");
-const imagemin = require("gulp-imagemin");
+// setup
+
+var gulp = require('gulp');
+const changed = require('gulp-changed');
 const gulpPngquant = require('gulp-pngquant');
 
-// image function
-function imgCompressor() {
-   return gulp
-   .src("resources/images/*.png")
-   .pipe(gulpPngquant({
-    quality: '65-80'
-   }))
+var imgSrc = 'resources/images/*.png';
+var imgDest = 'public/resources/images';
 
-   .pipe(gulp.dest("public/resources/images"));
-}
 
-// function call
-gulp.task("imgCompressor", imgCompressor);
+// Minify images
+gulp.task('images', function() {
 
-//watch function
-gulp.task("watch", () => {
-   gulp.watch("public/resources/images", imgCompressor);
+  return gulp.src(imgSrc)
+      .pipe(gulpPngquant({
+       quality: '65-80'
+      }))
+      .pipe(gulp.dest(imgDest));
+      console.log("images starting");
 });
 
-gulp.task("default", gulp.series("imgCompressor","watch"));
+// note this isn't working but the above is!
+
+// Minify any new images
+gulp.task('images-new', function() {
+
+  // Add the newer pipe to pass through newer images only
+  return gulp.src(imgSrc)
+      .pipe(changed(imgDest))
+      .pipe(gulpPngquant({
+       quality: '65-80'
+      }))
+      .pipe(gulp.dest(imgDest));
+      console.log("images-new starting")
+});
+
+
+gulp.task('default', function() {
+  gulp.watch(imgSrc, ['images-new']);
+});

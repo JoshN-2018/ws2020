@@ -23,6 +23,32 @@ gulp.task('default', function() {
   gulp.watch(imgSrc, ['images-new']);
 });
 
+
+
+// compress video (in theory!)
+
+const abraia = require('gulp-abraia')
+
+gulp.task('video', () => {
+
+  return gulp.src('resources/videos/*')
+    .pipe(abraia([
+      { height: 600, output: '{name}.mp4' }
+    ]))
+    .pipe(gulp.dest('public/resources/videos'))
+})
+
+
+
+
+
+
+
+
+
+
+
+
 // note this isn't working but the above is!
 
 /*

@@ -67,6 +67,16 @@ a:visited {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "untitled light";
+
+  src: url("../fonts/untitled-sans-test-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 /* default styling */
 html {
 font-family: 'untitled regular', sans-serif;
@@ -77,8 +87,15 @@ color: var(--color-black);
 /* large headings */
 .hero, .sidekick, .h1, .h2, .h3, .h4 {
    font-family: "serif bold", "Georgia", "serif";
-   font-weight: bold;
+   font-weight: normal;
 }
+
+/* hero messaging */
+.body-big-display {
+   font-family: 'untitled light', sans-serif;
+   font-weight: normal;
+}
+
 
 /* Text Styles */
 
@@ -114,8 +131,8 @@ color: var(--color-black);
    line-height: 1.67;
 }
 
-.body-big-loose {
-   font-size: 1.5rem; /* 24px */
+.body-big-display {
+   font-size: 1.75rem; /* 24px */
    line-height: 2.167;
 }
 
@@ -201,8 +218,8 @@ color: var(--color-black);
      line-height: 1.67;
   }
 
-  .body-big-loose {
-     font-size: 1.5rem; /* 24px */
+  .body-big-display {
+     font-size: 2rem; /* 32px */
      line-height: 2.83;
   }
 
@@ -273,8 +290,8 @@ color: var(--color-black);
      line-height: 1.67;
   }
 
-  .body-big-loose {
-     font-size: 1.5rem; /* 24px */
+  .body-big-display {
+     font-size: 2rem; /* 32px */
      line-height: 2.83;
   }
 
@@ -309,6 +326,87 @@ color: var(--color-black);
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 0.625rem;
+    line-height: 1.5;
+  }
+}
+
+
+/* region oversize */
+@media (min-width: 1100px) {
+  .h1 {
+     font-size: 4.6875px; /* 75px */
+     line-height: 1.25;
+   }
+
+  .h2 {
+   font-size: 3.5rem; /* 56px */
+   line-height: 1.25;
+  }
+
+  .h3 {
+    font-size: 2.625rem; /* 42px */
+    line-height: 1.25;
+   }
+
+  .h4 {
+   font-size: 2rem; /* 32px */
+   line-height: 1.25;
+  }
+
+  .h4-sans {
+     font-size: 2.625rem; /* 42px */
+     line-height: 1.667;
+  }
+
+  .body-big-tight {
+     font-size: 2rem; /* 32px */
+     line-height: 1.67;
+  }
+
+  .body-big-display {
+     font-size: 2.625rem; /* 42px */
+     line-height: 2.83;
+  }
+
+  .body-header {
+     font-size: 1.25rem; /* 18px */
+     line-height: 2;
+  }
+
+  .body-tight {
+     font-size: 1.25rem; /* 18px */
+     line-height: 1.5;
+  }
+
+  .body-loose {
+     font-size: 1.25rem; /* 18px */
+     line-height: 2;
+  }
+
+  .body-small {
+     font-size: 1.125rem; /* 16px */
+     line-height: 1.5;
+  }
+
+  .label {
+     letter-spacing: 2.4px;
+     text-transform: uppercase;
+     font-size: 0.875rem;
+     line-height: 1.5;
+  }
+
+  .eyebrow {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .button {
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.875rem;
     line-height: 1.5;
   }
 }

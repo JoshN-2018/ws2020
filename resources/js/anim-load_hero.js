@@ -46,8 +46,9 @@ var animSmall = lottie.loadAnimation({
    renderer: 'svg',
    loop: true,
    autoplay: false,
-   path: 'resources/anim/region-small.json'
+   path: 'resources/anim/region-small_hero.json'
 })
+
 
 // load region medium animation
 var animMedium = lottie.loadAnimation({
@@ -55,7 +56,7 @@ var animMedium = lottie.loadAnimation({
    renderer: 'svg',
    loop: true,
    autoplay: false,
-   path: 'resources/anim/region-medium.json'
+   path: 'resources/anim/region-medium_hero.json'
 })
 
 // load region large animation
@@ -64,7 +65,7 @@ var animLarge = lottie.loadAnimation({
    renderer: 'svg',
    loop: true,
    autoplay: false,
-   path: 'resources/anim/region-large.json'
+   path: 'resources/anim/region-large_hero.json'
 })
 
 
@@ -139,6 +140,7 @@ function animPlayer() {
    else if(screenBase === 3) {
       turnOffOtherRegions();
       animContLarge.classList.toggle("off");
+      animLarge.setSpeed(0.75);
       animLarge.playSegments([[0,525],[145,525]], true);
    }
 

@@ -11,11 +11,6 @@
   display: none;
 }
 
-/* delete this code */
-#skills a {
-   color: #FFF;
-}
-
 /* type */
 #skills p.label {
   margin-bottom: 12px;

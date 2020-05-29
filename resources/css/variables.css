@@ -2,7 +2,8 @@
 
 :root {
    /* Colours */
-  --color-black: #222222;
+  --color-black: #000000;
+  --color-text: #222222;
   --color-white: #FFFFFF;
   --color-light-grey: #cccccc;
   --color-v-light-grey: #eeeeee;

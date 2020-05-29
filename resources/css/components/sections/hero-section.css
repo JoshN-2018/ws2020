@@ -2,7 +2,7 @@
 
    /* region small */
 #hero-section {
-  height: calc(100vh - 36px);
+  height: calc(90vh - 36px);
   flex-direction: column;
   justify-content: space-between;
 }
@@ -35,7 +35,7 @@
    /* region medium */
 @media (min-width: 720px) {
   #hero-section {
-    height: calc(100vh - 54px);
+    height: calc(95vh - 54px);
   }
 
      /* this is replicating 'container' */
@@ -55,7 +55,7 @@
    /* region large */
 @media (min-width: 1100px) {
   #hero-section {
-    height: calc(100vh - 66px);
+    height: calc(90vh - 66px);
   }
 
      /* this is replicating 'container' */

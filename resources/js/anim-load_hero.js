@@ -40,36 +40,6 @@ function debounce(func, wait, immediate) {
 	};
 };
 
-// load region small animation
-var animSmall = lottie.loadAnimation({
-   container: document.getElementById('hero-anim-small'),
-   renderer: 'svg',
-   loop: true,
-   autoplay: false,
-   path: 'resources/anim/region-small_hero.json'
-})
-
-
-// load region medium animation
-var animMedium = lottie.loadAnimation({
-   container: document.getElementById('hero-anim-medium'),
-   renderer: 'svg',
-   loop: true,
-   autoplay: false,
-   path: 'resources/anim/region-medium_hero.json'
-})
-
-// load region large animation
-var animLarge = lottie.loadAnimation({
-   container: document.getElementById('hero-anim-large'),
-   renderer: 'svg',
-   loop: true,
-   autoplay: false,
-   path: 'resources/anim/region-large_hero.json'
-})
-
-
-
 
 //  Determine breakpoint & call loader  //
 
@@ -128,18 +98,48 @@ function animPlayer() {
    if(screenBase === 1) {
       turnOffOtherRegions();
       animContSmall.classList.toggle("off");
+
+      // load region small animation
+      var animSmall = lottie.loadAnimation({
+         container: document.getElementById('hero-anim-small'),
+         renderer: 'svg',
+         loop: true,
+         autoplay: false,
+         path: 'resources/anim/region-small_hero.json'
+      })
+
+      animSmall.setSpeed(0.75);
       animSmall.playSegments([[0,525],[145,525]], true);
       }
 
    else if(screenBase === 2) {
       turnOffOtherRegions();
       animContMedium.classList.toggle("off");
+
+      var animMedium = lottie.loadAnimation({
+         container: document.getElementById('hero-anim-medium'),
+         renderer: 'svg',
+         loop: true,
+         autoplay: false,
+         path: 'resources/anim/region-medium_hero.json'
+      })
+
+      animMedium.setSpeed(0.75);
       animMedium.playSegments([[0,525],[145,525]], true);
    }
 
    else if(screenBase === 3) {
       turnOffOtherRegions();
       animContLarge.classList.toggle("off");
+
+      var animLarge = lottie.loadAnimation({
+         container: document.getElementById('hero-anim-large'),
+         renderer: 'svg',
+         loop: true,
+         autoplay: false,
+         path: 'resources/anim/region-large_hero.json'
+      })
+
       animLarge.setSpeed(0.75);
       animLarge.playSegments([[0,525],[145,525]], true);
    }
@@ -147,6 +147,16 @@ function animPlayer() {
    else if(screenBase === 4) {
       turnOffOtherRegions();
       animContLarge.classList.toggle("off");
+
+      var animLarge = lottie.loadAnimation({
+         container: document.getElementById('hero-anim-large'),
+         renderer: 'svg',
+         loop: true,
+         autoplay: false,
+         path: 'resources/anim/region-large_hero.json'
+      })
+
+      animLarge.setSpeed(0.75);
       animLarge.playSegments([[0,525],[145,525]], true);
    }
 }

@@ -1,0 +1,138 @@
+/* intro-section-case */
+
+
+/* region small */
+
+   /* structure */
+#intro-section-case {
+  padding-top: var(--space-120);
+  padding-bottom: var(--space-80);
+  margin-top: calc(var(--space-60) * -1); /*suck intro section under image*/
+}
+
+#intro-section-case .content-secondary {
+  margin-top: var(--space-60);
+  flex-direction: column;
+}
+
+#intro-section-case .content-secondary .wrapper:nth-child(1n + 2) {
+  margin-top: var(--space-32);
+}
+
+#intro-section-case .container-flex:first-child {
+  flex-direction: column;
+}
+
+   /* type */
+#intro-section-case .eyebrow {
+   margin-bottom: 4px;
+}
+
+
+
+/* region medium */
+
+   /* structure */
+@media (min-width: 720px) {
+  #intro-section-case {
+    padding-top: 200px;
+    padding-bottom: var(--space-80);
+    margin-top: calc(var(--space-100) * -1); /*suck intro section under image*/
+  }
+
+  #intro-section-case .content-secondary {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #intro-section-case .content-secondary .wrapper:nth-child(1n + 2) {
+   margin-top: 0;
+   margin-left: 32px;
+ }
+
+  #intro-section-case .content-secondary .wrapper {
+    width: 25%;
+  }
+
+  #intro-section-case .content-main {
+    width: 100%;
+  }
+
+   #intro-section-case .container-flex:first-child {
+     flex-direction: column;
+   }
+}
+
+   /* region large */
+
+@media (min-width: 1100px) {
+
+   #intro-section-case .container-flex:first-child {
+     flex-direction: row;
+   }
+
+   #intro-section-case {
+     padding-top: 240px;
+     padding-bottom: var(--space-100);
+     margin-top: calc(var(--space-120) * -1); /*suck intro section under image*/
+   }
+
+   #intro-section-case .content-secondary {
+     width: 100%;
+     flex-direction: row;
+     justify-content: initial;
+     margin-top: 16px;
+   }
+
+   /* resetting from previous break*/
+    #intro-section-case .content-secondary .wrapper:nth-child(1n + 2) {
+     margin-top: 0;
+     margin-left: 0px;
+   }
+
+   #intro-section-case .content-secondary .wrapper:nth-child(1n + 3) {
+      margin-top: 0;
+      /* color: yellow; */
+   }
+
+   #intro-section-case .content-secondary {
+     flex-wrap: wrap;
+     width: 40%;
+   }
+
+   #intro-section-case .content-secondary .wrapper:nth-child(2n + 2) {
+    margin-left: 10%;
+  }
+
+  #intro-section-case .content-secondary .wrapper {
+    width: 45%;
+  }
+
+
+   #intro-section-case .content-main {
+     width: 60%;
+     padding-right: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

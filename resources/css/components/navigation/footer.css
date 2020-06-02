@@ -71,8 +71,12 @@ footer a {
 }
 
 footer h3 {
-   margin-bottom: var(--space-80);
+   margin-bottom: var(--space-32);
    max-width: 280px;
+}
+
+footer .message {
+   margin-bottom: 52px;
 }
 
 footer p.label {
@@ -81,6 +85,10 @@ footer p.label {
 
 footer .body-small {
    line-height: 28px;
+}
+
+footer .body-detail {
+   margin-top: 16px;
 }
    /* end of: type */
 

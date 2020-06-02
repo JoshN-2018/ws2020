@@ -21,7 +21,7 @@ exports.compress = compress
 
 // exposing a task called build which calls whatever tasks are placed in the folder
 
-exports.build = series(compress);
+exports.build = series(compress, watchImages);
 
 
 

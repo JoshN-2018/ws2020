@@ -67,9 +67,9 @@ var animLarge = lottie.loadAnimation({
    path: 'resources/anim/region-large_hero.json'
 })
 
-animSmall.setSpeed(0.75);
-animMedium.setSpeed(0.75);
-animLarge.setSpeed(0.75);
+// animSmall.setSpeed(0.75);
+// animMedium.setSpeed(0.75);
+// animLarge.setSpeed(0.75);
 
 
 //  Determine breakpoint & call loader  //

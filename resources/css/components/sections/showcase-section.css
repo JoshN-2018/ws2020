@@ -134,4 +134,34 @@
    }
 }
 
+
+
+/* region oversize */
+@media (min-width: 1920px) {
+
+#showcase-section .container-flex {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* end of: Showcase-section */

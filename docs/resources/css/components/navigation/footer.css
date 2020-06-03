@@ -193,21 +193,39 @@ footer .body-detail {
    }
 
    footer #content-cases p.label {
-      margin-left: 144px;
+      margin-left: 0;
    }
 
    footer #content-cases .container-flex:last-child {
-      margin-left: 144px;
+      margin-left: 0
    }
 
-   footer #content-contact {
-      margin-bottom: 0;
-   }
 
    /* type */
    footer h2 {
-      margin-bottom: var(--space-120);
-      max-width: 400px;
+      margin-bottom: var(--space-32);
+      max-width: 500px;
    }
 }
+
+
+/* region oversize */
+@media (min-width: 1920px) {
+   footer h2 {
+      margin-bottom: var(--space-32);
+      max-width: 700px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* end of: Footer */

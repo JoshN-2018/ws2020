@@ -41,7 +41,7 @@ footer #content-cases .container-flex {
 }
 
 footer #content-cases .container-flex p:nth-child(1n + 2) {
-   padding-left: 10%;
+   padding-left: 8%;
 }
 
 footer #content-cases {
@@ -60,6 +60,16 @@ footer #secondary-section {
 
 footer #secondary-section .wrapper:last-child img {
    margin-left: 16px;
+}
+
+/* placing credits and icons on one line */
+footer .cred-wrapper {
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+footer .cred-wrapper p:first-child {
+   width: 45%;
 }
    /* end of: structure */
 
@@ -88,7 +98,7 @@ footer #content-cases .body-small {
 }
 
 footer .body-detail {
-   margin-top: 16px;
+   text-align: left;
 }
    /* end of: type */
 

@@ -20,7 +20,7 @@
 
 #hero-section .positioning-line {
   width: 274px;
-  padding-top: var(--space-60);
+  padding-top: var(--space-80);
 }
 
 #hero-section .stretcher {
@@ -46,7 +46,7 @@
 
   #hero-section .positioning-line {
     width: 424px;
-    padding-top: var(--space-60);
+    padding-top: var(--space-100);
     padding-left: var(--gap);
   }
 }

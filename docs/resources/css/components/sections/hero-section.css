@@ -68,4 +68,45 @@
     padding-left: 0;
   }
 }
+
+
+/* region oversize */
+@media (min-width: 1920px) {
+
+   #hero-section .positioning-line {
+     width: 600px;
+   }
+}
 /* end of: Hero-section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

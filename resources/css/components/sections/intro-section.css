@@ -2,13 +2,7 @@
 
    /* region small */
 #intro-section {
-  padding-top: 24px;
   padding-bottom: var(--space-80);
-}
-
-.scroll-indicator {
-   justify-content: center;
-   margin-bottom: 28px;
 }
 
 #intro-section .content-left {
@@ -18,13 +12,7 @@
    /* region medium */
 @media (min-width: 720px) {
   #intro-section {
-    padding-top: 32px;
     padding-bottom: var(--space-80);
-  }
-
-  .scroll-indicator {
-     justify-content: center;
-     margin-bottom: var(--space-60);
   }
 
   #intro-section .content-left {

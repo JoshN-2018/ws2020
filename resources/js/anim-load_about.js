@@ -55,7 +55,7 @@ var animMedium = lottie.loadAnimation({
    renderer: 'svg',
    loop: true,
    autoplay: false,
-   path: '../resources/anim/region-medium_about.json'
+   path: '../resources/anim/region-small_about.json'
 })
 
 // load region large animation
@@ -80,6 +80,8 @@ var screenBase
 var breakOne = 720
 var breakTwo = 1100
 var breakThree = 1440
+
+var introText = document.getElementById('intro-text');
 
 
 // Break determiner and load caller (debounced)
@@ -127,24 +129,29 @@ function animPlayer() {
    if(screenBase === 1) {
       turnOffOtherRegions();
       animContSmall.classList.toggle("off");
+      introText.classList.add("container");
       animSmall.play();
    }
 
    else if(screenBase === 2) {
       turnOffOtherRegions();
       animContMedium.classList.toggle("off");
+      introText.classList.add("container");
       animMedium.play();
    }
 
    else if(screenBase === 3) {
       turnOffOtherRegions();
       animContLarge.classList.toggle("off");
+      introText.classList.remove("container");
       animLarge.play();
+
    }
 
    else if(screenBase === 4) {
       turnOffOtherRegions();
       animContLarge.classList.toggle("off");
+      introText.classList.remove("container");
       animLarge.play();
    }
 }

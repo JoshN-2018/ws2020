@@ -51,6 +51,7 @@ footer #content-cases {
 footer #secondary-section {
    /* background-color: purple; */
    width: 100%;
+   align-items: flex-end;
 }
 
 footer #secondary-section img {
@@ -86,6 +87,7 @@ footer h2 {
 
 footer .message {
    margin-bottom: 52px;
+   max-width: 340px;
 }
 
 footer p.label {
@@ -127,11 +129,6 @@ footer .body-detail {
       justify-content: space-between;
    }
 
-   /* footer #secondary-section {
-      flex-direction: column;
-      align-items: flex-end;
-   } */
-
    footer #bottom-section {
       flex-direction: column;
       justify-content: space-between;
@@ -159,7 +156,7 @@ footer .body-detail {
 
    footer .credit_m_l {
       display: initial;
-      background-color: purple;
+      /* background-color: purple; */
    }
 
 
@@ -213,7 +210,17 @@ footer .body-detail {
 @media (min-width: 1920px) {
    footer h2 {
       margin-bottom: var(--space-32);
-      max-width: 700px;
+      max-width: 690px;
+   }
+
+   footer .message {
+      /* margin-bottom: var(--space-60); */
+      max-width: 515px;
+   }
+
+   footer .cred-box {
+      margin-top: 32px;
+      justify-content: flex-end;
    }
 }
 

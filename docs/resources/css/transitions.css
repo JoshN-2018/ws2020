@@ -74,10 +74,9 @@ footer h4:hover {
   display: block;
   width: 120%;
   height: 1px;
-  margin-top: 9px;
+  margin-top: 32px;
   margin-left: -10%;
   background-color: var(--color-black);
-  /* mix-blend-mode: multiply; */
   -webkit-transform-origin: right;
   -ms-transform-origin: right;
   transform-origin: right;

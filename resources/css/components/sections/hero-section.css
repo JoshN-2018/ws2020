@@ -2,7 +2,7 @@
 
    /* region small */
 #hero-section {
-  height: calc(90vh - 36px);
+  height: calc(90vh - 62px);
   flex-direction: column;
   justify-content: space-between;
 }

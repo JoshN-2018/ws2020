@@ -3,14 +3,9 @@ nav {
 z-index: 5;
 }
 nav div.container-flex {
-padding: 1.25rem 1.25rem 0 1.25rem;
-align-items: center;
+padding: 28px 1.25rem 0 1.25rem;
 max-width: 1680px;
 margin: 0 auto;
-}
-
-nav ul .link-collapsible {
-display: none;
 }
 
 nav .logo {

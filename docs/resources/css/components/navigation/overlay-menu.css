@@ -1,6 +1,6 @@
 /* Menu-overlay */
 
-   /* region small-ONLY */
+   /* region small */
 
 #overlay {
     position: fixed;
@@ -28,20 +28,86 @@
    flex-direction: column;
    justify-content: space-between;
    height: 100vh;
-
 }
 
 #overlay .menu-items {
-   padding-left: 42px;
+   padding-left: 72px;
    padding-bottom: 8%;
 }
 
-
+/* logo position */
 #overlay img {
-   height: 1.5rem;
-   margin-top: 30px;
-   margin-left: 30px
+   margin-top: 28px;
+   margin-left: 20px
 }
+
+/* off position */
+#menu-button-off {
+   position: fixed;
+   top: 0px;
+   right: 20px;
+}
+
+#menu-button-off {
+   display: none;
+}
+
+#menu-button-off, #menu-button {
+padding-top: 4px;
+}
+
+
+
+   /* region medium */
+@media (min-width: 720px) {
+
+   /* logo position */
+   #overlay img {
+      margin-top: 2.25rem;
+      margin-left: 2.5rem;
+   }
+
+   /* off position */
+   #menu-button-off {
+      position: fixed;
+      top: 0px;
+      right: 2.5rem;
+   }
+
+   #overlay .menu-items {
+      padding-left: 152px;
+      padding-bottom: 8%;
+   }
+}
+
+/* region large */
+@media (min-width: 1100px) {
+
+   /* logo position */
+   #overlay img {
+      margin-top: 3rem;
+      margin-left: 3.75rem;
+   }
+
+   /* off position */
+   #menu-button-off {
+      position: fixed;
+      top: 0px;
+      right: 3.75rem;
+   }
+
+   /* logo size */
+   #overlay img:first-child {
+      height: 1.75rem;
+   }
+
+   #overlay .menu-items {
+      padding-left: 284px;
+      padding-bottom: 8%;
+   }
+}
+
+
 
    /* js classes */
 .overlayOn {
@@ -66,28 +132,7 @@
    /* end of js classes */
 
 
-   /* Button-overlay */
-   /* region-small */
-#menu-button img {
-   height: 2rem;
-}
-
-#menu-button-off img {
-   height: 2rem;
-}
-
-#menu-button-off {
-   display: none;
-}
 
 
-
-@media (min-width: 720px) {
-   #menu-button, #menu-button-off {
-      display: none;
-   }
-}
-
-   /* end of: Button-overlay */
 
 /* end of: Menu-overlay */

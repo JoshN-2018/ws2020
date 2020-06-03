@@ -338,9 +338,9 @@ color: var(--color-text);
 
 
 /* region oversize */
-@media (min-width: 1681px) {
+@media (min-width: 1920px) {
   .h1 {
-     font-size: 4.6875px; /* 75px */
+     font-size: 4.6875rem; /* 75px */
      line-height: 1.25;
    }
 

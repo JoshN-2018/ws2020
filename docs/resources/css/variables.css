@@ -138,6 +138,10 @@ a:hover {
   border: 2px solid red;
 }
 
+.test-lines-yellow {
+  border: 2px solid yellow;
+}
+
 /* end of: Global Styles */
 
 

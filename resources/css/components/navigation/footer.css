@@ -15,8 +15,8 @@ footer hr {
 }
 
 /* turn off logo for menu */
-footer #secondary-section .wrapper:first-child {
-   opacity: 0;
+footer .logo {
+   display: none;
 }
 
 footer #flip-wrapper {
@@ -49,28 +49,27 @@ footer #content-cases {
 }
 
 footer #secondary-section {
-   flex-direction: row;
-   justify-content: space-between;
+   /* background-color: purple; */
+   width: 100%;
 }
 
-footer #secondary-section {
-   /* margin-bottom: 36px; */
-   margin: 0 -3px 0 -3px;
-}
-
-footer #secondary-section .wrapper:last-child img {
+footer #secondary-section img {
    margin-left: 16px;
 }
 
-/* placing credits and icons on one line */
-footer .cred-wrapper {
-   flex-direction: row;
-   justify-content: space-between;
+   /* literally nothing else would work 🤦‍♂️ */
+footer #secondary-section .no-marg {
+   margin-left: 0;
 }
 
-footer .cred-wrapper p:first-child {
-   width: 45%;
+footer .credit {
+   flex-grow: 1;
 }
+
+footer .credit_m_l {
+   display: none;
+}
+
    /* end of: structure */
 
 
@@ -80,7 +79,7 @@ footer a {
    color: var(--color-white);
 }
 
-footer h3 {
+footer h2 {
    margin-bottom: var(--space-32);
    max-width: 280px;
 }
@@ -98,7 +97,7 @@ footer #content-cases .body-small {
 }
 
 footer .body-detail {
-   text-align: left;
+   text-align: right;
 }
    /* end of: type */
 
@@ -114,8 +113,9 @@ footer .body-detail {
       margin-bottom: var(--space-60);
    }
 
-   footer #secondary-section .wrapper:first-child {
-      opacity: 1;
+   /* turn off logo for menu */
+   footer .logo {
+      display: initial;
    }
 
    footer {
@@ -127,17 +127,45 @@ footer .body-detail {
       justify-content: space-between;
    }
 
-   footer #secondary-section {
+   /* footer #secondary-section {
       flex-direction: column;
       align-items: flex-end;
+   } */
+
+   footer #bottom-section {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+   }
+
+   footer #secondary-section {
+      flex-direction: row;
    }
 
    footer #content-cases {
       margin-bottom: 0;
    }
 
+
+   /* placing credits and icons on one line */
+   footer .credit {
+      display: none;
+   }
+
+   footer .cred-box {
+      margin-top: 24px;
+      justify-content: flex-end;
+   }
+
+   footer .credit_m_l {
+      display: initial;
+      background-color: purple;
+   }
+
+
+
    /* type */
-   footer h3 {
+   footer h2 {
       margin-bottom: var(--space-32);
       max-width: 400px;
    }
@@ -161,7 +189,7 @@ footer .body-detail {
    }
 
    footer #main-section .region-large {
-      flex-direction: row;
+      flex-direction: column;
    }
 
    footer #content-cases p.label {
@@ -177,7 +205,7 @@ footer .body-detail {
    }
 
    /* type */
-   footer h3 {
+   footer h2 {
       margin-bottom: var(--space-120);
       max-width: 400px;
    }

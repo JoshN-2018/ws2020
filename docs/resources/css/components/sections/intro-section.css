@@ -41,3 +41,10 @@
     width: 60%;
   }
 }
+
+/* region oversize */
+@media (min-width: 1920px) {
+   #intro-section {
+     padding-bottom: var(--space-100);
+   }
+}

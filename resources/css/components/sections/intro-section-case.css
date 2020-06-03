@@ -113,9 +113,18 @@
    #intro-section-case .content-main {
      width: 60%;
      padding-right: 80px;
+  }
 }
 
 
+/* region oversize */
+@media (min-width: 1920px) {
+   #intro-section-case {
+     padding-top: 320px;
+     padding-bottom: var(--space-160);
+     margin-top: calc(var(--space-160) * -1); /*suck intro*/
+   }
+}
 
 
 

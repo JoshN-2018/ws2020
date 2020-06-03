@@ -209,7 +209,7 @@ footer h4:hover {
 /* region oversize */
 @media (min-width: 1920px) {
   .strike-overlay:before {
-     margin-top: 52px;
+     margin-top: 44px;
   }
 }
 

@@ -96,6 +96,33 @@ margin-bottom: 8px;
 }
 
 
+/* region oversize */
+@media (min-width: 1920px) {
+
+      /* connected space */
+   .connected-spacer {
+      height: var(--space-160);
+   }
+
+      /* separated space */
+   .separated-spacer {
+      height: var(--space-240);
+   }
+
+   /* sect-1  */
+   #case-study-section .container.sect-1 {
+      padding-top: var(--space-240);
+   }
+
+   /* type */
+   #case-study-section .content-text {
+      max-width: 720px
+   }
+
+   #case-study-section .h4-sans {
+      margin-bottom: 16px;
+   }
+}
 
 
 

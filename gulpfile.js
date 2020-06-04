@@ -4,6 +4,7 @@ const { series } = require('gulp');
 const { src, dest } = require('gulp');
 const gulpPngquant = require('gulp-pngquant');
 const changed = require('gulp-changed');
+const imagemin = require('gulp-imagemin');
 const { watch } = require('gulp');
 
 function compress(cb) {
@@ -30,7 +31,7 @@ exports.build = series(compress, watchImages);
 function compressChanged(cb) {
    return src('../_images-raw/*.png')
       // filtering pipe to 'changed; files
-     .pipe(changed('Users/joshsmac/Documents/WS-2020/_images-raw/*.png'))
+     .pipe(changed('../_images-raw/*.png'))
      .pipe(gulpPngquant({
       quality: '65-80'
      }))
@@ -40,7 +41,7 @@ function compressChanged(cb) {
 }
 
 function watchImages() {
-  watch('docs/resources/images', compressChanged);
+  watch('../_images-raw/*.png', compressChanged);
 };
 
 exports.watchImages = watchImages

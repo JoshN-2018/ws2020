@@ -85,6 +85,10 @@ footer h2 {
    max-width: 280px;
 }
 
+footer h2:first-child {
+   margin-bottom: 0;
+}
+
 footer .message {
    margin-bottom: 52px;
    max-width: 340px;

@@ -11,7 +11,7 @@ function compress(cb) {
      .pipe(gulpPngquant({
       quality: '65-80'
      }))
-     .pipe(dest('docs/resources/images'));
+     .pipe(dest('dist/resources/images'));
 
   cb();
 }

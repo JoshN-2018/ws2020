@@ -7,11 +7,11 @@ const changed = require('gulp-changed');
 const { watch } = require('gulp');
 
 function compress(cb) {
-   return src('resources/images/*.png')
+   return src('../_images-raw/*.png')
      .pipe(gulpPngquant({
       quality: '65-80'
      }))
-     .pipe(dest('dist/resources/images'));
+     .pipe(dest('resources/images'));
 
   cb();
 }
@@ -28,13 +28,13 @@ exports.build = series(compress, watchImages);
 // WATCH
 
 function compressChanged(cb) {
-   return src('resources/images/*.png')
+   return src('../_images-raw/*.png')
       // filtering pipe to 'changed; files
-     .pipe(changed('docs/resources/images'))
+     .pipe(changed('Users/joshsmac/Documents/WS-2020/_images-raw/*.png'))
      .pipe(gulpPngquant({
       quality: '65-80'
      }))
-     .pipe(dest('docs/resources/images'));
+     .pipe(dest('resources/images'));
 
   cb();
 }

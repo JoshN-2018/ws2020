@@ -19,7 +19,7 @@
 }
 
 #hero-section .positioning-line {
-  width: 274px;
+  /* width: 274px; */
   padding-top: var(--space-60);
 }
 
@@ -45,7 +45,7 @@
 
 
   #hero-section .positioning-line {
-    width: 424px;
+    /* width: 424px; */
     padding-top: var(--space-80);
     padding-left: var(--gap);
   }
@@ -74,11 +74,10 @@
 @media (min-width: 1920px) {
 
    #hero-section .positioning-line {
-     width: 600px;
+     /* width: 600px; */
    }
 }
 /* end of: Hero-section */
-
 
 
 

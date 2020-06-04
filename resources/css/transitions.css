@@ -259,4 +259,25 @@ footer h4:hover {
   transition: all 0.75s cubic-bezier(0.32, 0.17, 0.2, 0.99);
 }
 
-//
+
+/* positioning line animations */
+
+.line-animate {
+  transition: all 0.8s cubic-bezier(0.32, 0.17, 0.2, 0.99);
+  transition-property: transform, opacity;
+}
+
+
+.line-1 {
+  -webkit-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+.line-2 {
+  -webkit-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  transform: translateY(15px);
+  opacity: 0;
+}

@@ -134,14 +134,35 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
+// Text line by line animate
 
+var lineOnes = document.getElementsByClassName("line-1");
+var lineTwos = document.getElementsByClassName("line-2");
+var lineAnimate = document.getElementsByClassName("line-animate");
 
+function lineOneAnimater() {
+   for (var i = 0; i < lineOnes.length; i++) {
+      lineOnes[i].classList.add("line-animate");
+      lineOnes[i].classList.remove("line-1");
+   }
+}
 
+function lineTwoAnimater() {
+   for (var i = 0; i < lineTwos.length; i++) {
+      lineTwos[i].classList.add("line-animate");
+      lineTwos[i].classList.remove("line-2");
+   }
+}
 
+function LineAnimRemover() {
+   for (var i = 0; i < lineAnimate.length; i++) {
+      lineAnimate[i].classList.remove("line-animate");
+   }
+}
 
-
-
-
+setTimeout(function(){lineOneAnimater(); }, 2000);
+setTimeout(function(){lineTwoAnimater(); }, 2100);
+setTimeout(function(){LineAnimRemover(); }, 2600);
 
 
  //

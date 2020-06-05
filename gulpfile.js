@@ -42,20 +42,17 @@ function compressChangedPng(cb) {
 }
 
 function compressChangedSvg(cb) {
-   return src('../_images-raw/*')
+   return src('../_images-raw/*.svg')
       // filtering pipe to 'changed; files
      .pipe(changed('../_images-raw/*.svg'))
      .pipe(imagemin([
-          // imagemin.gifsicle({interlaced: true}),
-          imagemin.mozjpeg({quality: 75, progressive: true}),
-          // imagemin.optipng({optimizationLevel: 5}),
-          imagemin.svgo({
-              plugins: [
-                  {removeViewBox: true},
-                  {cleanupIDs: true}
-              ]
-          })
-      ]))
+      imagemin.svgo({
+          plugins: [
+              {removeViewBox: false},
+              {cleanupIDs: false}
+          ]
+      })
+  ]))
      .pipe(dest('resources/images'));
 
   cb();

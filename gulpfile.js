@@ -2,11 +2,13 @@
 
 const { series } = require('gulp');
 const { parallel } = require('gulp');
-const { src, dest } = require('gulp');
+const { src, dest, lastRun, watch } = require('gulp');
 const gulpPngquant = require('gulp-pngquant');
 const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
-const { watch } = require('gulp');
+const { gulp } = require('gulp');
+
+
 
 function compress(cb) {
    return src('../_images-raw/*.png')
@@ -27,13 +29,14 @@ exports.build = series(compress);
 
 
 
+    // src: 'src/images/**/*.{jpg,jpeg,png}',
+
 // WATCH
 
+
 function compressChangedPng(cb) {
-   return src('../_images-raw/*.png')
-      // filtering pipe to 'changed; files
-     .pipe(changed('../_images-raw/*.png'))
-     .pipe(gulpPngquant({
+   return src('../_images-raw/*.png', { since: lastRun(compressChangedPng) })
+      .pipe(gulpPngquant({
       quality: '65-80'
      }))
      .pipe(dest('resources/images'));

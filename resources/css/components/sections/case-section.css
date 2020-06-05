@@ -42,10 +42,18 @@ margin-bottom: 8px;
       height: var(--space-80);
    }
 
+   /* .override.connected-spacer {
+      height: 40px;
+   } */
+
       /* separated space */
    .separated-spacer {
       height: var(--space-120);
    }
+
+   /* .override.separated-spacer {
+      height: 80px;
+   } */
 
 
    /* sect-1  */
@@ -75,9 +83,17 @@ margin-bottom: 8px;
       height: var(--space-120);
    }
 
+   .override.connected-spacer {
+      height: 80px;
+   }
+
       /* separated space */
    .separated-spacer {
       height: var(--space-200);
+   }
+
+   .override.separated-spacer {
+      height: 160px;
    }
 
    /* sect-1  */

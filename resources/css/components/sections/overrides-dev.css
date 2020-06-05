@@ -9,7 +9,7 @@
 }
 
 /* sect-2  */
-#case-study-section.dev:nth-child(2n + 0) {
+#case-study-section.dev.second {
    padding-top: 120px;
    margin-top: -120px;
    background-image: url('../../../../resources/images/white-space.svg');
@@ -44,12 +44,26 @@
 }
 
 
+/* region medium */
+@media (min-width: 720px) {
+
+   /* sect 5 */
+   #case-study-section.dev .sect-5 .case-image {
+      margin-top: 80px; /* connected spacer for eyes */
+   }
+
+   #case-study-section.dev .sect-5 .case-image {
+      max-width: 600px;
+   }
+}
+
+
 
 /* region large */
 @media (min-width: 1100px) {
 
    /* sect-2  */
-   #case-study-section.dev:nth-child(2n + 0) {
+   #case-study-section.dev.second {
       padding-top: 420px;
       margin-top: -420px;
       background-image: url('../../../../resources/images/white-space.svg');
@@ -72,6 +86,17 @@
    }
 
 
-   /* sect-5  */
+   /* sect 5 */
+   #case-study-section.dev .sect-5 {
+      flex-direction: row;
+      align-items: top;
+      padding-top: 120px;
+   }
+
+   #case-study-section.dev .sect-5 .case-image {
+      max-width: initial;
+      width: 40%;
+      margin-left: 10%;
+   }
 
 }

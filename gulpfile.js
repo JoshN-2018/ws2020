@@ -44,11 +44,10 @@ function compressChangedPng(cb) {
   cb();
 }
 
-function compressChangedSvg(cb) {
-   return src('../_images-raw/*.svg')
-      // filtering pipe to 'changed; files
-     .pipe(changed('../_images-raw/*.svg'))
+function compressChangedImg(cb) {
+   return src('../_images-raw/*.{svg,jpeg}', { since: lastRun(compressChangedImg) })
      .pipe(imagemin([
+      imagemin.mozjpeg({quality: 65, progressive: true}),
       imagemin.svgo({
           plugins: [
               {removeViewBox: false},
@@ -61,31 +60,15 @@ function compressChangedSvg(cb) {
   cb();
 }
 
-function compressChangedJpg(cb) {
-   return src('../_images-raw/*.jpg')
-      // filtering pipe to 'changed; files
-     .pipe(changed('../_images-raw/*.jpg'))
-     .pipe(imagemin([
-          imagemin.mozjpeg({quality: 65, progressive: true}),
-      ]))
-     .pipe(dest('resources/images'));
-
-  cb();
-}
 
 function watchPng() {
   watch('../_images-raw/*.png', compressChangedPng);
 };
 
-function watchSvg() {
-  watch('../_images-raw/*.svg', compressChangedSvg);
-};
-
-function watchJpg() {
-  watch('../_images-raw/*.jpg', compressChangedJpg);
+function watchImg() {
+  watch('../_images-raw/*.{svg,jpeg}', compressChangedImg);
 };
 
 exports.watchPng = watchPng
-exports.watchSvg = watchSvg
-exports.watchJpg = watchJpg
-exports.watcher = parallel(watchPng, watchSvg, watchJpg);
+exports.watchJpg = watchImg
+exports.watcher = parallel(watchPng, watchImg);

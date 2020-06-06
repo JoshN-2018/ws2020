@@ -29,7 +29,6 @@ exports.build = series(compress);
 
 
 
-    // src: 'src/images/**/*.{jpg,jpeg,png}',
 
 // WATCH
 

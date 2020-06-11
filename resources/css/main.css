@@ -10,7 +10,7 @@
 @import 'components/navigation/overlay-menu.css';
 @import 'components/navigation/footer.css';
 @import 'components/navigation/scroll-indicator.css';
-@import 'components/navigation/end-of-page-cta.css';
+@import 'components/navigation/next-project.css';
 
 /* sections */
 @import 'components/sections/hero-section.css';

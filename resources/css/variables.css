@@ -49,6 +49,10 @@ section.dark-mode, footer.dark-mode, #overlay.dark-mode a {
    color: var(--color-white);
 }
 
+section.dark-mode a {
+   color: var(--color-white);
+}
+
 .no-rule footer hr {
    border: 1px solid var(--color-black);
 }

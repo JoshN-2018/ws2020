@@ -5,8 +5,8 @@
 
 /* region small */
 
-/* sect-2  */
-   /* image overlap effect */
+
+   /* sect 2 — image overlap effect */
 #case-study-section.dig.second {
    background-image: url('../../../../resources/images/dig-white-top.svg'), url('../../../../resources/images/dig-white-bottom.svg');
    background-position: top, bottom;
@@ -14,36 +14,35 @@
    background-repeat: no-repeat;
 }
 
+/* preparing text to work without other elements in container */
+#case-study-section.dig.third .content-text {
+   max-width: initial;
 
-/* spacing between sections */
-#case-study-section.red.third, #case-study-section.red.fourth, #case-study-section.red.fifth {
-   margin-top: var(--space-160);
 }
 
-#case-study-section.red.fourth .content-text.suck-upwards {
-   margin-top: -16px;
+#case-study-section.dig.third .content-text p {
+   max-width: 592px;
+   padding-right: 30px;
 }
 
+/* convo image */
+#case-study-section.dig.third .case-image {
+   padding-left: 10%;
+}
+
+   /* sect 5 — image overlap effect */
+   #case-study-section.dig.fifth {
+      background-image: url('../../../../resources/images/dig-white-top-fifth.svg');
+      background-position: top;
+      background-size: 100%;
+      background-color: #FEF200;
+      background-repeat: no-repeat;
+   }
 
 /* region medium */
 @media (min-width: 720px) {
-
-   /* positioning icon for storyline description */
-   #case-study-section.red .content-text {
-      max-width: initial;
-      width: 100%;
-   }
-   #case-study-section.red .content-text p {
+   #case-study-section.dig.third .content-text p {
       max-width: 592px;
-   }
-
-   #case-study-section.red .content-text img {
-      height: 75px;
-   }
-
-   /* correcting experience text in sect 4 */
-   #case-study-section.red.fourth .content-text.suck-upwards {
-      margin-top: -40px;
    }
 
 }
@@ -53,24 +52,11 @@
 /* region large */
 @media (min-width: 1100px) {
 
-   /* spacing between sections */
-   #case-study-section.red.third, #case-study-section.red.fourth, #case-study-section.red.fifth {
-      margin-top: var(--space-240);
+   /* removing shadow from right side */
+   #case-study-section.dig.third .case-image.screen-shadow {
+        filter: drop-shadow(-30px 20px 30px #EEE);
    }
 
-   /* positioning icon for storyline description */
-   #case-study-section.red .content-text p {
-      max-width: 620px;
-   }
-
-   #case-study-section.red .content-text img {
-      height: 100px;
-   }
-
-   /* correcting experience text in sect 4 */
-   #case-study-section.red.fourth .content-text.suck-upwards {
-      margin-top: -100px;
-   }
 }
 
 
@@ -79,13 +65,5 @@
 /* region oversize */
 @media (min-width: 1920px) {
 
-   /* correcting experience text in sect 4 */
-   #case-study-section.red.fourth .content-text.suck-upwards {
-      margin-top: -160px;
-   }
 
-   /* positioning icon for storyline description */
-   #case-study-section.red .content-text p {
-      max-width: 720px;
-   }
 }

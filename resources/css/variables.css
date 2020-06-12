@@ -107,6 +107,8 @@ section.dark-mode a {
    /* Container-full wrapper */
       /* this container is full-bleed for mobile and tablet but reverts to standard container after 1100px */
    /* region small */
+
+
 .container-full {
    margin: 0 auto;
    padding: 0; /* 30px */
@@ -152,6 +154,11 @@ section.dark-mode a {
 .hero-shadow {
   filter: drop-shadow(-20px 60px 30px var(--color-black));
 }
+
+.screen-shadow {
+  filter: drop-shadow(0px 20px 30px #EEE);
+}
+
 
    /* Keyboard navigation */
 a:focus {

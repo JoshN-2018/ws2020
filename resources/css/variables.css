@@ -149,6 +149,10 @@ section.dark-mode a {
    border: 1px solid var(--color-v-light-grey);
 }
 
+.hero-shadow {
+  filter: drop-shadow(-20px 60px 30px var(--color-black));
+}
+
    /* Keyboard navigation */
 a:focus {
    outline: none;

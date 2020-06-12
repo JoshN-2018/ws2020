@@ -85,6 +85,11 @@ margin-bottom: 8px;
       height: var(--space-120);
    }
 
+      /* connected space tight*/
+   .connected-spacer-tight {
+      height: var(--space-60);
+   }
+
    .override.connected-spacer {
       height: 80px;
    }

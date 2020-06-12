@@ -27,6 +27,7 @@
 @import 'components/sections/overrides-deu.css';
 @import 'components/sections/overrides-dev.css';
 @import 'components/sections/overrides-red.css';
+@import 'components/sections/overrides-dig.css';
 
 /* box sizing  */
 -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */

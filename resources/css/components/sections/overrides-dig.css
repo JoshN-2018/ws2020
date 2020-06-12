@@ -1,36 +1,15 @@
-/* Overrides RedBull */
+/* Overrides Digital currencies */
 
-   /* all rules require .red */
+   /* all rules require .dig */
 
 
 /* region small */
 
 /* sect-2  */
-#case-study-section.red.second {
-   background-image: url('../../../../resources/images/red-white-top.svg'), url('../../../../resources/images/red-white-bottom.svg');
+   /* image overlap effect */
+#case-study-section.dig.second {
+   background-image: url('../../../../resources/images/dig-white-top.svg'), url('../../../../resources/images/dig-white-bottom.svg');
    background-position: top, bottom;
-   background-size: 100%;
-   background-repeat: no-repeat;
-}
-
-
-#case-study-section.red .container-flex {
-   justify-content: space-between;
-   align-items: flex-start;
-}
-
-
-/* image overlap effect */
-#case-study-section.red.third, #case-study-section.red.fourth {
-   background-image: url('../../../../resources/images/red-white-top.svg'), url('../../../../resources/images/red-white-bottom.svg');
-   background-position: top, bottom;
-   background-size: 100%;
-   background-repeat: no-repeat;
-}
-
-#case-study-section.red.fifth {
-   background-image: url('../../../../resources/images/red-white-top.svg');
-   background-position: top;
    background-size: 100%;
    background-repeat: no-repeat;
 }

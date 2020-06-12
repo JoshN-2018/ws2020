@@ -14,7 +14,7 @@
    margin-top: -120px;
    background-image: url('../../../../resources/images/white-space.svg');
    background-position: bottom;
-   background-size: contain;
+   background-size: 100%;
    background-repeat: no-repeat;
    padding-bottom: 0;
 }
@@ -25,7 +25,7 @@
 #case-study-section.dev.dev-fill {
    background-image: url('../../../../resources/images/dev-white-mobile.svg'), url('../../../../resources/images/dev-black-forms.svg');
    background-position: top, bottom;
-   background-size: contain;
+   background-size: 100%;
    background-repeat: no-repeat;
 }
 
@@ -68,7 +68,7 @@
       margin-top: -420px;
       background-image: url('../../../../resources/images/white-space.svg');
       background-position: bottom;
-      background-size: contain;
+      background-size: 100%;
       background-repeat: no-repeat;
       padding-bottom: 0;
    }

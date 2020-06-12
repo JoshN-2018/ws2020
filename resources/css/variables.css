@@ -75,6 +75,8 @@ section.dark-mode a {
 }
    /* end of: Flex wrapper */
 
+
+
    /* Container wrapper */
    /* region small */
 .container {
@@ -100,6 +102,37 @@ section.dark-mode a {
    }
 }
    /* end of: Container wrapper */
+
+
+   /* Container-full wrapper */
+      /* this container is full-bleed for mobile and tablet but reverts to standard container after 1100px */
+   /* region small */
+.container-full {
+   margin: 0 auto;
+   padding: 0; /* 30px */
+   overflow: hidden;
+   max-width: 1440px;
+   position: relative;
+}
+
+
+   /* region medium */
+@media (min-width: 720px) {
+   .container-full {
+      padding: 0;
+   }
+}
+
+   /* region large */
+@media (min-width: 1100px) {
+    .container-full {
+      padding: 0 10.75rem;  /* 172px */
+   }
+}
+   /* end of: Container-full wrapper */
+
+
+
 
 /* end of: Global Structure Elements */
 

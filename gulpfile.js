@@ -44,9 +44,9 @@ function compressChangedPng(cb) {
 }
 
 function compressChangedImg(cb) {
-   return src('../_images-raw/*.{svg,jpeg}', { since: lastRun(compressChangedImg) })
+   return src('../_images-raw/*.{svg,jpg,jpeg}', { since: lastRun(compressChangedImg) })
      .pipe(imagemin([
-      imagemin.mozjpeg({quality: 65, progressive: true}),
+      imagemin.mozjpeg({quality: 75, progressive: true}),
       imagemin.svgo({
           plugins: [
               {removeViewBox: false},
@@ -65,7 +65,7 @@ function watchPng() {
 };
 
 function watchImg() {
-  watch('../_images-raw/*.{svg,jpeg}', compressChangedImg);
+  watch('../_images-raw/*.{svg,jpg,jpeg}', compressChangedImg);
 };
 
 exports.watchPng = watchPng

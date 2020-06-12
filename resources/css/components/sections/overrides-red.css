@@ -4,57 +4,69 @@
 
 
 /* region small */
-#case-study-section.dev-fill {
-   background-color: #FFE400;
-}
 
 /* sect-2  */
-#case-study-section.dev.second {
-   padding-top: 120px;
-   margin-top: -120px;
-   background-image: url('../../../../resources/images/white-space.svg');
-   background-position: bottom;
-   background-size: contain;
-   background-repeat: no-repeat;
-   padding-bottom: 0;
-}
-
-
-/* sect 4 */
-   /* contains a white bg-image at the top and a black one at the bottom */
-#case-study-section.dev.dev-fill {
-   background-image: url('../../../../resources/images/dev-white-mobile.svg'), url('../../../../resources/images/dev-black-forms.svg');
+#case-study-section.red.second {
+   background-image: url('../../../../resources/images/red-white-top.svg'), url('../../../../resources/images/red-white-bottom.svg');
    background-position: top, bottom;
-   background-size: contain;
+   background-size: 100%;
    background-repeat: no-repeat;
 }
 
-#case-study-section.dev .sect-4 .connected-spacer {
-   height: 16px;
+
+#case-study-section.red .container-flex {
+   justify-content: space-between;
+   align-items: flex-start;
 }
 
 
-/* sect 5 */
-#case-study-section.dev .sect-5 {
-   flex-direction: column;
+/* image overlap effect */
+#case-study-section.red.third, #case-study-section.red.fourth {
+   background-image: url('../../../../resources/images/red-white-top.svg'), url('../../../../resources/images/red-white-bottom.svg');
+   background-position: top, bottom;
+   background-size: 100%;
+   background-repeat: no-repeat;
 }
 
-#case-study-section.dev .sect-5 .case-image {
-   margin-top: 60px; /* connected spacer for eyes */
+#case-study-section.red.fifth {
+   background-image: url('../../../../resources/images/red-white-top.svg');
+   background-position: top;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+
+/* spacing between sections */
+#case-study-section.red.third, #case-study-section.red.fourth, #case-study-section.red.fifth {
+   margin-top: var(--space-160);
+}
+
+#case-study-section.red.fourth .content-text.suck-upwards {
+   margin-top: -16px;
 }
 
 
 /* region medium */
 @media (min-width: 720px) {
 
-   /* sect 5 */
-   #case-study-section.dev .sect-5 .case-image {
-      margin-top: 80px; /* connected spacer for eyes */
+   /* positioning icon for storyline description */
+   #case-study-section.red .content-text {
+      max-width: initial;
+      width: 100%;
+   }
+   #case-study-section.red .content-text p {
+      max-width: 592px;
    }
 
-   #case-study-section.dev .sect-5 .case-image {
-      max-width: 600px;
+   #case-study-section.red .content-text img {
+      height: 75px;
    }
+
+   /* correcting experience text in sect 4 */
+   #case-study-section.red.fourth .content-text.suck-upwards {
+      margin-top: -40px;
+   }
+
 }
 
 
@@ -62,41 +74,34 @@
 /* region large */
 @media (min-width: 1100px) {
 
-   /* sect-2  */
-   #case-study-section.dev.second {
-      padding-top: 420px;
-      margin-top: -420px;
-      background-image: url('../../../../resources/images/white-space.svg');
-      background-position: bottom;
-      background-size: contain;
-      background-repeat: no-repeat;
-      padding-bottom: 0;
+   /* spacing between sections */
+   #case-study-section.red.third, #case-study-section.red.fourth, #case-study-section.red.fifth {
+      margin-top: var(--space-240);
    }
 
-   /* sect-3 */
-
-   #case-study-section.dev .sect-3 .content-text  {
-      margin-top: -40px;
-      /* color: red; */
+   /* positioning icon for storyline description */
+   #case-study-section.red .content-text p {
+      max-width: 620px;
    }
 
-   /* sect-4  */
-   #case-study-section.dev .sect-4 img:first-child {
-      /* margin-top: -200px; */
+   #case-study-section.red .content-text img {
+      height: 100px;
    }
 
-
-   /* sect 5 */
-   #case-study-section.dev .sect-5 {
-      flex-direction: row;
-      align-items: top;
-      padding-top: 120px;
+   /* correcting experience text in sect 4 */
+   #case-study-section.red.fourth .content-text.suck-upwards {
+      margin-top: -100px;
    }
+}
 
-   #case-study-section.dev .sect-5 .case-image {
-      max-width: initial;
-      width: 40%;
-      margin-left: 10%;
+
+
+
+/* region oversize */
+@media (min-width: 1920px) {
+
+   /* correcting experience text in sect 4 */
+   #case-study-section.red.fourth .content-text.suck-upwards {
+      margin-top: -160px;
    }
-
 }

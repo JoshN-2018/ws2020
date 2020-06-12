@@ -13,6 +13,11 @@
    height: var(--space-60);
 }
 
+   /* connected space tight*/
+.connected-spacer-tight {
+   height: var(--space-32);
+}
+
    /* separated space */
 .separated-spacer {
    height: var(--space-100);
@@ -42,18 +47,15 @@ margin-bottom: 8px;
       height: var(--space-80);
    }
 
-   /* .override.connected-spacer {
-      height: 40px;
-   } */
+      /* connected space tight*/
+   .connected-spacer-tight {
+      height: var(--space-52);
+   }
 
       /* separated space */
    .separated-spacer {
       height: var(--space-120);
    }
-
-   /* .override.separated-spacer {
-      height: 80px;
-   } */
 
 
    /* sect-1  */

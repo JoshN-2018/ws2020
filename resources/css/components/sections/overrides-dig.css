@@ -15,15 +15,13 @@
 }
 
 /* removing max-width property in order to make the element 100% and therefore restore left alignment. (without other elements to stretch parent .container) This breaks normal behaviour*/
-#case-study-section.dig.third .content-text p {
+#case-study-section.dig.third .content-text {
    max-width: initial;
-   color: red;
 }
 
-/* recreating normal behaviour on .content-text */
-#case-study-section.dig.third .content-text p {
-   max-width: 592px;
-   padding-right: 30px;
+/* same again for the fifth section */
+#case-study-section.dig.fifth .content-text.solo {
+   max-width: initial;
 }
 
 /* convo image */
@@ -49,6 +47,10 @@
       max-width: 592px;
    }
 
+   #case-study-section.dig.fifth .content-text.solo p {
+      max-width: 592px;
+   }
+
 }
 
 
@@ -66,6 +68,10 @@
       max-width: 620px;
    }
 
+   #case-study-section.dig.fifth .content-text.solo p {
+      max-width: 620px;
+   }
+
 }
 
 
@@ -76,6 +82,10 @@
 
    /* recreating normal behaviour on .content-text */
    #case-study-section.dig.third .content-text p {
+      max-width: 720px;
+   }
+
+   #case-study-section.dig.fifth .content-text.solo p {
       max-width: 720px;
    }
 

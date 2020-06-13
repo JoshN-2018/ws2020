@@ -49,11 +49,12 @@
 /* region medium */
 @media (min-width: 720px) {
 
-   /* positioning icon for storyline description */
+   /* removing max-width property in order to make the element 100% and position the icon (this breaks normal behaviour) */
    #case-study-section.red .content-text {
       max-width: initial;
       width: 100%;
    }
+   /* recreating normal behaviour on .content-text */
    #case-study-section.red .content-text p {
       max-width: 592px;
    }
@@ -79,7 +80,7 @@
       margin-top: var(--space-240);
    }
 
-   /* positioning icon for storyline description */
+   /* recreating normal behaviour on .content-text */
    #case-study-section.red .content-text p {
       max-width: 620px;
    }
@@ -105,7 +106,7 @@
       margin-top: -160px;
    }
 
-   /* positioning icon for storyline description */
+   /* recreating normal behaviour on .content-text */
    #case-study-section.red .content-text p {
       max-width: 720px;
    }

@@ -14,12 +14,13 @@
    background-repeat: no-repeat;
 }
 
-/* preparing text to work without other elements in container */
-#case-study-section.dig.third .content-text {
+/* removing max-width property in order to make the element 100% and therefore restore left alignment. (without other elements to stretch parent .container) This breaks normal behaviour*/
+#case-study-section.dig.third .content-text p {
    max-width: initial;
-
+   color: red;
 }
 
+/* recreating normal behaviour on .content-text */
 #case-study-section.dig.third .content-text p {
    max-width: 592px;
    padding-right: 30px;
@@ -30,17 +31,20 @@
    padding-left: 10%;
 }
 
-   /* sect 5 — image overlap effect */
-   #case-study-section.dig.fifth {
-      background-image: url('../../../../resources/images/dig-white-top-fifth.svg');
-      background-position: top;
-      background-size: 100%;
-      background-color: #FEF200;
-      background-repeat: no-repeat;
-   }
+/* sect 5 — image overlap effect */
+#case-study-section.dig.fifth {
+   background-image: url('../../../../resources/images/dig-white-top-fifth.svg');
+   background-position: top;
+   background-size: 100%;
+   background-color: #FEF200;
+   background-repeat: no-repeat;
+}
+
+
 
 /* region medium */
 @media (min-width: 720px) {
+   /* recreating normal behaviour on .content-text */
    #case-study-section.dig.third .content-text p {
       max-width: 592px;
    }
@@ -57,6 +61,11 @@
         filter: drop-shadow(-30px 20px 30px #EEE);
    }
 
+   /* recreating normal behaviour on .content-text */
+   #case-study-section.dig.third .content-text p {
+      max-width: 620px;
+   }
+
 }
 
 
@@ -65,5 +74,9 @@
 /* region oversize */
 @media (min-width: 1920px) {
 
+   /* recreating normal behaviour on .content-text */
+   #case-study-section.dig.third .content-text p {
+      max-width: 720px;
+   }
 
 }

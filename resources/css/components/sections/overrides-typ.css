@@ -1,0 +1,31 @@
+/* Overrides TypeCraft */
+
+   /* all rules require .typ */
+
+
+/* region small */
+a.typ {
+   border-bottom: 1px solid var(--color-white);
+}
+
+
+
+/* region medium */
+@media (min-width: 720px) {
+
+}
+
+
+
+/* region large */
+@media (min-width: 1100px) {
+
+}
+
+
+
+/* region oversize */
+@media (min-width: 1920px) {
+
+
+}

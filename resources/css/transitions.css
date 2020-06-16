@@ -33,6 +33,15 @@ button:hover {
   opacity: 0.3;
 }
 
+/* cards hover */
+
+.case-card img {
+   transition: filter 1s ease;
+}
+.case-card img:hover {
+  filter: grayscale(100%);
+}
+
 /* logo hover */
 nav .logo {
   /* this was causing nav animation! */

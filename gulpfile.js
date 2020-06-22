@@ -1,4 +1,4 @@
-
+// Plugins
 
 const { series } = require('gulp');
 const { parallel } = require('gulp');
@@ -8,13 +8,15 @@ const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
 const { gulp } = require('gulp');
 const autoprefixer = require('gulp-autoprefixer');
+const htmlmin = require('gulp-htmlmin');
+const removeHtmlComments = require('gulp-remove-html-comments');
 
 
 
 
 // Prefix
 function prefix(cb) {
-   return src('resources/css/**/*.css')
+   return src('resources/css/**/*.css') // will search through all sub folders
       .pipe(autoprefixer({
           cascade: true
       }))
@@ -24,6 +26,27 @@ function prefix(cb) {
 }
 exports.prefix = prefix
 
+// Clean
+// function clean(cb) {
+//   return src('./**/*.html')
+//       .pipe(htmlmin({ collapseWhitespace: true
+//       }))
+//     .pipe(dest('public'));
+//
+//   cb();
+// }
+
+// decomment
+function clean(cb) {
+  return src('./**/*.html')
+  .pipe(removeHtmlComments())
+    .pipe(dest('public'));
+
+  cb();
+}
+
+exports.clean = clean
+exports.tidy = series(prefix);
 
 
 // WATCH

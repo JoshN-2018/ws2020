@@ -11,6 +11,8 @@
 @import 'components/navigation/footer.css';
 @import 'components/navigation/scroll-indicator.css';
 @import 'components/navigation/next-project.css';
+@import 'components/navigation/pw-panel.css';
+
 
 /* sections */
 @import 'components/sections/hero-section.css';

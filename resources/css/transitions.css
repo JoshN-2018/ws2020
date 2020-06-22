@@ -3,8 +3,6 @@
 /* hover states */
 
 button:hover {
-  -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
   transform: scale(1.03);
 }
 
@@ -14,8 +12,6 @@ button:hover {
 }
 
 .social-icons img:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -88,7 +84,6 @@ footer h4:hover {
 .strike {
   display: inline-block;
   position: relative;
-  /* and this was causing nav animation! */
   transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -102,21 +97,13 @@ footer h4:hover {
   margin-top: 32px;
   margin-left: -10%;
   background-color: var(--color-black);
-  -webkit-transform-origin: right;
-  -ms-transform-origin: right;
   transform-origin: right;
-  -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
   transform: scaleX(0);
   transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .strike:hover:before {
-  -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
   transform: scaleX(1);
-  -webkit-transform-origin: left;
-  -ms-transform-origin: left;
   transform-origin: left;
 }
 
@@ -142,21 +129,13 @@ footer h4:hover {
   margin-top: 1.9rem;
   background-color: var(--color-black);
   mix-blend-mode: multiply;
-  -webkit-transform-origin: right;
-  -ms-transform-origin: right;
   transform-origin: right;
-  -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
   transform: scaleX(0);
   transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .strike-big:hover:before {
-  -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
   transform: scaleX(1);
-  -webkit-transform-origin: left;
-  -ms-transform-origin: left;
   transform-origin: left;
 }
 
@@ -183,7 +162,6 @@ footer h4:hover {
 .strike-overlay {
   display: inline-block;
   position: relative;
-  /* and this was causing nav animation! */
   transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -197,21 +175,13 @@ footer h4:hover {
   margin-top: 20px;
   margin-left: -10%;
   background-color: var(--color-white);
-  -webkit-transform-origin: right;
-  -ms-transform-origin: right;
   transform-origin: right;
-  -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
   transform: scaleX(0);
   transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .strike-overlay:hover:before {
-  -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
   transform: scaleX(1);
-  -webkit-transform-origin: left;
-  -ms-transform-origin: left;
   transform-origin: left;
 }
 
@@ -251,29 +221,21 @@ footer h4:hover {
 
 /* js classes */
 .offsetAn1 {
-  -webkit-transform: translateY(35px);
-  -ms-transform: translateY(35px);
   transform: translateY(35px);
   opacity: 0;
 }
 
 .offsetAn2 {
-  -webkit-transform: translateY(35px);
-  -ms-transform: translateY(35px);
   transform: translateY(35px);
   opacity: 0;
 }
 
 .offsetAn3 {
-  -webkit-transform: translateY(35px);
-  -ms-transform: translateY(35px);
   transform: translateY(35px);
   opacity: 0;
 }
 
 .offsetAn4 {
-  -webkit-transform: translateY(35px);
-  -ms-transform: translateY(35px);
   transform: translateY(35px);
   opacity: 0;
 }
@@ -293,15 +255,11 @@ footer h4:hover {
 
 
 .line-1 {
-  -webkit-transform: translateY(15px);
-  -ms-transform: translateY(15px);
   transform: translateY(15px);
   opacity: 0;
 }
 
 .line-2 {
-  -webkit-transform: translateY(15px);
-  -ms-transform: translateY(15px);
   transform: translateY(15px);
   opacity: 0;
 }

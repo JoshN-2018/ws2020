@@ -1,4 +1,4 @@
-// RUN
+
 
 const { series } = require('gulp');
 const { parallel } = require('gulp');
@@ -7,32 +7,22 @@ const gulpPngquant = require('gulp-pngquant');
 const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
 const { gulp } = require('gulp');
+const autoprefixer = require('gulp-autoprefixer');
 
-
-
-function compress(cb) {
-   return src('../_images-raw/*.png')
-     .pipe(gulpPngquant({
-      quality: '65-80'
-     }))
-     .pipe(dest('resources/images'));
+// Prefix
+function prefix(cb) {
+   return src('resources/css/**/*.css')
+      .pipe(autoprefixer({
+          cascade: true
+      }))
+     .pipe(dest('public/resources/css'));
 
   cb();
 }
 
-// exposing the task
-exports.compress = compress
-
-// exposing a task called build which calls whatever tasks are placed in the folder
-
-exports.build = series(compress);
-
-
-
+exports.prefix = prefix
 
 // WATCH
-
-
 function compressChangedPng(cb) {
    return src('../_images-raw/*.png', { since: lastRun(compressChangedPng) })
       .pipe(gulpPngquant({

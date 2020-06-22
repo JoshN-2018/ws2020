@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "sergey",
+    "poststart": "gulp prefix",
     "dev": "sergey --watch"
   },
   "repository": {
@@ -26,6 +27,7 @@
     "autoprefixer": "^9.8.0",
     "gulp": "^4.0.2",
     "gulp-abraia": "^0.7.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-changed": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",

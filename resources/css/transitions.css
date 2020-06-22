@@ -6,21 +6,6 @@ button:hover {
   transform: scale(1.03);
 }
 
-/* social icons hover */
-.social-icons img {
-  transition: all 0.3s ease;
-}
-
-.social-icons img:hover {
-  transform: scale(1.1);
-}
-
-/* next project arrows */
-.arrow-right,
-.arrow-left {
-  /* transition: all 0.3s ease; */
-}
-
 .arrow-right:hover {
   opacity: 0.3;
 }

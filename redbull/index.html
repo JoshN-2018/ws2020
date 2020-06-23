@@ -8,16 +8,21 @@
 
 
     <!-- password required -->
-
-    <div id="pw-bg" class="container-flex">
-      <div class="pw-panel container screen-shadow">
-         <h2 class="h4-sans">Password required (sorry).</h2>
-         <input type="text" name="pw-field" value="**********">
-         <p class="body-detail">Unfortunately the password you entered is incorrect.</p>
-         <button class="button white" type="button" name="button">Submit</button>
+    <div class="container-flex pw wrapper">
+      <div class="pw-panel">
+         <h2 class="h4-sans">Password required. (sorry)</h2>
+         <input id="pw-input" type="text" name="pw-field" placeholder="•••••••••••••">
+         <div class="pw-error-box">
+            <p id="pw-error" class="body-detail">Unfortunately the password you entered is incorrect.</p>
+         </div>
+         <div class="container-flex">
+            <button onclick="pwSubmit()" class="button white" type="button" name="button">Submit</button>
+         </div>
       </div>
-
     </div>
+
+    <div id="pw-bg"></div>
+
 
 
     <!-- Hero-section -->
@@ -103,30 +108,8 @@
 
 
 
-
-
-
-
-
-  <section id="next-project" class="dark-mode">
-     <div class="container container-flex">
-        <div class="content-left container-flex">
-            <img src="../resources/images/arrow-left.svg" alt="arrow-left">
-            <p class="body-tight">
-               <a href="../index.html#showcase-section">Return&nbsp;to&nbsp;work</a>
-            </p>
-        </div>
-        <div class="content-right container-flex">
-            <p class="body-tight">
-               <a href="../de-voorhoede/index.html">Show&nbsp;me&nbsp;more</a>
-            </p>
-            <img src="../resources/images/arrow-right.svg" alt="arrow-right">
-        </div>
-     </div>
-  </section>
-
-
-<sergey-import src="footer.html" />
 <sergey-import src="page-end.html" />
+<script src="../resources/js/pw.js"></script>
+
 </body>
 </html>

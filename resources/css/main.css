@@ -31,8 +31,3 @@
 @import 'components/sections/overrides-red.css';
 @import 'components/sections/overrides-dig.css';
 @import 'components/sections/overrides-typ.css';
-
-/* box sizing  */
--webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;         /* Opera/IE 8+ */

@@ -89,7 +89,7 @@
 
    #showcase-section .container-flex {
       padding-top: var(--space-52);
-      /* max-width: 1096px; */
+      max-width: 1096px;
       margin: 0 auto;
    }
 

@@ -38,13 +38,13 @@
 /* Global Structure Elements */
 
 /* box sizing */
-html {
+/* html {
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
-}
+} */
 
 
 .dark-mode {

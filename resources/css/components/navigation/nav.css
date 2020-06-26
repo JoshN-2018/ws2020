@@ -43,7 +43,7 @@ flex-grow: 1;
    }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 1700px) {
    nav div.container-flex {
    padding: 3rem 0rem 0 0;
    }

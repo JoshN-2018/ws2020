@@ -32,7 +32,6 @@
 }
 
 .pw-panel {
-   width: calc(100% - 60px);
    background-color: var(--color-white);
    padding: 42px 24px 52px 24px;
    max-width: 534px;
@@ -51,8 +50,8 @@
 
 /* elements */
 .pw-panel input {
-   height: 60px;
-   width: 100%;
+   height: calc(60px - 40px);
+   width: calc(100% - 40px);
    border-radius: 3px;
    border: 1px solid var(--color-light-grey);
    margin-top: 32px;

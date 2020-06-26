@@ -99,10 +99,19 @@ section.dark-mode a {
    /* region large */
 @media (min-width: 1100px) {
     .container {
-      padding: 0 10.75rem;  /* 172px */
+      padding: 0 10.75rem;
    }
 }
-   /* end of: Container wrapper */
+
+   /* region oversize */
+@media (min-width: 1440px) {
+    .container {
+      padding: 0rem;
+   }
+}
+
+
+/* end of: Container wrapper */
 
 
    /* Container-full wrapper */

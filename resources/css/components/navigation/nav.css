@@ -42,4 +42,14 @@ flex-grow: 1;
       height: 1.75rem;
    }
 }
+
+@media (min-width: 1680px) {
+   nav div.container-flex {
+   padding: 3rem 0rem 0 0;
+   }
+
+   nav .logo img {
+      height: 1.75rem;
+   }
+}
 /* end of: App-header */

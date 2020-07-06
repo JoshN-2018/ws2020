@@ -42,11 +42,20 @@ a:visited {
 
 
 
-@font-face {
+/* @font-face {
   font-family: "serif bold";
 
   src: url("../fonts/serif-headline-web-bold.woff2") format("woff2"),
     url("../fonts/serif-headline-web-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "serif bold";
+
+
+  src: url("../fonts/financier-display-test-bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -271,7 +280,7 @@ strong {
     line-height: 1.5;
   }
   .body-detail {
-     font-size: 12px; 
+     font-size: 12px;
      line-height: 1.5;
      text-align: right;
   }

@@ -42,23 +42,15 @@ a:visited {
 
 
 
-/* @font-face {
+@font-face {
   font-family: "serif bold";
 
   src: url("../fonts/serif-headline-web-bold.woff2") format("woff2"),
     url("../fonts/serif-headline-web-bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-} */
-
-@font-face {
-  font-family: "serif bold";
-
-
-  src: url("../fonts/financier-display-test-bold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
 }
+
 
 @font-face {
   font-family: "untitled medium";
@@ -81,8 +73,8 @@ a:visited {
 @font-face {
   font-family: "untitled light";
 
-  src: url("../fonts/SF-Pro-Display-Light.woff2") format("woff2"),
-    url("../fonts/SF-Pro-Display-Light.woff") format("woff");
+  src: url("../fonts/untitled-sans-web-light.woff2") format("woff2"),
+    url("../fonts/untitled-sans-web-light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -105,8 +97,7 @@ color: var(--color-text);
 /* hero messaging */
 .body-big-loose {
    font-family: 'untitled light', sans-serif;
-   font-weight: lighter;
-   letter-spacing: 1.8px;
+   font-weight: normal;
 }
 
 strong {

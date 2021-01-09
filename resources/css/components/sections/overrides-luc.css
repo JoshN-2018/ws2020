@@ -5,19 +5,44 @@
 
 /* region small */
 
+/* sect-1  */
+#case-study-section.luc.first .container-flex {
+   flex-direction: column;
+}
+
+#case-study-section.luc.first .icon-housing {
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: var(--space-32);
+}
+
+#case-study-section.luc.first .icon-housing img {
+   height: 69px;
+   margin-bottom: 8px;
+}
+
+#case-study-section.luc.first .h2 {
+   margin-bottom: 8px;
+}
+
+
+
 /* sect-2  */
-#case-study-section.red.second {
-   background-image: url('../../../../resources/images/red-white-top.svg'), url('../../../../resources/images/red-white-bottom.svg');
-   background-position: top, bottom;
+#case-study-section.luc.second {
+   background-image: url('../../../../resources/images/luc-white-top-pdw_s.svg');
+   background-position: top;
    background-size: 100%;
    background-repeat: no-repeat;
 }
 
-
-#case-study-section.red .container-flex {
-   justify-content: space-between;
-   align-items: flex-start;
+/*region ml version
+#case-study-section.luc.second {
+   background-image: url('../../../../resources/images/luc-white-top-pdw_ml.svg');
+   background-position: top;
+   background-size: 100%;
+   background-repeat: no-repeat;
 }
+*/
 
 
 /* image overlap effect */

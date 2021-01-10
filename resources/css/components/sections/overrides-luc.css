@@ -1,6 +1,6 @@
-/* Overrides RedBull */
+/* Overrides Lucid motors */
 
-   /* all rules require .red */
+   /* all rules require .luc */
 
 
 /* region small */
@@ -10,13 +10,13 @@
    flex-direction: column;
 }
 
-#case-study-section.luc.first .icon-housing {
+#case-study-section.luc .icon-housing {
    flex-direction: row;
    justify-content: space-between;
    margin-top: var(--space-32);
 }
 
-#case-study-section.luc.first .icon-housing img {
+#case-study-section.luc .icon-housing img {
    height: 69px;
    margin-bottom: 8px;
 }
@@ -44,7 +44,7 @@
 }
 */
 
-
+/* sect: full bleed  */
 .luc .cover-img img {
    height: 500px;
    width: 100%;
@@ -53,119 +53,13 @@
 }
 
 
-/* image overlap effect */
-#case-study-section.red.third, #case-study-section.red.fourth {
-   background-image: url('../../../../resources/images/red-white-top.svg'), url('../../../../resources/images/red-white-bottom.svg');
-   background-position: top, bottom;
-   background-size: 100%;
-   background-repeat: no-repeat;
-}
-
-#case-study-section.red.fifth {
-   background-image: url('../../../../resources/images/red-white-top.svg');
-   background-position: top;
-   background-size: 100%;
-   background-repeat: no-repeat;
-}
 
 
-/* spacing between sections */
-#case-study-section.red.third, #case-study-section.red.fourth, #case-study-section.red.fifth {
-   margin-top: var(--space-160);
-}
-
-#case-study-section.red.fourth .content-text.suck-upwards {
-   margin-top: -16px;
-}
-
-#case-study-section.red .sect-5 {
+/* sect-3  */
+#case-study-section.luc.second .container-flex {
    flex-direction: column;
 }
 
-
-
-/* region medium */
-@media (min-width: 720px) {
-
-   /* removing max-width property in order to make the element 100% and position the icon (this breaks normal behaviour) */
-   #case-study-section.red .content-text {
-      max-width: initial;
-      width: 100%;
-   }
-   /* recreating normal behaviour on .content-text */
-   #case-study-section.red .content-text p {
-      max-width: 592px;
-   }
-
-   #case-study-section.red .content-text img {
-      height: 75px;
-   }
-
-   #case-study-section.red .sect-5 .content-text img {
-      height: 60px;
-   }
-
-   /* correcting experience text in sect 4 */
-   #case-study-section.red.fourth .content-text.suck-upwards {
-      margin-top: -40px;
-   }
-
-   #case-study-section.red .sect-5 {
-      flex-direction: row;
-   }
-
-   #case-study-section.red .sect-5 .content-text:nth-child(1n+3) {
-      margin-left: 5%;
-   }
-
-}
-
-
-
-/* region large */
-@media (min-width: 1100px) {
-
-   /* spacing between sections */
-   #case-study-section.red.third, #case-study-section.red.fourth, #case-study-section.red.fifth {
-      margin-top: var(--space-240);
-   }
-
-   /* recreating normal behaviour on .content-text */
-   #case-study-section.red .content-text p {
-      max-width: 620px;
-   }
-
-   #case-study-section.red .content-text img {
-      height: 100px;
-   }
-
-   #case-study-section.red .sect-5 .content-text img {
-      height: 70px;
-   }
-
-   /* correcting experience text in sect 4 */
-   #case-study-section.red.fourth .content-text.suck-upwards {
-      margin-top: -100px;
-   }
-}
-
-
-
-
-/* region oversize */
-@media (min-width: 1920px) {
-
-   /* correcting experience text in sect 4 */
-   #case-study-section.red.fourth .content-text.suck-upwards {
-      margin-top: -160px;
-   }
-
-   #case-study-section.red .sect-5 .content-text img {
-      height: 90px;
-   }
-
-   /* recreating normal behaviour on .content-text */
-   #case-study-section.red .content-text p {
-      max-width: 720px;
-   }
+#case-study-section.luc.second .h2 {
+   margin-bottom: 8px;
 }

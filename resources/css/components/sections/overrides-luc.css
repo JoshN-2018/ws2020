@@ -35,23 +35,15 @@
    background-repeat: no-repeat;
 }
 
-/*region ml version
-#case-study-section.luc.second {
-   background-image: url('../../../../resources/images/luc-white-top-pdw_ml.svg');
-   background-position: top;
-   background-size: 100%;
-   background-repeat: no-repeat;
-}
-*/
+
 
 /* sect: full bleed  */
 .luc .cover-img img {
-   height: 500px;
+   height: 450px;
    width: 100%;
    object-fit: cover;
    object-position: center;
 }
-
 
 
 
@@ -63,3 +55,63 @@
 #case-study-section.luc.second .h2 {
    margin-bottom: 8px;
 }
+
+
+
+/* sect-4  */
+#case-study-section.luc.fourth {
+   background-image: url('../../../../resources/images/luc-white-top-svm_ml.svg');
+   background-position: top;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+
+
+
+/* region medium */
+
+/* sect-2  */
+@media (min-width: 720px) {
+   #case-study-section.luc.second {
+      background-image: url('../../../../resources/images/luc-white-top-pdw_ml.svg');
+      background-position: top;
+      background-size: 100%;
+      background-repeat: no-repeat;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

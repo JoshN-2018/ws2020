@@ -45,6 +45,14 @@
 */
 
 
+.luc .cover-img img {
+   height: 500px;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+
 /* image overlap effect */
 #case-study-section.red.third, #case-study-section.red.fourth {
    background-image: url('../../../../resources/images/red-white-top.svg'), url('../../../../resources/images/red-white-bottom.svg');

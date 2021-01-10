@@ -1,7 +1,7 @@
 
 /*/////////////////// Duplicated code  ////////////////*/
 
-/* Copy and paste any hero section cahnges into here and use find replace to make them hero-section-case */
+/* Copy and paste any hero section changes into here and use find replace to make them hero-section-case */
 
 
 /* Hero-section */
@@ -17,8 +17,6 @@ justify-content: space-between;
 #hero-section-case .positioning-line-cont {
 max-width: 1440px;
 position: relative;
--webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
         transform: translateX(-50%);
 left: 50%;
 padding: 0 30px;

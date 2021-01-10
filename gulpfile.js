@@ -26,17 +26,6 @@ function prefix(cb) {
 }
 exports.prefix = prefix
 
-// Clean
-// function clean(cb) {
-//   return src('./**/*.html')
-//       .pipe(htmlmin({ collapseWhitespace: true
-//       }))
-//     .pipe(dest('public'));
-//
-//   cb();
-// }
-
-// decomment
 function clean(cb) {
   return src('./**/*.html')
   .pipe(removeHtmlComments())
@@ -61,7 +50,7 @@ function compressChangedPng(cb) {
 }
 
 function compressChangedImg(cb) {
-   return src('../_images-raw/*.{svg,jpg,jpeg}', { since: lastRun(compressChangedImg) })
+   return src('../_images-raw/*.{svg,jpg,jpeg,gif}', { since: lastRun(compressChangedImg) })
      .pipe(imagemin([
       imagemin.mozjpeg({quality: 75, progressive: true}),
       imagemin.svgo({
@@ -82,7 +71,7 @@ function watchPng() {
 };
 
 function watchImg() {
-  watch('../_images-raw/*.{svg,jpg,jpeg}', compressChangedImg);
+  watch('../_images-raw/*.{svg,jpg,jpeg,gif}', compressChangedImg);
 };
 
 exports.watchPng = watchPng

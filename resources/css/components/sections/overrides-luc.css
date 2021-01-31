@@ -1,0 +1,184 @@
+/* Overrides Lucid motors */
+
+   /* all rules require .luc */
+
+
+/* region small */
+
+/* sect-1:  PDW Introduction */
+#case-study-section.luc.first .container-flex {
+   flex-direction: column;
+}
+
+#case-study-section.luc.first .icon-housing {
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: var(--space-32);
+   max-width: 375px;
+}
+
+#case-study-section.luc .icon-housing img {
+   height: 69px;
+   margin-bottom: 8px;
+}
+
+#case-study-section.luc.first .h2 {
+   margin-bottom: 8px;
+}
+
+
+
+/* sect-2  */
+#case-study-section.luc.second {
+   background-image: url('../../../../resources/images/luc-white-top-pdw_s.svg');
+   background-position: top;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+
+
+/* sect: full bleed  */
+.luc .cover-img img {
+   height: 450px;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+
+
+/* sect-3:  SVM Introduction */
+#case-study-section.luc.second .container-flex {
+   flex-direction: column;
+}
+
+#case-study-section.luc.second .h2 {
+   margin-bottom: 8px;
+}
+
+#case-study-section.luc.second .container-flex {
+   flex-direction: column;
+}
+
+#case-study-section.luc.second .icon-housing {
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: var(--space-32);
+   max-width: 375px;
+}
+
+
+
+/* sect-4  */
+#case-study-section.luc.fourth {
+   background-image: url('../../../../resources/images/luc-white-top-svm_ml.svg');
+   background-position: top;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+
+
+
+
+/* region medium */
+
+/* sect-2  */
+@media (min-width: 720px) {
+   #case-study-section.luc.second {
+      background-image: url('../../../../resources/images/luc-white-top-pdw_ml.svg');
+      background-position: top;
+      background-size: 100%;
+      background-repeat: no-repeat;
+   }
+
+   /* sect: full bleed  */
+   .luc .cover-img img {
+      height: 650px;
+   }
+
+}
+
+
+
+/* region large */
+
+@media (min-width: 1100px) {
+
+   /* sect-1:  PDW Introduction */
+   #case-study-section.luc.first .container-flex {
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   #case-study-section.luc.first .h2 {
+      margin-bottom: 24px;
+   }
+
+   #case-study-section.luc .icon-housing {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 32px;
+      margin-top: var(--space-32);
+      min-width: 400px;
+   }
+
+   #case-study-section.luc .icon-housing img {
+      height: 91px;
+      margin-bottom: 24px;
+   }
+
+
+
+   /* sect-3:  SVM Introduction */
+   #case-study-section.luc.second .container-flex {
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   /* sect: full bleed  */
+   .luc .cover-img img {
+      height: 800px;
+   }
+
+   .luc .content-video.car-interior-pdw {
+      max-width: 1440px;
+      margin: 0 auto;
+   }
+
+}
+
+
+
+/* region oversize */
+@media (min-width: 1920px) {
+   #case-study-section.luc.second {
+      background-image: url('../../../../resources/images/luc-white-top-pdw_xl.svg');
+      background-position: top;
+      background-size: 100%;
+      background-repeat: no-repeat;
+   }
+
+   /* sect: full bleed  */
+   .luc .cover-img img {
+      height: 1200px;
+      max-width:
+   }
+
+   .luc .content-video.car-interior-pdw {
+      max-width: 1600px;
+   }
+
+   .luc .content-video.car-interior-svm {
+      max-width: 1600px;
+      margin: 0 auto;
+   }
+}
+
+
+
+
+
+
+/*  */

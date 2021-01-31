@@ -1,0 +1,102 @@
+/* Overrides De Voorhoede */
+
+   /* all rules require .dev */
+
+
+/* region small */
+#case-study-section.dev-fill {
+   background-color: #FFE400;
+}
+
+/* sect-2  */
+#case-study-section.dev.second {
+   padding-top: 120px;
+   margin-top: -120px;
+   background-image: url('../../../../resources/images/white-space.svg');
+   background-position: bottom;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   padding-bottom: 0;
+}
+
+
+/* sect 4 */
+   /* contains a white bg-image at the top and a black one at the bottom */
+#case-study-section.dev.dev-fill {
+   background-image: url('../../../../resources/images/dev-white-mobile.svg'), url('../../../../resources/images/dev-black-forms.svg');
+   background-position: top, bottom;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+#case-study-section.dev .sect-4 .connected-spacer {
+   height: 16px;
+}
+
+
+/* sect 5 */
+#case-study-section.dev .sect-5 {
+   flex-direction: column;
+}
+
+#case-study-section.dev .sect-5 .case-image {
+   margin-top: 60px; /* connected spacer for eyes */
+}
+
+
+/* region medium */
+@media (min-width: 720px) {
+
+   /* sect 5 */
+   #case-study-section.dev .sect-5 .case-image {
+      margin-top: 80px; /* connected spacer for eyes */
+   }
+
+   #case-study-section.dev .sect-5 .case-image {
+      max-width: 600px;
+   }
+}
+
+
+
+/* region large */
+@media (min-width: 1100px) {
+
+   /* sect-2  */
+   #case-study-section.dev.second {
+      padding-top: 420px;
+      margin-top: -420px;
+      background-image: url('../../../../resources/images/white-space.svg');
+      background-position: bottom;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding-bottom: 0;
+   }
+
+   /* sect-3 */
+
+   #case-study-section.dev .sect-3 .content-text  {
+      margin-top: -40px;
+      /* color: red; */
+   }
+
+   /* sect-4  */
+   #case-study-section.dev .sect-4 img:first-child {
+      /* margin-top: -200px; */
+   }
+
+
+   /* sect 5 */
+   #case-study-section.dev .sect-5 {
+      flex-direction: row;
+      align-items: top;
+      padding-top: 120px;
+   }
+
+   #case-study-section.dev .sect-5 .case-image {
+      max-width: initial;
+      width: 40%;
+      margin-left: 10%;
+   }
+
+}

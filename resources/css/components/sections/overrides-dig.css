@@ -1,0 +1,96 @@
+/* Overrides Digital currencies */
+
+   /* all rules require .dig */
+
+
+/* region small */
+
+
+   /* sect 2 — image overlap effect */
+#case-study-section.dig.second {
+   background-image: url('../../../../resources/images/dig-white-top.svg'), url('../../../../resources/images/dig-white-bottom.svg');
+   background-position: top, bottom;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+/* removing max-width property in order to make the element 100% and therefore restore left alignment. (without other elements to stretch parent .container) This breaks normal behaviour*/
+#case-study-section.dig.third .content-text {
+   max-width: initial;
+}
+
+/* same again for the fifth section */
+#case-study-section.dig.fifth .content-text.solo {
+   max-width: initial;
+}
+
+/* convo image */
+#case-study-section.dig.third .case-image {
+   padding-left: 10%;
+}
+
+/* sect 5 — image overlap effect */
+#case-study-section.dig.fifth {
+   background-image: url('../../../../resources/images/dig-white-top-fifth.svg');
+   background-position: top;
+   background-size: 100%;
+   background-color: #FEF200;
+   background-repeat: no-repeat;
+}
+
+#next-project.dig {
+   background-color: #FEF200;
+}
+
+
+
+/* region medium */
+@media (min-width: 720px) {
+   /* recreating normal behaviour on .content-text */
+   #case-study-section.dig.third .content-text p {
+      max-width: 592px;
+   }
+
+   #case-study-section.dig.fifth .content-text.solo p {
+      max-width: 592px;
+   }
+
+}
+
+
+
+/* region large */
+@media (min-width: 1100px) {
+
+   /* removing shadow from right side */
+   #case-study-section.dig.third .case-image.screen-shadow {
+        filter: drop-shadow(-30px 20px 30px #EEE);
+   }
+
+   /* recreating normal behaviour on .content-text */
+   #case-study-section.dig.third .content-text p {
+      max-width: 620px;
+   }
+
+   #case-study-section.dig.fifth .content-text.solo p {
+      max-width: 620px;
+   }
+
+}
+
+
+
+
+/* region oversize */
+@media (min-width: 1920px) {
+
+   /* recreating normal behaviour on .content-text */
+   #case-study-section.dig.third .content-text p {
+      max-width: 720px;
+   }
+
+   #case-study-section.dig.fifth .content-text.solo p {
+      max-width: 720px;
+   }
+
+}

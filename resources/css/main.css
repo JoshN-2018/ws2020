@@ -1,0 +1,34 @@
+/* core css */
+@import 'reset.css';
+@import 'typography.css';
+@import 'variables.css';
+@import 'transitions.css';
+
+
+/* navigation components */
+@import 'components/navigation/nav.css';
+@import 'components/navigation/overlay-menu.css';
+@import 'components/navigation/footer.css';
+@import 'components/navigation/scroll-indicator.css';
+@import 'components/navigation/next-project.css';
+@import 'components/navigation/pw-panel.css';
+
+
+/* sections */
+@import 'components/sections/hero-section.css';
+@import 'components/sections/hero-section-case.css';
+@import 'components/sections/hero-section-default.css';
+@import 'components/sections/intro-section.css';
+@import 'components/sections/intro-section-case.css';
+@import 'components/sections/showcase-section.css';
+@import 'components/sections/case-section.css';
+@import 'components/sections/about-section.css';
+@import 'components/sections/highlights-section.css';
+
+/* case specific overrides */
+@import 'components/sections/overrides-deu.css';
+@import 'components/sections/overrides-dev.css';
+@import 'components/sections/overrides-red.css';
+@import 'components/sections/overrides-dig.css';
+@import 'components/sections/overrides-typ.css';
+@import 'components/sections/overrides-luc.css';

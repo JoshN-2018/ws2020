@@ -1,0 +1,314 @@
+/* Global transitions & interactions */
+
+/* hover states */
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.arrow-right:hover {
+  opacity: 0.3;
+}
+
+.arrow-left:hover {
+  opacity: 0.3;
+}
+
+/* cards hover */
+
+.case-card img {
+   transition: filter 1s ease;
+}
+.case-card img:hover {
+  filter: grayscale(100%);
+}
+
+/* logo hover */
+nav .logo {
+  /* this was causing nav animation! */
+  transition: opacity 0.5s ease;
+}
+
+nav .logo:hover {
+  opacity: 0.3;
+}
+
+.logo-region-m-l img {
+  transition: all 0.5s ease;
+}
+
+.logo-region-m-l img:hover {
+  opacity: 0.3;
+}
+
+/* Footer category hover */
+footer h4:hover {
+  border-width: 2px;
+}
+
+/* next-project comp */
+
+#next-project .content-left:hover {
+     opacity: 0.5;
+  }
+
+#next-project .content-right:hover {
+    opacity: 0.5;
+ }
+
+ #next-project .content-left, .content-right {
+    transition: opacity 0.5s ease;
+  }
+
+
+
+/* end of: hover states */
+
+/* Link behaviour */
+
+.strike {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.strike:before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  display: block;
+  width: 120%;
+  height: 1px;
+  margin-top: 32px;
+  margin-left: -10%;
+  background-color: var(--color-black);
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.strike:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.dark-mode .strike:before {
+  background-color: var(--color-white) !important;
+}
+
+/* Strike-big */
+/* region small */
+.strike-big {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.strike-big:before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 1.9rem;
+  background-color: var(--color-black);
+  mix-blend-mode: multiply;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.strike-big:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* region medium */
+@media (min-width: 720px) {
+  .strike-big:before {
+    height: 2px;
+    margin-top: 2.2rem;
+  }
+}
+
+/* region large */
+@media (min-width: 1100px) {
+  .strike-big:before {
+    height: 2px;
+    margin-top: 3rem;
+  }
+}
+
+
+
+/* Strike-overlay */
+/* region small */
+.strike-overlay {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.strike-overlay:before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  display: block;
+  width: 120%;
+  height: 2px;
+  margin-top: 20px;
+  margin-left: -10%;
+  background-color: var(--color-white);
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.strike-overlay:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* region medium */
+@media (min-width: 720px) {
+  .strike-overlay:before {
+     margin-top: 32px;
+  }
+}
+
+/* region large */
+@media (min-width: 1100px) {
+  .strike-overlay:before {
+     margin-top: 32px;
+  }
+}
+
+/* region oversize */
+@media (min-width: 1920px) {
+  .strike-overlay:before {
+     margin-top: 44px;
+  }
+}
+
+
+/* end of: link behaviour */
+
+/* ///////////////////    JS clasess  /////////////////*/
+
+/* toggle class for hero animations */
+
+.off {
+  display: none;
+}
+
+/* offset animations */
+
+/* js classes */
+.offsetAn1 {
+  transform: translateY(35px);
+  opacity: 0;
+}
+
+.offsetAn2 {
+  transform: translateY(35px);
+  opacity: 0;
+}
+
+.offsetAn3 {
+  transform: translateY(35px);
+  opacity: 0;
+}
+
+.offsetAn4 {
+  transform: translateY(35px);
+  opacity: 0;
+}
+/* end of: js classes */
+
+.offset-an-props {
+  transition: all 0.75s cubic-bezier(0.32, 0.17, 0.2, 0.99);
+}
+
+
+/* positioning line animations */
+
+.line-animate {
+  transition: all 0.8s cubic-bezier(0.32, 0.17, 0.2, 0.99);
+  transition-property: transform, opacity;
+}
+
+
+.line-1 {
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+.line-2 {
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+
+/* reserving space for lottie animations */
+
+/* pre-sets the height to prevent content jumping when animation plays */
+.space-save-hero {
+   min-height: 176px;
+}
+
+@media (min-width: 375px) {
+   .space-save-main {
+      min-height: 248px;
+   }
+   .space-save-default {
+      min-height: 201px;
+   }
+
+}
+
+@media (min-width: 410px) {
+   .space-save-main {
+      min-height: 270px;
+   }
+   .space-save-default {
+      min-height: 220px;
+   }
+}
+
+@media (min-width: 720px) {
+   .space-save-main {
+      min-height: 474px;
+   }
+   .space-save-default {
+      min-height: 474px;
+   }
+}
+
+@media (min-width: 1100px) {
+   .space-save-main {
+      min-height: 373px;
+   }
+   .space-save-default {
+      min-height: 483px;
+   }
+}
+
+@media (min-width: 1440px) {
+   .space-save-main {
+      min-height: 417px;
+   }
+   .space-save-default {
+      min-height: 380px;
+   }
+}
+
+@media (min-width: 1679px) {
+   .space-save-main {
+      min-height: 445px;
+   }
+   .space-save-default {
+      min-height: 443px;
+   }
+}
+/* end of: Global Styles */

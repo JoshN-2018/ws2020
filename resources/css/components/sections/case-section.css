@@ -28,6 +28,12 @@
    height: var(--space-100);
 }
 
+.center {
+   position: relative;
+           transform: translateX(-50%);
+   left: 50%;
+}
+
 
 /* sect-1  */
 #case-study-section .container.sect-1 {

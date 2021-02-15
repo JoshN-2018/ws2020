@@ -6,23 +6,6 @@
 /* region small */
 
 /* sect-1:  Explaining the concept */
-#case-study-section.lin.second {
-   background-image: url('../../../../resources/images/lin-white-top-ux_s.svg');
-   background-position: top;
-   background-size: 100%;
-   background-repeat: no-repeat;
-}
-
-#case-study-section.lin.second {
-   background-image: url('../../../../resources/images/lin-white-bottom-ux_s.svg');
-   background-position: bottom;
-   background-size: 100%;
-   background-repeat: no-repeat;
-}
-
-#case-study-section.lin.second .h2 {
-margin-bottom: 24px;
-}
 
 #case-study-section.lin.first .container-flex {
    /* border: 1px solid yellow; */
@@ -34,33 +17,31 @@ margin-bottom: 24px;
    margin-bottom: 40px;
 }
 
+#case-study-section.lin.second {
+   background-image: url('../../../../resources/images/lin-white-top-ux_s.svg'), url('../../../../resources/images/lin-white-bottom-ux_s.svg');
+   background-position: top, bottom;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+
+#case-study-section.lin.second .h2 {
+margin-bottom: 24px;
+}
+
+
+
 
 
 /* region medium */
 
 /* sect-2  */
 @media (min-width: 720px) {
-   #case-study-section.lin.second {
-      background-image: url('../../../../resources/images/lin-white-top-ux_m.svg');
-      background-position: top;
-      background-size: 100%;
-      background-repeat: no-repeat;
-   }
-
-   #case-study-section.lin.second {
-      background-image: url('../../../../resources/images/lin-white-bottom-ux_m.svg');
-      background-position: bottom;
-      background-size: 100%;
-      background-repeat: no-repeat;
-   }
-
    #case-study-section.lin.first .container-flex {
-      /* border: 1px solid yellow; */
       flex-direction: row;
    }
 
    #case-study-section.lin.first .container-flex img {
-      /* border: 1px solid yellow; */
       min-width: 250px;
       margin-left: 60px;
    }
@@ -71,6 +52,16 @@ margin-bottom: 24px;
    }
 
 
+   #case-study-section.lin.second {
+      background-image: url('../../../../resources/images/lin-white-top-ux_m.svg'), url('../../../../resources/images/lin-white-bottom-ux_m.svg');
+      background-position: top, bottom;
+      background-size: 100%;
+      background-repeat: no-repeat;
+   }
+
+   #case-study-section.lin.second img:first-of-type {
+      padding-top: 40px;
+   }
 }
 
 
@@ -79,21 +70,9 @@ margin-bottom: 24px;
 
 @media (min-width: 1100px) {
    #case-study-section.lin.first .container-flex img {
-      /* border: 1px solid yellow; */
       min-width: 300px;
       margin-left: 100px;
    }
-
-   #case-study-section.lin.second {
-      background-image: url('../../../../resources/images/lin-white-bottom-ux_l.svg');
-      background-position: bottom;
-      background-size: 100%;
-      background-repeat: no-repeat;
-   }
-
-
-
-
 }
 
 

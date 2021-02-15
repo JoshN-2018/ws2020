@@ -5,19 +5,71 @@
 
 /* region small */
 
-/* sect-1:  PDW Introduction */
+/* sect-1:  Explaining the concept */
+#case-study-section.lin.second {
+   background-image: url('../../../../resources/images/lin-white-top-ux_s.svg');
+   background-position: top;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+#case-study-section.lin.second {
+   background-image: url('../../../../resources/images/lin-white-bottom-ux_s.svg');
+   background-position: bottom;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+#case-study-section.lin.second .h2 {
+margin-bottom: 24px;
+}
+
+#case-study-section.lin.first .container-flex {
+   /* border: 1px solid yellow; */
+   flex-direction: column;
+}
+
+#case-study-section.lin.first .container-flex .content-text {
+   /* color: yellow; */
+   margin-bottom: 40px;
+}
+
 
 
 /* region medium */
 
 /* sect-2  */
 @media (min-width: 720px) {
-   #case-study-section.luc.second {
-      background-image: url('../../../../resources/images/luc-white-top-pdw_ml.svg');
+   #case-study-section.lin.second {
+      background-image: url('../../../../resources/images/lin-white-top-ux_m.svg');
       background-position: top;
       background-size: 100%;
       background-repeat: no-repeat;
    }
+
+   #case-study-section.lin.second {
+      background-image: url('../../../../resources/images/lin-white-bottom-ux_m.svg');
+      background-position: bottom;
+      background-size: 100%;
+      background-repeat: no-repeat;
+   }
+
+   #case-study-section.lin.first .container-flex {
+      /* border: 1px solid yellow; */
+      flex-direction: row;
+   }
+
+   #case-study-section.lin.first .container-flex img {
+      /* border: 1px solid yellow; */
+      min-width: 250px;
+      margin-left: 60px;
+   }
+
+   #case-study-section.lin.first .container-flex .content-text {
+      /* color: yellow; */
+      margin-bottom: 0;
+   }
+
 
 }
 
@@ -26,6 +78,20 @@
 /* region large */
 
 @media (min-width: 1100px) {
+   #case-study-section.lin.first .container-flex img {
+      /* border: 1px solid yellow; */
+      min-width: 300px;
+      margin-left: 100px;
+   }
+
+   #case-study-section.lin.second {
+      background-image: url('../../../../resources/images/lin-white-bottom-ux_l.svg');
+      background-position: bottom;
+      background-size: 100%;
+      background-repeat: no-repeat;
+   }
+
+
 
 
 }

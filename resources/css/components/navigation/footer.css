@@ -42,6 +42,7 @@ footer #content-contact {
 
 footer #content-cases .container-flex {
    flex-direction: row;
+   white-space: nowrap;
 }
 
 footer #content-cases .container-flex p:nth-child(1n + 2) {

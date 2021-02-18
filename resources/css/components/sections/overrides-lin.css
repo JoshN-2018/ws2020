@@ -12,6 +12,10 @@
    flex-direction: column;
 }
 
+#case-study-section.lin.first .h2 {
+   margin-bottom: 8px;
+}
+
 #case-study-section.lin.first .container-flex .content-text {
    /* color: yellow; */
    margin-bottom: 40px;
@@ -73,13 +77,11 @@ margin-bottom: 24px;
       flex-direction: row;
    }
 
-   #case-study-section.lin.first .container-flex img {
-      min-width: 250px;
-      margin-left: 60px;
-   }
 
    #case-study-section.lin.first .container-flex .content-text {
       /* color: yellow; */
+      margin-right: 60px;
+      width: 50%;
       margin-bottom: 0;
    }
 
@@ -115,9 +117,15 @@ margin-bottom: 24px;
       margin-left: 100px;
    }
 
-   #case-study-section.lin.third .content-text:first-of-type {
-      margin-bottom: 60px;
+   #case-study-section.lin.first .h2 {
+      margin-bottom: 24px;
    }
+
+   #case-study-section.lin.first .container-flex .content-text {
+      /* color: yellow; */
+      width: 40%;
+   }
+
    .laptop-wrapper.lin {
       margin-top: -2px;
       background-image: url('../../../../resources/images/lin-blue-top-laptop_l.svg');
@@ -144,6 +152,12 @@ margin-bottom: 24px;
    .laptop-wrapper .container-full {
       padding: 0 10.75rem;  /* reset back to default values of container-full */
    }
+
+   #case-study-section.lin.first .container-flex .content-text {
+      /* color: yellow; */
+      width: 40%;
+   }
+
    #case-study-section.lin.third .content-video.ipad {
       max-width: 1300px;
       margin: 0 auto;

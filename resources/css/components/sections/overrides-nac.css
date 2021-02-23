@@ -9,6 +9,7 @@
 margin-bottom: 24px;
 }
 
+/* Concept: Design to Motion explainer */
 #case-study-section.nac.first .design-to-motion-wrapper {
    flex-direction: column;
 }
@@ -32,6 +33,26 @@ margin-bottom: 24px;
 }
 
 
+/* System: Motion building blocks */
+#case-study-section.nac.second .case-50-50 .label {
+color: #52FFE0;
+}
+
+#case-study-section.nac.second .case-50-50 .left {
+margin-bottom: var(--space-60);
+}
+
+#case-study-section.nac.second .case-50-50 img:first-of-type {
+margin-left: -32px;
+}
+
+#case-study-section.nac.second .case-50-50 .content-text, .content-video {
+margin-top: 16px;
+}
+
+
+
+
 
 
 
@@ -39,6 +60,7 @@ margin-bottom: 24px;
 
 @media (min-width: 720px) {
 
+   /* Concept: Design to Motion explainer */
    #case-study-section.nac.first .case-50-50:last-of-type {
       flex-direction: row-reverse;
    }
@@ -71,6 +93,22 @@ margin-bottom: 24px;
    #case-study-section.nac.first .case-50-50:last-of-type .right {
       width: 35%;
    }
+
+
+   /* System: Motion building blocks */
+      #case-study-section.nac.second .case-50-50 .left, .right {
+      max-width: 424px;
+   }
+      #case-study-section.nac.second .case-50-50 {
+      justify-content: flex-start;
+   }
+      #case-study-section.nac.second .case-50-50 .right {
+      margin-left: 80px;
+   }
+      #case-study-section.nac.second .case-50-50 img:first-of-type {
+      margin-left: -24px;
+   }
+
 }
 
 
@@ -108,6 +146,11 @@ margin-bottom: 24px;
    }
    #case-study-section.nac.first .case-50-50:last-of-type .right {
       width: 40%;
+   }
+
+   /* System: Motion building blocks */
+      #case-study-section.nac.second .case-50-50 .right {
+      margin-left: 140px;
    }
 
 }

@@ -5,12 +5,65 @@
 
 /* region small */
 
+#case-study-section.nac.first .design-to-motion-wrapper {
+   flex-direction: column;
+}
+
+#case-study-section.nac.first .case-50-50:first-of-type img:first-child {
+   height: 100px;
+   width: 171px;
+}
+
+#case-study-section.nac.first .case-50-50:first-of-type .left {
+   margin-bottom: var(--space-32);
+}
+
+#case-study-section.nac.first .case-50-50:last-of-type img:first-child {
+   height: 198px;
+   width: 205px;
+}
+
+#case-study-section.nac.first .case-50-50:last-of-type .right {
+   margin-bottom: var(--space-32);
+}
 
 
 /* region medium */
 
 @media (min-width: 720px) {
-   #
+
+   #case-study-section.nac.first .case-50-50:last-of-type {
+      flex-direction: row-reverse;
+   }
+
+   #case-study-section.nac.first .case-50-50:first-of-type .left {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: var(--space-60);
+      margin-bottom: 0;
+   }
+
+   #case-study-section.nac.first .case-50-50:last-of-type .right {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: var(--space-60);
+      margin-bottom: 0;
+   }
+
+   #case-study-section.nac.first .case-50-50:first-of-type .right {
+      width: 65%;
+   }
+   #case-study-section.nac.first .case-50-50:first-of-type .left {
+      width: 35%;
+   }
+   #case-study-section.nac.first .case-50-50:last-of-type .left {
+      width: 65%;
+   }
+   #case-study-section.nac.first .case-50-50:last-of-type .right {
+      width: 35%;
+   }
 }
 
 
@@ -19,6 +72,36 @@
 
 @media (min-width: 1100px) {
 
+   #case-study-section.nac.first .case-50-50:first-of-type img:first-child {
+      height: 130px;
+      width: auto;
+   }
+
+   #case-study-section.nac.first .case-50-50:last-of-type img:first-child {
+      height: 287px;
+      width: auto;
+   }
+
+   #case-study-section.nac.first .case-50-50:first-of-type .left {
+      margin-right: var(--space-80);
+   }
+
+   #case-study-section.nac.first .case-50-50:last-of-type .right {
+      margin-left: var(--space-80);
+   }
+
+   #case-study-section.nac.first .case-50-50:first-of-type .right {
+      width: 60%;
+   }
+   #case-study-section.nac.first .case-50-50:first-of-type .left {
+      width: 40%;
+   }
+   #case-study-section.nac.first .case-50-50:last-of-type .left {
+      width: 60%;
+   }
+   #case-study-section.nac.first .case-50-50:last-of-type .right {
+      width: 40%;
+   }
 
 }
 
@@ -26,7 +109,7 @@
 
 /* region oversize */
 @media (min-width: 1920px) {
-   
+
 }
 
 

@@ -5,6 +5,10 @@
 
 /* region small */
 
+#case-study-section.nac .h2 {
+margin-bottom: 24px;
+}
+
 #case-study-section.nac.first .design-to-motion-wrapper {
    flex-direction: column;
 }
@@ -26,6 +30,9 @@
 #case-study-section.nac.first .case-50-50:last-of-type .right {
    margin-bottom: var(--space-32);
 }
+
+
+
 
 
 /* region medium */

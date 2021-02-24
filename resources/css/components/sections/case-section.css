@@ -17,6 +17,10 @@
    width: 100%;
 }
 
+.case-50-50 .left {
+margin-bottom: var(--space-60);
+}
+
 
    /* connected space */
 .connected-spacer {
@@ -65,11 +69,18 @@ margin-bottom: 8px;
 
    .case-50-50 {
       flex-direction: row;
-      justify-content: space-between;
+   }
+
+   .case-50-50 .left {
+   margin-bottom: 0;
    }
 
    .case-50-50 .left, .case-50-50 .right {
       width: 50%;
+   }
+
+   .case-50-50 .right {
+      margin-left: 80px;
    }
 
       /* connected space */
@@ -109,6 +120,10 @@ margin-bottom: 8px;
 
 /* region large */
 @media (min-width: 1100px) {
+
+   .case-50-50 .right {
+      margin-left: 140px;
+   }
 
       /* connected space */
    .connected-spacer {

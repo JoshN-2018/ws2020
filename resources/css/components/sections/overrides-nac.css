@@ -19,10 +19,6 @@ margin-bottom: 24px;
    width: 171px;
 }
 
-#case-study-section.nac.first .case-50-50:first-of-type .left {
-   margin-bottom: var(--space-32);
-}
-
 #case-study-section.nac.first .case-50-50:last-of-type img:first-child {
    height: 198px;
    width: 205px;
@@ -59,10 +55,20 @@ margin-top: 32px;
 margin-left: 0;
 }
 
-/* Building blocks: Typography */
+/* Atoms: Typography */
 #case-study-section.nac.third {
 background-color: #070845;
 }
+
+/* Atoms: Micro Interactions */
+#case-study-section.nac.fourth {
+background-color: #f8f8f8;
+}
+
+#case-study-section.nac.fourth .case-50-50 .label {
+margin-bottom: 24px;
+}
+
 
 
 
@@ -126,6 +132,15 @@ background-color: #070845;
       margin-left: 0;
    }
 
+   /* Building blocks: Typography */
+   #case-study-section.nac.third .content-video {
+   max-width: 1096px;
+   }
+
+   /* Atoms: Micro Interactions */
+   #case-study-section.nac.fourth .case-50-50 .left {
+   max-width: 500px;
+   }
 
 }
 

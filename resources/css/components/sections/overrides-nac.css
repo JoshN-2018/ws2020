@@ -42,7 +42,11 @@ margin-bottom: var(--space-60);
 margin-left: -32px;
 }
 
-#case-study-section.nac.second .case-50-50 .content-text, .content-video {
+#case-study-section.nac.second .case-50-50 .content-text {
+margin-top: 16px;
+}
+
+#case-study-section.nac.second .case-50-50 .content-video {
 margin-top: 16px;
 }
 
@@ -75,7 +79,22 @@ margin-bottom: 24px;
 background-color: #070845;
 }
 
+#case-study-section.nac.fifth {
+   background-image: url('../../../../resources/images/nac-white-top-fifth_s.svg'), url('../../../../resources/images/nac-white-bottom-fifth_s.svg');
+    background-position: 0 -2px, bottom;  /*the first listed property contains co-ordinates 0 from the left and -2 from the top*/
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
 
+/* sect 6 – Final video */
+#case-study-section.nac.sixth {
+background-color: #070845;
+}
+
+/* sect 7 – Spacer */
+#case-study-section.nac.seventh {
+background-color: #000000;
+}
 
 
 
@@ -121,7 +140,10 @@ background-color: #070845;
 
 
    /* System: Motion building blocks */
-      #case-study-section.nac.second .case-50-50 .left, .right {
+      #case-study-section.nac.second .case-50-50 .left {
+      max-width: 424px;
+   }
+      #case-study-section.nac.second .case-50-50 .right {
       max-width: 424px;
    }
       #case-study-section.nac.second .case-50-50 {
@@ -145,6 +167,12 @@ background-color: #070845;
    /* Atoms: Micro Interactions */
    #case-study-section.nac.fourth .case-50-50 .left {
    max-width: 500px;
+   }
+
+   /* Molecules: Components Interactions */
+   #case-study-section.nac.fifth {
+      background-image: url('../../../../resources/images/nac-white-top-fifth_m.svg'), url('../../../../resources/images/nac-white-bottom-fifth_m.svg');
+       background-position: 0 -2px, bottom;  /*the first listed property contains co-ordinates 0 from the left and -2 from the top*/
    }
 
 }
@@ -190,6 +218,11 @@ background-color: #070845;
       #case-study-section.nac.second .case-50-50 .right {
       margin-left: 140px;
    }
+
+   /* Molecules: Components Interactions */
+   #case-study-section.nac.fifth {
+      background-image: url('../../../../resources/images/nac-white-top-fifth_l.svg'), url('../../../../resources/images/nac-white-bottom-fifth_l.svg');
+       background-position: 0 -2px, bottom;  /*the first listed property contains co-ordinates 0 from the left and -2 from the top*/
 
 }
 

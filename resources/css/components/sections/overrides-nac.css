@@ -216,7 +216,13 @@ background-color: #000000;
 
    /* System: Motion building blocks */
       #case-study-section.nac.second .case-50-50 .right {
-      margin-left: 140px;
+      margin-left: 180px;
+   }
+      #case-study-section.nac.second .case-50-50 .left {
+      max-width: initial;
+   }
+      #case-study-section.nac.second .case-50-50 .right {
+      max-width: initial;
    }
 
    /* Molecules: Components Interactions */

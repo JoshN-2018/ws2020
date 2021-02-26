@@ -68,9 +68,15 @@ background-color: #070845;
 #case-study-section.nac.fourth {
 background-color: #f8f8f8;
 }
-
 #case-study-section.nac.fourth .case-50-50 .label {
 margin-bottom: 24px;
+}
+#case-study-section.nac.fourth .case-50-50 .left {
+margin-bottom: 0;
+}
+#case-study-section.nac.fourth .case-50-50 .right {
+margin-bottom: 0;
+max-width: 85%;
 }
 
 
@@ -94,6 +100,15 @@ background-color: #070845;
 /* sect 7 – Spacer */
 #case-study-section.nac.seventh {
 background-color: #000000;
+}
+
+   /* Video label spacing */
+#case-study-section.nac .video-label {
+   margin-bottom: 16px;
+}
+#case-study-section.nac .video-label-dark-override {
+   color: var(--color-text);
+   margin-bottom: 16px;
 }
 
 
@@ -166,8 +181,17 @@ background-color: #000000;
 
    /* Atoms: Micro Interactions */
    #case-study-section.nac.fourth .case-50-50 .left {
-   max-width: 500px;
+   max-width: 424px;
    }
+
+   #case-study-section.nac.fourth .case-50-50 .right {
+   max-width: 424px;
+   }
+
+   /* #case-study-section.nac.fourth .case-50-50 .right .content-video {
+   margin-top: 25%;
+   } */
+
 
    /* Molecules: Components Interactions */
    #case-study-section.nac.fifth {
@@ -175,6 +199,13 @@ background-color: #000000;
        background-position: 0 -2px, bottom;  /*the first listed property contains co-ordinates 0 from the left and -2 from the top*/
    }
 
+   /* Video label spacing */
+   #case-study-section.nac .video-label {
+      margin-bottom: 24px;
+   }
+   #case-study-section.nac .video-label-dark-override {
+      margin-bottom: 24px;
+   }
 }
 
 
@@ -215,21 +246,48 @@ background-color: #000000;
    }
 
    /* System: Motion building blocks */
-      #case-study-section.nac.second .case-50-50 .right {
-      margin-left: 180px;
-   }
       #case-study-section.nac.second .case-50-50 .left {
       max-width: initial;
    }
       #case-study-section.nac.second .case-50-50 .right {
       max-width: initial;
+      margin-left: 180px;
+   }
+
+   /* Atoms: Micro Interactions */
+   #case-study-section.nac.fourth .case-50-50 .left {
+      max-width: initial;
+      width:45%;
+   }
+
+   #case-study-section.nac.fourth .case-50-50 .right {
+      max-width: initial;
+      margin-left: 0px;
+      width:45%;
+   }
+
+   #case-study-section.nac.fourth .case-50-50 .right .content-video {
+      padding-top: 6px;
+      /* border: 1px solid yellow; */
+   }
+
+
+   #case-study-section.nac.fourth .case-50-50 .content-video {
+      max-width: 500px;
    }
 
    /* Molecules: Components Interactions */
    #case-study-section.nac.fifth {
       background-image: url('../../../../resources/images/nac-white-top-fifth_l.svg'), url('../../../../resources/images/nac-white-bottom-fifth_l.svg');
        background-position: 0 -2px, bottom;  /*the first listed property contains co-ordinates 0 from the left and -2 from the top*/
-
+   }
+   /* Video label spacing */
+   #case-study-section.nac .video-label {
+      margin-bottom: 32px;
+   }
+   #case-study-section.nac .video-label-dark-override {
+      margin-bottom: 32px;
+   }
 }
 
 

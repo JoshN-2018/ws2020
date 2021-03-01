@@ -28,7 +28,7 @@ exports.prefix = prefix
 
 function clean(cb) {
   return src('./**/*.html')
-  .pipe(htmlmin())
+  .pipe(removeHtmlComments())
     .pipe(dest('public'));
 
   cb();

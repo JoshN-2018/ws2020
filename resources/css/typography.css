@@ -49,6 +49,7 @@ a:visited {
     url("../fonts/serif-headline-web-bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 
@@ -59,6 +60,7 @@ a:visited {
     url("../fonts/untitled-sans-web-medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -68,6 +70,7 @@ a:visited {
     url("../fonts/untitled-sans-web-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -77,6 +80,7 @@ a:visited {
     url("../fonts/untitled-sans-web-light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 

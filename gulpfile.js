@@ -28,14 +28,14 @@ exports.prefix = prefix
 
 function clean(cb) {
   return src('./**/*.html')
-  .pipe(removeHtmlComments())
+  .pipe(htmlmin())
     .pipe(dest('public'));
 
   cb();
 }
 
 exports.clean = clean
-exports.tidy = series(prefix);
+exports.tidy = series(prefix, clean);
 
 
 // WATCH

@@ -2,26 +2,14 @@
 <html lang="en" dir="ltr">
 
 <head>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99051508-2">
-   </script>
-   <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-         dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-99051508-2");
-   </script>
-
+   <!-- core data -->
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <title><sergey-slot name="page-title" /></title>
+   <meta name="description" content="<sergey-slot name="page-description" />">
 
    <!-- social sharing -->
    <meta property="og:title" content="Joshua Noon">
-   <meta name="description" content="The portfolio of Digital Designer Joshua Noon.">
    <meta property="og:description" content="
       My name is Josh, I’m a digital designer working at the intersection of product and brand. My thinking is conceptually led and digitally activated. In other words, creating experiences that
       move people.">
@@ -32,11 +20,8 @@
    <meta property="og:site_name" content="Joshua Noon">
    <meta name="twitter:image:alt" content="Creating experiences at the intersection of product and brand">
 
-   <title>Joshua Noon</title>
-
-   <!-- css critical -->
+   <!-- css -->
    <link rel="stylesheet" type="text/css" href="../resources/css/critical.css" />
-   <!-- css non-critical -->
    <link rel="preload" href="../resources/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
    <noscript>
       <link rel="stylesheet" href="../resources/css/main.css">
@@ -65,5 +50,19 @@
    <meta name="msapplication-TileColor" content="#ffffff">
    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
    <meta name="theme-color" content="#ffffff">
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99051508-2">
+   </script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-99051508-2");
+   </script>
 
 </head>

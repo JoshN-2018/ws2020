@@ -1,23 +1,15 @@
+
+/* non critical (below the fold) */
+
 /* core css */
-@import 'reset.css';
-@import 'typography.css';
-@import 'variables.css';
 @import 'transitions.css';
 
-
 /* navigation components */
-@import 'components/navigation/nav.css';
 @import 'components/navigation/overlay-menu.css';
 @import 'components/navigation/footer.css';
-@import 'components/navigation/scroll-indicator.css';
 @import 'components/navigation/next-project.css';
-@import 'components/navigation/pw-panel.css';
 
-
-/* sections */
-@import 'components/sections/hero-section.css';
-@import 'components/sections/hero-section-case.css';
-@import 'components/sections/hero-section-default.css';
+/* sections  */
 @import 'components/sections/intro-section.css';
 @import 'components/sections/intro-section-case.css';
 @import 'components/sections/showcase-section.css';

@@ -35,7 +35,7 @@ function clean(cb) {
 }
 
 exports.clean = clean
-exports.tidy = series(prefix, clean);
+exports.tidy = series(prefix);
 
 
 // WATCH

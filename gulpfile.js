@@ -24,7 +24,7 @@ function prefix(cb) {
 
 function minHTML(cb) {
   return src('./**/*.html')
-     .pipe(htmlmin({ collapseWhitespace: true }))
+     .pipe(htmlmin({ collapseWhitespace: true}, { removeComments: true } ))
      .pipe(dest('public'));
   cb();
 }

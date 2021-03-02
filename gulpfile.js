@@ -8,7 +8,7 @@ const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
 const { gulp } = require('gulp');
 const autoprefixer = require('gulp-autoprefixer');
-const htmlmin = require('gulp-htmlmin');
+// const htmlmin = require('gulp-htmlmin'); breaks everything
 const cleanCSS = require('gulp-clean-css');
 
 

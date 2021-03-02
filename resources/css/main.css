@@ -1,11 +1,8 @@
 
 /* non critical (below the fold) */
 
-/* core css */
-@import 'transitions.css';
 
 /* navigation components */
-@import 'components/navigation/overlay-menu.css';
 @import 'components/navigation/footer.css';
 @import 'components/navigation/next-project.css';
 

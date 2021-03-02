@@ -253,6 +253,7 @@ footer h4:hover {
 /* reserving space for lottie animations */
 
 /* pre-sets the height to prevent content jumping when animation plays */
+
 .space-save-hero {
    min-height: 176px;
 }

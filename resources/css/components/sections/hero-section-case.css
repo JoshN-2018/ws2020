@@ -97,9 +97,11 @@ padding-left: 0;
       height: 65vh;
       margin: 0 auto;
 }
+
 #hero-section-case #hero-image img {
    height: 100%;
    width: 100%;
+   min-height: 65vh; /* Reserves space for image load */
    object-fit: cover;
    object-position: left;
 }

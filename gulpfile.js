@@ -16,32 +16,30 @@ const cleanCSS = require('gulp-clean-css');
 // Clean & Prefix
 function prefix(cb) {
    return src('resources/css/**/*.css') // will search through all sub folders
-      .pipe(autoprefixer({
-          cascade: true
-      }))
+      .pipe(autoprefixer({ cascade: true }))
      .pipe(dest('public/resources/css'));
 
   cb();
 }
 
-function cleanHTML(cb) {
+function minHTML(cb) {
   return src('./**/*.html')
      .pipe(htmlmin({ collapseWhitespace: true }))
-     .pipe(gulp.dest('public'));
+     .pipe(dest('public'));
   cb();
 }
 
-function cleanCSS(cb) {
+function minCSS(cb) {
   return src('resources/css/**/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('public'));
+   .pipe(cleanCSS({compatibility: 'ie8'}))
+   .pipe(dest('public/resources/css'));
   cb();
 }
 
 exports.prefix = prefix
-exports.cleanHTML = cleanHTML
-exports.cleanHTML = cleanCSS
-exports.tidy = series(prefix, cleanHTML, cleanCSS);
+exports.minHTML = minHTML
+exports.minCSS = minCSS
+exports.tidy = series(prefix, minCSS, minHTML);
 
 
 

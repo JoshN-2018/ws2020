@@ -9,12 +9,11 @@ const imagemin = require('gulp-imagemin');
 const { gulp } = require('gulp');
 const autoprefixer = require('gulp-autoprefixer');
 const htmlmin = require('gulp-htmlmin');
-const removeHtmlComments = require('gulp-remove-html-comments');
+const cleanCSS = require('gulp-clean-css');
 
 
 
-
-// Prefix
+// Clean & Prefix
 function prefix(cb) {
    return src('resources/css/**/*.css') // will search through all sub folders
       .pipe(autoprefixer({
@@ -24,21 +23,29 @@ function prefix(cb) {
 
   cb();
 }
-exports.prefix = prefix
 
-function clean(cb) {
+function cleanHTML(cb) {
   return src('./**/*.html')
-  .pipe(removeHtmlComments())
-    .pipe(dest('public'));
-
+     .pipe(htmlmin({ collapseWhitespace: true }))
+     .pipe(gulp.dest('public'));
   cb();
 }
 
-exports.clean = clean
-exports.tidy = series(prefix);
+function cleanCSS(cb) {
+  return src('resources/css/**/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('public'));
+  cb();
+}
+
+exports.prefix = prefix
+exports.cleanHTML = cleanHTML
+exports.cleanHTML = cleanCSS
+exports.tidy = series(prefix, cleanHTML, cleanCSS);
 
 
-// WATCH
+
+// WATCH & Compress
 function compressChangedPng(cb) {
    return src('../_images-raw/*.png', { since: lastRun(compressChangedPng) })
       .pipe(gulpPngquant({

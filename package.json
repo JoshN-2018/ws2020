@@ -21,7 +21,6 @@
   "homepage": "https://github.com/JoshN-2018/ws2020#readme",
   "dependencies": {
     "core-util-is": "^1.0.2",
-    "gulp-htmlmin": "^5.0.1",
     "sergey": "0.0.13"
   },
   "devDependencies": {
@@ -30,11 +29,12 @@
     "gulp-abraia": "^0.7.0",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-pngquant": "^1.0.13",
-    "gulp-postcss": "^8.0.0",
-    "gulp-remove-html-comments": "^1.0.1"
+    "gulp-postcss": "^8.0.0"
   },
   "description": ""
 }

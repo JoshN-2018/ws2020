@@ -22,13 +22,6 @@ function prefix(cb) {
   cb();
 }
 
-function minHTML(cb) {
-  return src('./**/*.html')
-     .pipe(htmlmin({ collapseWhitespace: true}, { removeComments: true } ))
-     .pipe(dest('public'));
-  cb();
-}
-
 function minCSS(cb) {
   return src('resources/css/**/*.css')
    .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -37,9 +30,8 @@ function minCSS(cb) {
 }
 
 exports.prefix = prefix
-exports.minHTML = minHTML
 exports.minCSS = minCSS
-exports.tidy = series(prefix, minCSS, minHTML);
+exports.tidy = series(prefix, minCSS);
 
 
 

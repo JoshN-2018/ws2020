@@ -22,6 +22,11 @@
   object-fit: cover;
 }
 
+/* creates a mask around the image */
+.case-card .clip {
+   clip-path: inset(-1px 0 0 0);
+}
+
 .case-card p {
   margin-bottom: 4px;
 }

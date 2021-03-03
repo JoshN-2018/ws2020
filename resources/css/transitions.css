@@ -17,10 +17,12 @@ button:hover {
 /* cards hover */
 
 .case-card img {
-   transition: filter 1s ease;
+  transition: transform 1.333s cubic-bezier(0.3, 0, 0.15, 1);
 }
 .case-card img:hover {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
+  transform: scale(1.1);
+  transition: transform 1.333s cubic-bezier(0.3, 0, 0.15, 1);
 }
 
 /* logo hover */

@@ -26,22 +26,40 @@ button:hover {
 }
 
 /* logo hover */
-nav .logo {
-  /* this was causing nav animation! */
+nav .logo img {
   transition: opacity 0.5s ease;
 }
 
-nav .logo:hover {
-  opacity: 0.3;
+nav .logo img:hover {
+  opacity: 0.4;
 }
 
 .logo-region-m-l img {
-  transition: all 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .logo-region-m-l img:hover {
-  opacity: 0.3;
+  opacity: 0.4;
 }
+
+/* menu hover */
+#menu-button-off, #menu-button {
+   transition: opacity 0.5s ease;
+}
+#menu-button-off:hover, #menu-button:hover {
+  opacity: 0.5;
+}
+
+#overlay .logo-white {
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+  max-width: 100px;
+}
+#overlay .logo-white:hover {
+  opacity: 0.5;
+}
+
+
 
 /* Footer category hover */
 footer h4:hover {

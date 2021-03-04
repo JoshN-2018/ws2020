@@ -9,7 +9,6 @@
 
      /* this is replicating 'container' */
 #hero-section .positioning-line-cont {
-   max-width: 1440px;
    position: relative;
    -webkit-transform: translateX(-50%);
        -ms-transform: translateX(-50%);
@@ -59,7 +58,7 @@
 
      /* this is replicating 'container' */
    #hero-section .positioning-line-cont {
-    padding: 0 52px;
+    padding: 0 172px;
   }
 
   #hero-section .positioning-line {
@@ -74,6 +73,7 @@
 
    #hero-section .positioning-line-cont {
       padding: 0 0px;
+      max-width: 1440px;
    }
 
    #hero-section .positioning-line {

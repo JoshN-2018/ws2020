@@ -15,7 +15,6 @@
 
      /* this is replicating 'container' */
 #hero-section-case .positioning-line-cont {
-   max-width: 1440px;
    position: relative;
    -webkit-transform: translateX(-50%);
        -ms-transform: translateX(-50%);
@@ -66,7 +65,7 @@
 
      /* this is replicating 'container' */
    #hero-section-case .positioning-line-cont {
-    padding: 0 52px;
+    padding: 0 172px;
   }
 
   #hero-section-case .positioning-line {
@@ -80,9 +79,10 @@
 @media (min-width: 1920px) {
 
    #hero-section-case .positioning-line-cont {
+      max-width: 1440px;
       padding: 0 0px;
    }
-   
+
    #hero-section-case .positioning-line {
      /* width: 600px; */
    }

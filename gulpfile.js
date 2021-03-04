@@ -10,6 +10,8 @@ const { gulp } = require('gulp');
 const autoprefixer = require('gulp-autoprefixer');
 // const htmlmin = require('gulp-htmlmin'); breaks everything
 const cleanCSS = require('gulp-clean-css');
+const uglify = require('gulp-uglify');
+const pipeline = require('readable-stream').pipeline;
 
 
 
@@ -29,9 +31,17 @@ function minCSS(cb) {
   cb();
 }
 
+function minJS(cb) {
+  return src('resources/js/**/*.js')
+   .pipe(uglify())
+   .pipe(dest('public/resources/js'));
+  cb();
+}
+
 exports.prefix = prefix
 exports.minCSS = minCSS
-exports.tidy = series(prefix, minCSS);
+exports.minJS = minJS
+exports.tidy = series(prefix, minCSS, minJS);
 
 
 

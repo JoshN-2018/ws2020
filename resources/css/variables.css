@@ -83,8 +83,7 @@ section.dark-mode a {
 .container {
    margin: 0 auto;
    padding: 0 1.875rem; /* 30px */
-   overflow: hidden;
-   max-width: 1440px;
+   /* overflow: hidden; */
    position: relative;
 }
 
@@ -104,11 +103,12 @@ section.dark-mode a {
 }
 
    /* region oversize */
-/* @media (min-width: 1440px) {
+   @media (min-width: 1784px) {
     .container {
-      padding: 0rem;
+      padding: 0 0;
+      max-width: 1440px;
    }
-} */
+}
 
 
 /* end of: Container wrapper */
@@ -120,8 +120,7 @@ section.dark-mode a {
 
 .container-full {
    margin: 0 auto;
-   padding: 0; /* 30px */
-   overflow: hidden;
+   padding: 0;
    max-width: 1440px;
    position: relative;
 }
@@ -137,7 +136,7 @@ section.dark-mode a {
    /* region large */
 @media (min-width: 1100px) {
     .container-full {
-      padding: 0 10.75rem;  /* 172px */
+      max-width: 1440px;
    }
 }
    /* end of: Container-full wrapper */

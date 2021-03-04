@@ -69,16 +69,28 @@ footer h4:hover {
 /* next-project comp */
 
 #next-project .content-left:hover {
-     opacity: 0.5;
-  }
+   opacity: 0.5;
+}
 
 #next-project .content-right:hover {
-    opacity: 0.5;
+   opacity: 0.5;
  }
 
- #next-project .content-left, .content-right {
-    transition: opacity 0.5s ease;
-  }
+#next-project .content-left, .content-right {
+   transition: opacity 0.5s ease;
+}
+
+.pw-panel .content-left:hover {
+   opacity: 0.5;
+}
+
+.pw-panel .content-right:hover {
+   opacity: 0.5;
+ }
+
+.pw-panel .content-left, .content-right {
+   transition: opacity 0.5s ease;
+}
 
 
 

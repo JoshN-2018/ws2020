@@ -46,7 +46,8 @@ a:visited {
   font-family: "serif bold";
 
   src: url("../fonts/serif-headline-web-bold.woff2") format("woff2"),
-    url("../fonts/serif-headline-web-bold.woff") format("woff");
+    url("../fonts/serif-headline-web-bold.woff") format("woff"),
+    url("../fonts/serif-headline-web-bold.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -57,7 +58,8 @@ a:visited {
   font-family: "untitled medium";
 
   src: url("../fonts/untitled-sans-web-medium.woff2") format("woff2"),
-    url("../fonts/untitled-sans-web-medium.woff") format("woff");
+    url("../fonts/untitled-sans-web-medium.woff") format("woff"),
+    url("../fonts/untitled-sans-web-medium.eot") format("eot");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -67,7 +69,8 @@ a:visited {
   font-family: "untitled regular";
 
   src: url("../fonts/untitled-sans-web-regular.woff2") format("woff2"),
-    url("../fonts/untitled-sans-web-regular.woff") format("woff");
+    url("../fonts/untitled-sans-web-regular.woff") format("woff"),
+    url("../fonts/untitled-sans-web-regular.eot") format("eot");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -77,7 +80,8 @@ a:visited {
   font-family: "untitled light";
 
   src: url("../fonts/untitled-sans-web-light.woff2") format("woff2"),
-    url("../fonts/untitled-sans-web-light.woff") format("woff");
+    url("../fonts/untitled-sans-web-light.woff") format("woff"),
+    url("../fonts/untitled-sans-web-light.eot") format("eot");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

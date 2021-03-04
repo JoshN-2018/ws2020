@@ -7,6 +7,10 @@ footer {
    padding-bottom: 30px;
 }
 
+footer .container-nav {
+   max-width: 1440px;
+}
+
 footer hr {
    border: 1px solid white;
    width: 100%;
@@ -53,7 +57,7 @@ footer #secondary-section {
    align-items: flex-end;
 }
 
-footer #secondary-section img {
+footer #secondary-section a:last-of-type {
    margin-left: 16px;
 }
 

@@ -274,6 +274,11 @@ footer h4:hover {
   opacity: 0;
 }
 
+.line-3 {
+  transform: translateY(15px);
+  opacity: 0;
+}
+
 
 /* reserving space for lottie animations */
 

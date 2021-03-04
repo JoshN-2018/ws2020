@@ -34,7 +34,8 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-pngquant": "^1.0.13",
-    "gulp-postcss": "^8.0.0"
+    "gulp-postcss": "^8.0.0",
+    "gulp-uglify": "^3.0.2"
   },
   "description": ""
 }

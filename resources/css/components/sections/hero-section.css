@@ -19,7 +19,6 @@
 }
 
 #hero-section .positioning-line {
-  /* width: 274px; */
   padding-top: var(--space-60);
 }
 
@@ -72,6 +71,10 @@
 
 /* region oversize */
 @media (min-width: 1920px) {
+
+   #hero-section .positioning-line-cont {
+      padding: 0 0px;
+   }
 
    #hero-section .positioning-line {
      /* width: 600px; */

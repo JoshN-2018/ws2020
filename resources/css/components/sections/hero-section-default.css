@@ -18,7 +18,6 @@
 }
 
 #hero-section-default .positioning-line {
-  width: 274px;
   padding-top: var(--space-60);
 }
 
@@ -74,7 +73,7 @@
 
      /* this is replicating 'container' */
    #hero-section-default .positioning-line-cont {
-    padding: 0 172px;
+    padding: 0 52px;
   }
 
   #hero-section-default .positioning-line {
@@ -104,9 +103,13 @@
 
    #hero-section-default #intro-text p {
       padding-top: 14.6%;
-      padding-left: 80px;
+      /* padding-left: 80px; */
       padding-right: 200px;
       /* width: 680px; */
+   }
+
+   #hero-section-default .positioning-line-cont {
+      padding: 0 0px;
    }
 
    #hero-section-default .positioning-line {

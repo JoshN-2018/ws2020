@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 var lineOnes = document.getElementsByClassName("line-1");
 var lineTwos = document.getElementsByClassName("line-2");
+var lineThrees = document.getElementsByClassName("line-3"); //highlights and about pages
 var lineAnimate = document.getElementsByClassName("line-animate");
 
 function lineOneAnimater() {
@@ -154,12 +155,20 @@ function lineTwoAnimater() {
    }
 }
 
+function lineThreeAnimater() {
+   for (var i = 0; i < lineThrees.length; i++) {
+      lineThrees[i].classList.add("line-animate");
+      lineThrees[i].classList.remove("line-3");
+   }
+}
+
 function LineAnimRemover() {
    for (var i = 0; i < lineAnimate.length; i++) {
       lineAnimate[i].classList.remove("line-animate");
    }
 }
 
+setTimeout(function(){lineThreeAnimater(); }, 100);
 setTimeout(function(){lineOneAnimater(); }, 2000);
 setTimeout(function(){lineTwoAnimater(); }, 2100);
 setTimeout(function(){LineAnimRemover(); }, 2600);

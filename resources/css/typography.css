@@ -47,7 +47,7 @@ a:visited {
 
   src: url("../fonts/serif-headline-web-bold.woff2") format("woff2"),
     url("../fonts/serif-headline-web-bold.woff") format("woff"),
-    url("../fonts/serif-headline-web-bold.ttf") format("ttf");
+    url("../fonts/serif-headline-web-bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

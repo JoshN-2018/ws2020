@@ -23,6 +23,10 @@
    margin-bottom: 2.5rem;
 }
 
+#overlay .menu-items-wrapper {
+   height: 100%;
+   align-items: center;
+}
 #overlay .menu-items {
    padding-left: 72px;
    padding-bottom: 8%;
@@ -32,25 +36,15 @@
    cursor: pointer;
 }
 
-/* off position */
-#menu-button-off {
-   /* position: fixed; */
-   top: 0px;
-   right: 20px;
-}
-
 #menu-button-off {
    display: none;
 }
-
-
 
 
    /* region medium */
 @media (min-width: 720px) {
    #overlay .menu-items {
       padding-left: 152px;
-      padding-bottom: 8%;
    }
 }
 
@@ -61,10 +55,8 @@
    #overlay img:first-child {
       height: 1.75rem;
    }
-
    #overlay .menu-items {
       padding-left: 284px;
-      padding-bottom: 8%;
    }
 }
 

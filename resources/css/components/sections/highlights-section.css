@@ -3,6 +3,11 @@
    /* region small */
 
 /* structure */
+#highlights .highlights-wrapper {
+   align-items: center;
+   flex-direction: column;
+}
+
 #highlights .content-title {
   margin-top: 40px;
   justify-content: space-between;
@@ -32,6 +37,7 @@
 @media (min-width: 720px) {
 
    /* region medium */
+      /* center content */
 
    #highlights .content-title img {
      height: 50px;
@@ -53,7 +59,6 @@
    #highlights .highlight-block {
       margin-bottom: var(--space-120);
    }
-
 }
 
 
@@ -66,6 +71,7 @@
    }
 
    #highlights .highlight-block {
+      width: 100%;
       max-width: 1096px;
       margin-bottom: var(--space-200);
    }

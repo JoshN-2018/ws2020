@@ -85,13 +85,22 @@
   /* type */
 
   .skills-detail hr {
-    border-color: var(--color-dark-grey);
-    margin-bottom: 10px;
-    display: flex;
+   margin-bottom: 10px;
+   display: block;
+   border-bottom: 1px solid var(--color-dark-grey);
   }
 
   .skills-detail {
     margin-left: 60px;
-    margin-top: 68px;
+    margin-top: 78px;
+  }
+}
+
+/* region oversize */
+@media (min-width: 1920px) {
+     /* type */
+  .skills-detail {
+    margin-left: 60px;
+    margin-top: 90px;
   }
 }

@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
    var anFour = document.getElementsByClassName("offsetAn4");
 
       // Markers to install properties
-   var anMarkProps = document.getElementsByClassName("an-mark-props");
-   var anMarkOne = document.getElementsByClassName("an-mark-1");
-   var anMarkTwo = document.getElementsByClassName("an-mark-2");
-   var anMarkThree = document.getElementsByClassName("an-mark-3");
-   var anMarkFour = document.getElementsByClassName("an-mark-4");
+   // var anMarkProps = document.getElementsByClassName("an-mark-props");
+   // var anMarkOne = document.getElementsByClassName("an-mark-1");
+   // var anMarkTwo = document.getElementsByClassName("an-mark-2");
+   // var anMarkThree = document.getElementsByClassName("an-mark-3");
+   // var anMarkFour = document.getElementsByClassName("an-mark-4");
 
 
 
@@ -83,48 +83,48 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
    // Add animation classes (based on markers)
-   function addProps() {
-      for (var i = 0; i < anMarkProps.length; i++) {
-         anMarkProps[i].classList.add("offset-an-props");
-      }
-   }
-
-   function addAn1() {
-      for (var i = 0; i < anMarkOne.length; i++) {
-         anMarkOne[i].classList.add("offsetAn1");
-      }
-   }
-
-   function addAn2() {
-      for (var i = 0; i < anMarkTwo.length; i++) {
-         anMarkTwo[i].classList.add("offsetAn2");
-      }
-   }
-
-   function addAn3() {
-      for (var i = 0; i < anMarkThree.length; i++) {
-         anMarkThree[i].classList.add("offsetAn3");
-      }
-   }
-
-   function addAn4() {
-      for (var i = 0; i < anMarkFour.length; i++) {
-         anMarkFour[i].classList.add("offsetAn4");
-      }
-   }
+   // function addProps() {
+   //    for (var i = 0; i < anMarkProps.length; i++) {
+   //       anMarkProps[i].classList.add("offset-an-props");
+   //    }
+   // }
+   //
+   // function addAn1() {
+   //    for (var i = 0; i < anMarkOne.length; i++) {
+   //       anMarkOne[i].classList.add("offsetAn1");
+   //    }
+   // }
+   //
+   // function addAn2() {
+   //    for (var i = 0; i < anMarkTwo.length; i++) {
+   //       anMarkTwo[i].classList.add("offsetAn2");
+   //    }
+   // }
+   //
+   // function addAn3() {
+   //    for (var i = 0; i < anMarkThree.length; i++) {
+   //       anMarkThree[i].classList.add("offsetAn3");
+   //    }
+   // }
+   //
+   // function addAn4() {
+   //    for (var i = 0; i < anMarkFour.length; i++) {
+   //       anMarkFour[i].classList.add("offsetAn4");
+   //    }
+   // }
 
 
    // call the above functions
 
 
-   addAn1();
-   addAn2();
-   addAn3();
-   addAn4();
+   // addAn1();
+   // addAn2();
+   // addAn3();
+   // addAn4();
 
       //functions called at set times
 
-   setTimeout(function(){addProps(); }, 50);
+   // setTimeout(function(){addProps(); }, 50);
    setTimeout(function(){delay1(); }, 100);
    setTimeout(function(){delay2(); }, 200);
    setTimeout(function(){delay3(); }, 300);

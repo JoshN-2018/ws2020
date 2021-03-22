@@ -252,7 +252,8 @@ footer h4:hover {
 /* end of: js classes */
 
 .offset-an-props {
-  transition: all 0.75s cubic-bezier(0.32, 0.17, 0.2, 0.99);
+  transition: transform 0.75s cubic-bezier(0.32, 0.17, 0.2, 0.99),
+  opacity 0.75s ease;
 }
 
 
